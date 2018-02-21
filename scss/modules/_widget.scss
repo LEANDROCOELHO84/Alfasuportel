@@ -1,0 +1,27 @@
+//_____________________contact info -----------------
+
+.widget-info {
+  padding-bottom: 20px;
+  ul {
+    margin:0
+  }
+  li {
+    line-height: 32px;
+  }
+  span {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 13px;
+    text-transform: uppercase;
+    & > span {
+      color:#fff;
+    }
+  }
+  a {
+    color: #fff;
+  }
+}
+
+
+.widget-logo {
+    padding: 0 10px 0px 10px;
+}

@@ -1,0 +1,25 @@
+.list-icon {
+  li {
+    padding-left: 15px;
+    margin-bottom: 10px;
+  }
+  li::before {
+    color: $primary-color;
+    content: "\f00c";
+    font-family: "FontAwesome";
+    position: absolute;
+    margin: 0px -19px 0px;
+  }
+  &.check-circle li::before {
+    content: "\f00c";
+  }
+  &.check-circle-o li::before {
+    content: "\f00c";
+  }
+  &.check-square li::before {
+    content: "\f00c";
+  }
+  &.check-square-o li::before {
+    content: "\f00c";
+  }
+}

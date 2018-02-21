@@ -1,0 +1,106 @@
+.wd-menu4-header {
+    position: absolute;
+    z-index: 5;
+    .top-bar {
+        background-color: #FFF;
+        height: 50px;
+        @media #{$topbar-media-query} {
+          background-color: transparent;
+          height: 74px;
+        }
+        position: relative;
+        .top-bar-section {
+            margin-top: 17px;
+            margin-right: 0;
+            ul {
+                float: right;
+            }
+        }
+        .toggle-topbar.menu-icon {
+            margin-top: -22px;
+        }
+        .top-bar-section > .has-dropdown > a::after {
+            margin-right: 20px;
+        }
+        .title-area {
+          height: 50px;
+          @media #{$topbar-media-query} {
+            height: 74px;
+          }
+        }
+    }
+    .top-bar.expanded {
+      height: auto;
+    }
+}
+
+.wd-menu4-logo {
+    h1 {
+        width: 150px;
+        margin: 0 auto;
+        @media #{$topbar-media-query} {
+          margin: 0;
+        }
+    }
+}
+
+.wd-menu4-nav {
+    .top-bar-section {
+        background: transparent;
+        float: none;
+        padding-left: 0;
+        li {
+          border: none;
+        }
+        li,
+        li:not(.has-form) a:not(.button) {
+            background: transparent;
+            color: #fff;
+            font-weight: 600;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            @media #{$topbar-media-query} {
+              padding-top: 0;
+              padding-bottom: 0;
+            }
+        }
+        a {
+            padding: 0 28px !important;
+        }
+      .has-dropdown > a::after {
+        border-color: rgba(255, 255, 255, 0.6) transparent transparent;
+        top: 23px;
+        right: -2px;
+        border-width: 4px;
+      }
+    }
+}
+
+.wd-menu4-social {
+    margin-top: 10px;
+    background-color: #FFF;
+    @media #{$topbar-media-query} {
+        margin-top: 0;
+        background-color: transparent;
+    }
+    .social-icons {
+        text-align: center;
+        padding: 6px 0;
+        @media #{$topbar-media-query} {
+          text-align: left;
+          padding: 22px 0;
+        }
+        li {
+            display: inline-block;
+            float: none;
+            @media #{$topbar-media-query} {
+                display: block;
+                float: left;
+            }
+        }
+        a {
+            color: #fff;
+            font-size: 1.3em;
+        }
+    }
+}

@@ -1,0 +1,174 @@
+// Non-modular or client styles for asides or sidebars.
+
+.l-sidebar {}
+
+.sidebar {
+  margin-top: 80px;
+  margin-bottom: 100px;
+  .block-title {
+    font-size: 18px;
+    margin-bottom: 25px;
+    margin-top: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 1px;
+  }
+
+
+  ul {
+    margin: 0;
+    line-height: 26px;
+    li {
+      list-style-type: none;
+      font-size: 14px;
+      padding: 15px 0px;
+      border-top: 1px solid #E9E9E9;
+      position: relative;
+      a {
+        color: #222;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        padding-left: 18px;
+      }
+      &:before {
+        font-family: "FontAwesome";
+        font-size: 13px;
+        position: absolute;
+        content: "\f105";
+        top: 14px;
+        left: 0px;
+      }
+    }
+  }
+  .latest-posts {
+    ul li a {
+      padding: 0%;
+    }
+    ul li:before {
+      content: "";
+      display: none;
+    }
+  }
+  .recentcomments {
+    overflow: hidden;
+    height: 49px;
+    .comment-author-link {
+      padding-left: 18px;
+    }
+    a {
+      padding: 0;
+    }
+  }
+}
+
+.tagcloud a {
+  background: #f95b36;
+  color: #fff;
+  display: inline-block;
+  font-size: 1.1em !important;
+  line-height: 1.1em;
+  margin: 3px;
+    padding: 5px 10px;
+  &:hover {
+    background: #bab9b9;
+  }
+}
+
+/*-----------serch -----------------*/
+.searchform {
+  position: relative;
+  #searchsubmit {
+    background-color: $primary-color;
+    border: 0 none;
+    box-shadow: none;
+    color: #fff;
+    display: inline;
+    font-size: 12px;
+    font-weight: 300;
+    height: 3em;
+    position: absolute;
+    right: 0;
+    top: 1px;
+    transition: all 0.3s ease-in-out 0s;
+    width: auto;
+    }
+    #s {
+      font-size: 0.9em;
+      height: 38px;
+      padding-right: 59px;
+      box-shadow: 0 0 0 rgba(0, 0, 0, 0.1) inset;
+      border: 1px solid #e7e7e7;
+  }
+}
+
+.sidebar-second.sidebar-left {
+  margin-top: 138px;
+  h2 {
+    font-weight: 600;
+  }
+  ul {
+    li.menu-item::before {
+      content: "";
+      margin: 0;
+    }
+    li.menu-item {
+      border-left: 1px solid #fff;
+      line-height: 39px;
+      margin: 0;
+      padding-left: 20px;
+      transition: all 3ms ease 0s;
+      a {
+        font-size: 16px;
+      }
+    }
+    li.current-menu-item, li.current-menu-item:hover {
+      background-color: #fea026;
+      a {
+        color: #fff;
+      }
+    }
+    li.menu-item:hover {
+       border-left: 2px solid #fea026;
+      a {
+        color: #fea026;
+      }
+    }
+  }
+  .widget-documents {
+    .widget-subtitle {
+      color: #a0a4a7;
+      font-size: 16px;
+      font-weight: 600;
+    }
+    ul {
+      margin-top: 20px;
+      li {
+        box-shadow: 0 0 3px 0 #bbb;
+        margin: 12px 0;
+        padding: 0;
+        color: #787b7f;
+        a {
+          font-size: 13px;
+          font-weight: 600;
+          padding: 8px 10px;
+        }
+        i {
+          margin-top: 0;
+          font-size: 15px;
+          margin-right: 10px;
+        }
+        &:hover {
+          background-color: #FFF;
+          a {
+            color: #787b7f;
+          }
+        }
+      }
+    }
+  }
+}
+.page-template-left-sidebar.page-child .large-9.main.columns, .page-template-right-sidebar.page-child .large-9.main.columns {
+  margin-top: 110px;
+}

@@ -1,0 +1,135 @@
+.wd-top-header {
+      background: #282423;
+    color: #fff;
+    min-height: 100px;
+   
+    padding:0;
+    .wd-logo {
+       border-right: 25px solid #282423;
+      border-top: 100px solid #fbd232;
+      @media #{$medium-only} {
+        border:none;
+        background:#fbd232;
+      }
+      h1 {
+        position:absolute;
+        top: -105px;
+        right:0;
+        @media #{$medium-only} {
+          position:unset;
+        }
+      }
+    }
+    .wd-telephon-info, .wd-adress-info {
+      padding-top: 10px;
+      @media #{$medium-only} {
+        width:33.333%;
+       
+      }
+      i {
+        font-size: 2.6em;
+        padding-top: 6px;
+        color:$primary-color;
+        float:left;
+        
+      }
+      & > div {
+        float:left;
+        padding-left:20px;
+        padding-top: 5px;
+        color:#9595a0;
+        span {
+          display:block;
+          font-size:15px;
+          line-height: 22px;
+        }
+        & span:first-child {
+          color:#fff;
+          font-weight: bold;
+          font-size:20px;
+        }
+      }
+    }
+    .wd-telephon-info{
+      padding-left:85px;
+      
+    }
+    .wd-adress-info{
+     padding-left: 23px;
+     @media #{$medium-only} { 
+       padding-left: 0;
+       }
+    }
+    .wd-search-info{
+      padding-top:20px;
+      @media #{$medium-only} {
+        width:33.333%;
+      }
+      i {
+        font-size: 1.3em;
+        margin-right:15px;
+        color:$primary-color;
+      }
+    }
+    .wd-search-info, .wd-adress-info, .wd-telephon-info {
+       @media #{$medium-only} {
+         padding-top:20px;
+         padding-bottom:20px;
+       }
+    }
+}
+
+.wd-nav-header {
+  padding:0;
+  .wd-social-media {
+    border-right: 25px solid #fff;
+    border-bottom: 67px solid #f8c707;
+    @media #{$medium-only} {
+        border:none;
+         background:#fbd232;
+         padding: 20px 0;
+      }
+    .social-icons{
+      position:absolute;
+      right: 30px;
+      top: 20px;
+      @media #{$medium-only} {
+        position:unset;
+      }
+      li{
+        margin-right:15px;
+      }
+      i
+      {
+        color:#fff;
+        font-size: 1.8em;
+      }
+      
+    }
+  }
+  .top-bar {
+    top:0;
+    .toggle-topbar.menu-icon {
+      right:20px;
+    }
+  }
+  .top-bar-section{
+    float:left;
+    margin-top:10px;
+    
+    .wd_mega-menu > .sub-menu.dropdown > li{
+      @media #{$medium-only} {
+      display : block;
+      }
+    }
+    a{
+      font-size: 14px;
+      font-weight: 600;
+      color:#707781;
+      &:hover{
+        color:#000;
+      }
+    }
+    
+  }
+}

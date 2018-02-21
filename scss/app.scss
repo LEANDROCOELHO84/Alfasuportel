@@ -1,0 +1,141 @@
+/*
+[Table of contents]
+
+1 body
+  2 Header / .l-header
+    2.1 Navigation / .top-bar
+  3 Content /
+    3.0 Title Bar / .wd-title-bar
+    3.1 Slider / .slider
+    3.2 Services / .our-services
+    3.3 Call To Action / .call-to-action-wrapper
+    3.4 Projects / .our-projects
+    3.5 Client & Free Quote / .our-clients-free-quotes
+    3.6 News / .latest-news
+    3.7 Latest News / .latest-news
+    3.8 Portfolio / .wd-section-project
+    3.9 Sidebar / .sidebar
+        3.9.1 Search / #s
+  3.10 NewsLetter / .wd-newsletter
+  3.11 Team / .wd-section-team
+  3.12 Text With Icon / .wd-fucts
+  3.13 Testimonials / .wd-testimonail
+  3.14 Our Clients / .carousel_client
+  3.15 Pricing Tables / .pricing-table
+  3.16 Accordions / .accordion + .faq-wrapper
+  4 Footer / .wd-footer
+*/
+@import "settings";
+@import "foundation";
+@import "fonts";
+@import "custom";
+// Or selectively include components
+// @import
+//   "foundation/components/accordion",
+//   "foundation/components/alert-boxes",
+//   "foundation/components/block-grid",
+//   "foundation/components/breadcrumbs",
+//   "foundation/components/button-groups",
+//   "foundation/components/buttons",
+//   "foundation/components/clearing",
+//   "foundation/components/dropdown",
+//   "foundation/components/dropdown-buttons",
+//   "foundation/components/flex-video",
+//   "foundation/components/forms",
+//   "foundation/components/grid",
+//   "foundation/components/inline-lists",
+//   "foundation/components/joyride",
+//   "foundation/components/keystrokes",
+//   "foundation/components/labels",
+//   "foundation/components/magellan",
+//   "foundation/components/orbit",
+//   "foundation/components/pagination",
+//   "foundation/components/panels",
+//   "foundation/components/pricing-tables",
+//   "foundation/components/progress-bars",
+//   "foundation/components/reveal",
+//   "foundation/components/side-nav",
+//   "foundation/components/split-buttons",
+//   "foundation/components/sub-nav",
+//   "foundation/components/switches",
+//   "foundation/components/tables",
+//   "foundation/components/tabs",
+//   "foundation/components/thumbs",
+//   "foundation/components/tooltips",
+//   "foundation/components/top-bar",
+//   "foundation/components/type",
+//   "foundation/components/offcanvas",
+//   "foundation/components/visibility";
+
+
+@import "help";
+
+//___________vendor________________
+@import "vendor/hover/hover";
+
+//___________layout________________
+
+
+@import "layout/global";
+/* 2 + 2.1 */
+@import "layout/header";
+/**/
+@import "layout/main";
+/* 4 */
+@import "layout/footer";
+/**/
+/* 3.9.1 */
+@import "layout/aside";
+/**/
+
+
+// ___________components____________
+
+@import "components/menu/menu";
+@import "components/menu/menu2";
+@import "components/menu/menu3";
+@import "components/menu/menu4";
+@import "components/menu/_menu-creative";
+
+@import "components/bouton";
+@import "components/lists";
+@import "components/forms";
+/* 3.10 */
+@import "components/newsletter";
+/**/
+/* 3.12 */
+@import "components/text-icon";
+/**/
+/* 3.1 + 3.2 + 3.3 + 3.5 + 3.11 + 3.16 */
+@import "components/sections";
+/**/
+@import "components/homepage";
+/* 3.13 */
+@import "components/testimonail";
+/**/
+/* 3.15 */
+@import "components/pricing-table";
+/**/
+@import "components/image-hover";
+/* 3.16 */
+@import "components/accordion";
+/**/
+/* 3.0 */
+@import "components/titlebar";
+/**/
+/* 3.14 */
+@import "components/our-clients";
+/**/
+/* 3.4 + 3.8 */
+@import "components/gallery";
+
+//____________base______________
+@import "base/global";
+
+//____________module______________
+@import "modules/slider";
+@import "modules/_widget";
+/* 3.6 + 3.7 */
+@import "modules/blog";
+@import "modules/404";
+@import "modules/carousel";

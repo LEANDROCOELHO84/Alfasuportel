@@ -1,0 +1,48 @@
+.wd-newsletter {
+  position: relative;
+  color: rgba(254, 254, 254, 0.76);
+  font-family: inherit;
+  font-size: 1em;
+  font-weight: normal;
+  line-height: 1.714;
+  margin-bottom: 1.42857em;
+  text-transform: uppercase;
+  & > div {
+    margin-top: 15px;
+  }
+  .newslettersubmit {
+    background-color: #fe5b10;
+    border: 0 none;
+    box-shadow: none;
+    color: #fff;
+    height: 40px;
+    left: 225px;
+    padding: 0 13px;
+    position: absolute;
+    right: auto;
+    top: 39px;
+    // Chrome only
+    @media screen and (-webkit-min-device-pixel-ratio:0) {
+      top: 38px;
+    }
+  }
+  .email-adress, .email-adress:focus {
+    background-color: transparent;
+    color: #93a1a7;
+    height: 40px;
+    width: 262px;
+  }
+  li {
+    margin: 0;
+  }
+  i {
+    color: #FFF;
+    font-size: 16px;
+    margin: 0;
+    padding: 3px;
+    width: 24px;
+    &:hover {
+      color: #FE5B10;
+    }
+  }
+}

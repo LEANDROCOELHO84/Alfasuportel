@@ -1,0 +1,38 @@
+.button{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.wd-bouton {
+    background-color: #fe5b10;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 11.5px 10px;
+    text-transform: uppercase;
+    border:none;
+    color:#fff;
+}
+
+.wd-call-to-action-btn {
+  margin-top:30px;
+  text-align: center;
+  a{
+  border: 2px solid #fff;
+  padding: 15px 30px;
+  color:#fff;
+  }
+}
+.wd-call-to-action-btn-invers {
+  margin-top:30px;
+  text-align: center;
+  a{
+  background:$primary-color;
+  padding: 15px 30px;
+  color:#fff;
+  }
+}
+
+.button.small {
+  font-weight: 700;
+  padding: 11px 42px;
+}

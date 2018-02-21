@@ -1,0 +1,72 @@
+/*
+ * ---------testimonials---------------
+ */
+.wd-testimonail {
+  margin: 0;
+  blockquote{
+    border:none;
+    color: inherit;
+    img {
+      margin: 0 0px 0 20px;
+      height: 70px;
+      width: 70px;
+      border-radius: 50%;
+      float: right;
+      padding: 8px;
+      border: 2px solid rgba(0, 0, 0, 0.1);
+    }
+    cite {
+      text-align: right;
+      padding-left: 0;
+      font-size: 16px;
+      color: $primary-color;
+      font-weight: 600;
+      padding-top: 22px;
+      &::before {
+        content: "";
+      }
+    }
+    .job-title {
+      color: #000000;
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+  p {
+    margin-top: 15px;
+    line-height: 1.714;
+    color: #636363;
+    color: inherit;
+    text-align: left;
+    font-style: italic;
+    font-size: 18px;
+    padding: 11px 22px;
+    background: rgba(204, 204, 204, 0.16);
+    border-radius: 4px;
+    margin-bottom: 12px;
+    font-family: serif;
+    &:before {
+      content: "\f10d";
+      font-family: "FontAwesome";
+      color: rgba(255,255,255,0.4);
+      font-size: 18px;
+      margin: -15px -19px 0;
+      position: absolute;
+    }
+    &:after {
+      content: "\f10e";
+      font-family: "FontAwesome";
+      color: rgba(255,255,255,0.4);
+      font-size: 18px;
+      margin: 17px 28px 0;
+      position: absolute;
+      right: 0;
+    }
+  }
+  .quote {
+    display: none;
+  }
+  
+}
+
+

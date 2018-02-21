@@ -1,0 +1,113 @@
+body ,body p {
+  font-family :'Open Sans';
+  font-weight :400;
+}
+h1, h2, h3, h4, h5, h6, .menu-list a {
+   font-family :'Open Sans';
+   font-weight :700;
+}
+.top-bar-section ul li > a {
+    font-family : 'Open Sans';
+}
+.top-bar-section ul li > a {
+  font-weight : 400;
+}
+.top-bar-section ul li > a {
+  text-transform : none;
+}
+h1, h2, h3, h4, h5, h6, .menu-list a {
+  text-transform : none;
+}
+body ,body p {
+  text-transform : none;
+}
+.primary-color,#filters li:hover,#filters li:first-child, #filters li:focus, #filters li:active,
+.wd-section-blog-services.style-3 .wd-blog-post h4:after,
+.box-icon img, .box-icon i,
+button:hover, button:focus, .button:hover, .button:focus,
+button, .button,
+.wd-latest-news .wd-image-date span strong,
+.wd-section-blog.style2 h4:after,
+.pricing-table.featured .title,
+.accordion .accordion-navigation > a, .accordion dd > a,
+.searchform #searchsubmit,.wd-pagination span,.blog-page .quote-format blockquote,
+.woocommerce .widget_price_filter .ui-slider .ui-slider-range,
+.woocommerce-page .widget_price_filter .ui-slider .ui-slider-range,
+.products .product .button,
+.woocommerce #content input.button.alt, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt,
+.woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce-page #content input.button.alt,
+.woocommerce-page #respond input#submit.alt, .woocommerce-page a.button.alt,
+.woocommerce-page button.button.alt, .woocommerce-page input.button.alt,
+.woocommerce #content input.button:hover, .woocommerce #respond input#submit:hover,
+.woocommerce a.button:hover, .woocommerce button.button:hover,
+.woocommerce input.button:hover, .woocommerce-page #content input.button:hover,
+.woocommerce-page #respond input#submit:hover, .woocommerce-page a.button:hover,
+.woocommerce-page button.button:hover, .woocommerce-page input.button:hover,
+.woocommerce span.onsale, .woocommerce-page span.onsale,
+.woocommerce-page button.button, .widget_product_search #searchsubmit, .widget_product_search #searchsubmit:hover,
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button
+{
+  background:rgba(182,112,42,1);
+}
+
+.wd-section-blog-services.style-3 .wd-blog-post .shape {
+  stroke: rgba(182,112,42,1)
+}
+
+.wd-menu3-logo {
+  border-top: 70px solid rgba(0,0,0,0.45)
+}
+
+.triongle {
+  background-color: rgba(0,0,0,0.45)
+}
+.blog-page .read-more-link,
+#wp-calendar a,.wd-testimonail blockquote cite,
+.list-icon li:before
+{
+  color:rgba(182,112,42,1);
+}
+.hvr-underline-from-center:before,
+.hvr-outline-in:before {
+  border-color:rgba(209,154,32,1);
+}
+.wd-footer {
+  background: rgb(44, 44, 44);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.wd-title-section_c h2::after, .wd-title-section_l h2::after, .wd-latest-news .wd-title-element::after, .hvr-underline-from-center::before  {
+  background-color: rgba(182,112,42,1);
+}
+.wd-latest-news .hvr-pop.read-more{
+  color: rgba(182,112,42,1);
+}
+
+button.alert, .button.alert, .wd-newsletter .newslettersubmit{
+  background-color: rgba(182,112,42,1);
+  border-color: rgba(182,112,42,1);
+}
+a:hover, a:focus {
+  color: rgba(182,112,42,1);
+}
+.wd-latest-news .wd-image-date span{
+  background-color: rgba(209,154,32,1);
+}
+@media (min-width: 40.063em) {
+  .creative-layout .contain-to-grid.sticky{
+    background: linear-gradient(180deg, rgba(0,0,0,0.45) 0px,rgba(0,0,0,0) 97%);
+  }
+}
+.creative-layout .contain-to-grid.sticky.fixed{
+  background-color: rgba(0,0,0,0.8);
+}
+.creative-layout .top-bar-section ul li > a {
+  color: rgba(255,255,255,1);
+}
+.creative-layout .fixed .top-bar-section ul li > a {
+  color: rgba(255,255,255,1);
+}
+.creative-layout .fixed .top-bar-section ul li > a:hover, .creative-layout .fixed .top-bar-section ul li.active_menu > a {
+  color: rgba(182,112,42,1);
+}
