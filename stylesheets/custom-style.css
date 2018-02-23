@@ -111,3 +111,18 @@ a:hover, a:focus {
 .creative-layout .fixed .top-bar-section ul li > a:hover, .creative-layout .fixed .top-bar-section ul li.active_menu > a {
   color: rgba(182,112,42,1);
 }
+.wd-title-bar {
+  background: url("../images/slider/slide3.jpg") no-repeat center center;
+  min-height: 289px;
+  padding-top: 150px;
+  .single-portfolio & {
+    margin-bottom: 90px;
+  }
+  // Our Projects
+.our-projects {
+  padding: 70px 0;
+  background-image: url("../images/slider/slide1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
