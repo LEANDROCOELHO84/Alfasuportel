@@ -118,11 +118,14 @@ a:hover, a:focus {
   .single-portfolio & {
     margin-bottom: 90px;
   }
-  // Our Projects
 .our-projects {
   padding: 70px 0;
   background-image: url("../images/slider/slide1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  }
+  .wd-title-section_c {
+    h2 {
+      color: $primary-color;
+    }
+}    
