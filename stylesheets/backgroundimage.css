@@ -1,0 +1,20 @@
+.projects {
+  padding: 70px 0;
+  background-image: url("../images/slider/slide2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .wd-title-section_c {
+    h2 {
+      color: $primary-color;
+  }
+}    
+.ourclients{
+  padding: 70px 0;
+  background-image: url("../images/slider/slide2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+
+}

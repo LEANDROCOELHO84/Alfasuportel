@@ -118,14 +118,27 @@ a:hover, a:focus {
   .single-portfolio & {
     margin-bottom: 90px;
   }
-.our-projects {
-  padding: 70px 0;
-  background-image: url("../images/slider/slide1.jpg");
+  .facts {
+  padding: 100px 0;
+  background-image: url('images/slider/slide4.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  .wd-title-section_c {
+  .wd-title-section_l {
+    margin-bottom: 50px;
     h2 {
-      color: $primary-color;
+      color: #FFF;
     }
-}    
+    h5 {
+      color: rgba(255, 255, 255, 0.74);
+      margin-bottom: 0;
+    }
+  }
+  &.style-2 {
+    .wd-title-section_c {
+      h2 {
+        color: $primary-color;
+      }
+    }
+  }
+}
