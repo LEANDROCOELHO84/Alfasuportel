@@ -1,0 +1,86 @@
+// Slider
+.slider1 {
+  height: 515px;
+  @media #{$small-only} {
+    height: 300px;
+  }
+  .flexslider1 {
+    height: 100%;
+    .flex-viewport {
+      height: 100%;
+      .slides1 {
+        height: 100%;
+        li {
+          position: relative;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 100%;
+          .row {
+            height: 100%;
+            position: relative;
+            .slider-caption {
+              position: absolute;
+              top: 50%;
+              left: 0;
+              transform: translate(0, -50%);
+              width: 690px;
+              @media #{$small-only} {
+                width: 100%;
+                padding: 0 20px;
+              }
+              h1 {
+                position: relative;
+                color: #FFF;
+                font-size: 55px;
+                line-height: 55px;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+                @media #{$small-only} {
+                  font-size: 27px;
+                  line-height: 27px;
+                }
+                &:after {
+                  content: "";
+                  display: block;
+                  height: 3px;
+                  width: 70px;
+                  background-color: #00bbff;
+                  margin-top: 20px;
+                }
+              }
+              p {
+                color: #FFF;
+                font-size: 28px;
+                font-weight: 100;
+                line-height: 36px;
+                margin-bottom: 15px;
+                @media #{$small-only} {
+                  font-size: 16px;
+                  line-height: 19px;
+                }
+              }
+              a {
+                transition: all .5s ease-in-out;
+                display: inline-block;
+                padding: 12px 30px;
+                background-color: $primary-color;
+                color: #FFF;
+                font-size: 12px;
+                font-weight: 700;
+                text-transform: uppercase;
+                text-align: center;
+                &:hover {
+                  background-color: #000;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    // Call To Action
+.call-to-action-wrapper1 {
+  padding: 70px 0;
+  background-color: #f9440be8;
+}

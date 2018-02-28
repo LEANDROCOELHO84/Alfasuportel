@@ -704,7 +704,7 @@ padding-top:50px;
 // Facts
 .facts {
   padding: 100px 0;
-  background-image: url('http://via.placeholder.com/1950x1097');
+  background-image: url('images/slider/slide4.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -942,7 +942,7 @@ padding-top:50px;
 }
 // Slider
 .slider {
-  height: 750px;
+  height: 515px;
   @media #{$small-only} {
     height: 300px;
   }

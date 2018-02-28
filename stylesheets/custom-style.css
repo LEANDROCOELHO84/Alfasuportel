@@ -118,7 +118,7 @@ a:hover, a:focus {
   .single-portfolio & {
     margin-bottom: 90px;
   }
-  .facts {
+ section.facts {
   padding: 100px 0;
   background-image: url('images/slider/slide4.jpg');
   background-position: center;
