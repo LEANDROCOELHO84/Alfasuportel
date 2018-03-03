@@ -962,11 +962,11 @@ padding-top:50px;
             height: 100%;
             position: relative;
             .slider-caption {
-              position: absolute;
-              top: 50%;
+              position: relative;
+              top: 64%;
               left: 0;
               transform: translate(0, -50%);
-              width: 690px;
+              width: 511  px;
               @media #{$small-only} {
                 width: 100%;
                 padding: 0 20px;
@@ -974,10 +974,10 @@ padding-top:50px;
               h1 {
                 position: relative;
                 color: #FFF;
-                font-size: 55px;
-                line-height: 55px;
+                font-size: 20px;
+                line-height: 25px;
                 text-transform: uppercase;
-                margin-bottom: 20px;
+                margin-bottom: 0px;
                 @media #{$small-only} {
                   font-size: 27px;
                   line-height: 27px;

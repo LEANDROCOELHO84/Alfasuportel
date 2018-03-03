@@ -47,15 +47,15 @@ button, .button,
 .woocommerce-page button.button, .widget_product_search #searchsubmit, .widget_product_search #searchsubmit:hover,
 .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button
 {
-  background:rgba(182,112,42,1);
+  background:rgba(232, 17, 48,1);
 }
 
 .wd-section-blog-services.style-3 .wd-blog-post .shape {
-  stroke: rgba(182,112,42,1)
+  stroke: rgba(232, 17, 48,1)
 }
 
 .wd-menu3-logo {
-  border-top: 70px solid rgba(0,0,0,0.45)
+  border-top: 60px solid rgba(0,0,0,0.45)
 }
 
 .triongle {
@@ -65,11 +65,11 @@ button, .button,
 #wp-calendar a,.wd-testimonail blockquote cite,
 .list-icon li:before
 {
-  color:rgba(182,112,42,1);
+  color:rgba(232, 17, 48,1);
 }
 .hvr-underline-from-center:before,
 .hvr-outline-in:before {
-  border-color:rgba(209,154,32,1);
+  border-color:rgba(232, 17, 48,1);
 }
 .wd-footer {
   background: rgb(44, 44, 44);
@@ -78,21 +78,21 @@ button, .button,
 }
 
 .wd-title-section_c h2::after, .wd-title-section_l h2::after, .wd-latest-news .wd-title-element::after, .hvr-underline-from-center::before  {
-  background-color: rgba(182,112,42,1);
+  background-color: rgba(232, 17, 48,1);
 }
 .wd-latest-news .hvr-pop.read-more{
-  color: rgba(182,112,42,1);
+  color: rgba(232, 17, 48,1);
 }
 
 button.alert, .button.alert, .wd-newsletter .newslettersubmit{
-  background-color: rgba(182,112,42,1);
-  border-color: rgba(182,112,42,1);
+  background-color: rgba(232, 17, 48,1);
+  border-color: rgba(232, 17, 48,1);
 }
 a:hover, a:focus {
-  color: rgba(182,112,42,1);
+  color: rgba(232, 17, 48,1);
 }
 .wd-latest-news .wd-image-date span{
-  background-color: rgba(209,154,32,1);
+  background-color: rgba(232, 17, 48,1);
 }
 @media (min-width: 40.063em) {
   .creative-layout .contain-to-grid.sticky{
@@ -109,7 +109,7 @@ a:hover, a:focus {
   color: rgba(255,255,255,1);
 }
 .creative-layout .fixed .top-bar-section ul li > a:hover, .creative-layout .fixed .top-bar-section ul li.active_menu > a {
-  color: rgba(182,112,42,1);
+  color: rgba(232, 17, 48,1);
 }
 .wd-title-bar {
   background: url("../images/slider/slide3.jpg") no-repeat center center;
@@ -134,11 +134,15 @@ a:hover, a:focus {
       margin-bottom: 0;
     }
   }
-  &.style-2 {
+  .style-2 {
     .wd-title-section_c {
       h2 {
         color: $primary-color;
       }
     }
   }
+}
+.call-to-action-wrapper {
+  padding: 70px 0;
+  background-color: $primary-color;
 }
