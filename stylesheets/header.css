@@ -1,0 +1,127 @@
+.top-header-info{
+  background : $primary-color;
+  height:63px;
+}
+.top-bar-section {
+  margin-top:16px;
+  margin-right:30px;
+  float:right;
+}
+header.navigation {
+  position: relative;
+  z-index: 2;
+}
+@media screen and (max-width: 360px) {
+  .top-bar-section {
+  float:unset;
+  margin-right: 0;
+  margin-top:0;
+  width: 100%;
+  z-index: 20;
+  }
+  
+}
+.top-header-info {
+  font-weight: 700;
+}
+
+.top-bar-phone-section:after {
+    background-image: url("../images/bg-phone.png");
+    background-repeat: no-repeat;
+    content: " ";
+    height: 51px;
+    position: absolute;
+    right: -83px;
+    top: 0;
+    width: 83px;
+    z-index: 1;
+}
+.top-bar-phone-section {
+   background : #fff;
+   padding-bottom: 26px;
+    padding-top: 13px;
+    text-align: right;
+    
+     color: #7d8793;
+    font-size: 16px;
+    i {
+      font-size: 20px;
+      color:#365598;
+    }
+} 
+.top-bar-adress-section{
+  padding-left: 110px;
+  font-size: 16px;
+  color:#fff;
+  .contact-info{
+    padding-top: 12px;
+  }
+  i{
+     padding: 0 5px 0 10px;
+  }
+}
+.top-bar-social-section {
+  padding-top: 16px;
+  padding-left: 130px;
+  i{
+    color:#fff;
+    font-size: 1.3em;
+  }
+  
+}
+ ///___________________
+.creative-layout .top-bar .name h1 a {
+  @media #{$small-only} {
+    padding-top: 0 !important;
+  }
+}
+.creative-layout .top-bar .name h1 a img {
+  @media #{$small-only} {
+    margin-top: 0px;
+  }
+}
+ .top-bar .name {
+   padding: 0px 10px 10px;
+ }
+ .top-bar .toggle-topbar.menu-icon a {
+   color: #FFF;
+   margin-top: 5px;
+ }
+ .top-bar .toggle-topbar.menu-icon a span:after {
+   box-shadow: 0 0 0 1px #aaa, 0 7px 0 1px #aaa, 0 14px 0 1px #aaa;
+ }
+.top-bar .title-area {
+  height: 74px;
+.name{
+    a{
+      line-height: 23px;
+      @media #{$small-only}{
+        line-height: 43px;
+      }
+      img{
+        max-height: 80px;
+        @media #{$small-only}{
+          max-height: 50px;
+        }
+      }
+    }
+  }
+}
+
+
+/*___________________   Title Bar____________________________*/
+.wd-title-bar {
+  background: url("../images/slider/slide3.jpg") no-repeat center center;
+  min-height: 289px;
+  padding-top: 150px;
+  .single-portfolio & {
+    margin-bottom: 90px;
+  }
+  h2 {
+    color: #fff;
+  }
+  div h5 {
+    color: rgba(255,255,255, 1);
+
+  }
+}
