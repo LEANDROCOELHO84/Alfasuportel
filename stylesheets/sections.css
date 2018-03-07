@@ -19,3 +19,12 @@ section.call-to-action-wrapper1 {
 section.our-services1 {
   padding: 10px 0;
 }
+
+section.wd-section-call-to-action {
+  background: #dc1515;
+  padding: 40px 0 50px;
+  h4,p {
+    color: #fff;
+  }
+  
+}
