@@ -27,4 +27,40 @@ section.wd-section-call-to-action {
     color: #fff;
   }
   
+// Alfasuportel About
+section.aboutalfasuportel {
+  padding: 70px 0;
+  p {
+    margin-bottom: 0;
+  }
+  .row {
+    .row {
+      &.full-width {
+        margin-left: -15px;
+        margin-right: -15px;
+        padding-top: 20px;
+        .list-icon {
+          margin: 0;
+          li {
+            padding-left: 0;
+            &:before {
+              margin: 0;
+              margin-right: 5px;
+              display: inline-block;
+              position: relative;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+section.facts1 {
+    padding: 100px 0;
+    background-image: url(http://via.placeholder.com/1950x1097);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: #ff7f7f;
 }
