@@ -15,9 +15,19 @@ section.call-to-action-wrapper1 {
     text-align: center;
 }
 
+.slider .flexslider .flex-viewport .slides li .row .slider-caption {
+  top: 70%;
+  width: 900px;
+}
+
+.slider .flexslider .flex-viewport .slides li .row .slider-caption h1 {
+  font-size: 40px !important;
+  line-height: 40px !important;
+}
+
 // Our Services
-section.our-services1 {
-  padding: 10px 0;
+section.our_products {
+  padding: 1px 0;
 }
 
 section.wd-section-call-to-action {
