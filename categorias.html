@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br" ng-app="alfasuportel">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,8 +15,10 @@
     <link rel="stylesheet" href="stylesheets/custom-style.css">
     <link rel="stylesheet" href="stylesheets/header.css">
     <link rel="icon" href="images/logo/logo alfa suportel .png" width="140" height="140">
+    <script src="bower_components/angular/angular.js"></script>
+
   </head>
-  <body>
+  <body ng-controller="categoriasController">
 
     <!-- Start Header -->
 
@@ -43,7 +45,7 @@
                   <ul class="sub-menu dropdown">
                     <li class="title back js-generated"><h5><a href="javascript:void(0)">Voltar</a></h5></li><li class="parent-link hide-for-medium-up"><a class="parent-link js-generated" href="#">Catalogo</a></li>
                     <li id="menu-item-1300" class="has-dropdown not-click">
-                      <a href="#" class="has-icon">CHURRASQUEIRAS</a>
+                      <a href="#" class="has-icon">ALFASUPORTEL</a>
                       <ul class="sub-menu dropdown"><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li><li class="parent-link hide-for-medium-up"><a class="parent-link js-generated" href="#">Estilo I</a></li>
                         <li id="menu-item-1317">
                           <a href="portfolio-columns.html" class="has-icon">Catalogo Colunas</a>
@@ -157,7 +159,7 @@
 
     <!-- End Title Bar -->
 
-    <!-- Start Portfolio -->
+    <!-- Start Products-->
 
     <section class="portfolio-wrapper bg">
       <div class="row">
@@ -172,60 +174,10 @@
         <div class="small-12 large-12 columns">
           <div class="wd-section-project">
             <ul class="masque portfolio-grid small-block-grid-1	medium-block-grid-2 large-block-grid-2">
-              <li>
-                <div class="wd-project hvr-underline-from-center">
-                  <img width="380" height="254" src="http://via.placeholder.com/380x254" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image" alt="">					<a href="single-portfolio.html"><h4>Swedish Mega Project</h4></a>
-                  <p> DESIGN<span>- </span>  INTERIOR<span>- </span>  OFFICE<span>- </span> </p>
-                </div>
-              </li>
-              <li>
+              <li ng-repeat="item in categorias">
                 <div class="wd-project hvr-underline-from-center">
                   <img width="380" height="254" src="http://via.placeholder.com/380x254" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image" alt="">
-                  <a href="single-portfolio.html"><h4>So to deliberately render</h4></a>
-                  <p> DESIGN<span>- </span>  INTERIOR<span>- </span>  OFFICE<span>- </span> </p>
-                </div>
-
-              </li>
-              <li>
-                <div class="wd-project hvr-underline-from-center">
-                  <img width="380" height="254" src="http://via.placeholder.com/380x254" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image" alt="">
-                  <a href="single-portfolio.html"><h4>Frozen Trees In A Lake</h4></a>
-                  <p> DESIGN<span>- </span>  INTERIOR<span>- </span>  OFFICE<span>- </span> </p>
-                </div>
-              </li>
-              <li>
-                <div class="wd-project hvr-underline-from-center">
-                  <img width="380" height="254" src="http://via.placeholder.com/380x254" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image" alt="">
-                  <a href="single-portfolio.html"><h4>Consectetur adipiscing</h4></a>
-                  <p> DESIGN<span>- </span>  INTERIOR<span>- </span>  OFFICE<span>- </span> </p>
-                </div>
-              </li>
-              <li>
-                <div class="wd-project hvr-underline-from-center">
-                  <img width="380" height="254" src="http://via.placeholder.com/380x254" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image" alt="">
-                  <a href="single-portfolio.html"><h4>Consectetur adipiscing</h4></a>
-                  <p> DESIGN<span>- </span>  INTERIOR<span>- </span>  OFFICE<span>- </span> </p>
-                </div>
-              </li>
-              <li>
-                <div class="wd-project hvr-underline-from-center">
-                  <img width="380" height="254" src="http://via.placeholder.com/380x254" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image" alt="">
-                  <a href="single-portfolio.html"><h4>Consectetur adipiscing</h4></a>
-                  <p> DESIGN<span>- </span>  INTERIOR<span>- </span>  OFFICE<span>- </span> </p>
-                </div>
-              </li>
-              <li>
-                <div class="wd-project hvr-underline-from-center">
-                  <img width="380" height="254" src="http://via.placeholder.com/380x254" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image" alt="">
-                  <a href="single-portfolio.html"><h4>Consectetur adipiscing</h4></a>
-                  <p> DESIGN<span>- </span>  INTERIOR<span>- </span>  OFFICE<span>- </span> </p>
-                </div>
-              </li>
-              <li>
-                <div class="wd-project hvr-underline-from-center">
-                  <img width="380" height="254" src="http://via.placeholder.com/380x254" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image" alt="">
-                  <a href="single-portfolio.html"><h4>Consectetur adipiscing</h4></a>
-                  <p> DESIGN<span>- </span>  INTERIOR<span>- </span>  OFFICE<span>- </span> </p>
+                  <a href="single-portfolio.html"><h4>{{ item.descricao_categoria }}</h4></a><br>
                 </div>
               </li>
             </ul>
@@ -318,7 +270,8 @@
   </section>
 
     <!-- End Footer -->
-
+    <script src="js/extras.js"></script>
+    <script src="js/angular-controller/categorias-controller.js"></script>
     <script src="js/jquery-1.12.3.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/shortcode/script-shortcodes.js"></script>

@@ -18,13 +18,11 @@
   <link rel="stylesheet" href="stylesheets/sections.css">
   <link rel="stylesheet" href="stylesheets/header.css">
   <link rel="icon" href="images/logo/logo alfa suportel .png" width="140" height="140">
-
-<!--bower_components -->
-  
-  
+    <!--bower_components -->
+  <script src="bower_components/angular/angular.js"></script>
 
 </head>
-<body>
+<body ng-controller="indexController">
 
   <!-- Start Header -->
 
@@ -43,166 +41,120 @@
             <a href="#"><span>Menu</span></a>
           </li>
         </ul>
-  <section class="creative top-bar-section right">
-    <div class="menu-main-menu-container">  
-      <ul id="menu-main-menu" class="menu">
-        <li id="menu-item-1299" class="has-dropdown not-click">
-            <a href="#" class="has-icon">PRODUTOS</a>
-            <ul class="sub-menu dropdown">
-              <li class="title back js-generated"><h5><a href="javascript:void(0)">Voltar</a></h5></li><li class="parent-link hide-for-medium-up"><a class="parent-link js-generated" href="catalogo.html">Catalogo</a></li>
-              <li id="menu-item-1300" class="has-dropdown not-click">
-                <a href="catalogo.html" class="has-icon">CHURRASQUEIRAS</a>
-                <ul class="sub-menu dropdown"><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li><li class="parent-link hide-for-medium-up"><a class="parent-link js-generated" href="#">Estilo I</a></li>
-                  <li id="menu-item-1316">
-                    <a href="item_produto.html" class="has-icon">ASPECT II</a>
-                  </li>
-                  <li id="menu-item-1316">
-                    <a href="item_produto.html" class="has-icon">ASPECT III</a>
+        <section class="creative top-bar-section right">
+          <div class="menu-main-menu-container">  
+            <ul id="menu-main-menu" class="menu">
+              <li id="menu-item-1299" class="has-dropdown not-click">
+                <a href="linhasdeprodutos.html" class="has-icon">LINHA DE PRODUTOS</a>
+                <ul class="sub-menu dropdown">
+                  <li class="title back js-generated"><h5><a href="javascript:void(0)">Voltar</a></h5></li><li class="parent-link hide-for-medium-up"><a class="parent-link js-generated" href="catalogo.html">Catalogo</a></li>
+                  <li id="menu-item-1300" class="has-dropdown not-click">
+                    <a href="categoria.html" class="has-icon">ALFASUPORTEL</a>
+                    <ul class="sub-menu dropdown"><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li><li class="parent-link hide-for-medium-up"><a class="parent-link js-generated" href="#">Estilo I</a></li>
+                      <li id="menu-item-1316">
+                        <a href="categoria.html" class="has-icon">ASPECT II</a>
+                      </li>
+                      <li id="menu-item-1316">
+                        <ul class="sub-menu dropdown"><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5>
+                        </li>                    
+                        <a href="categoria.html" class="has-icon">ASPECT III</a>
+                      </ul>
+                    </li>
+                    <li id="menu-item-1315">
+                      <a href="categoria.html" class="has-icon">BRASIL570</a>
+                    </li>
+                    <li id="menu-item-1315">
+                      <a href="categoria.html" class="has-icon">CARVÃO A BAFO PÉ ALTO</a>
+                    </li>
+                    <li id="menu-item-1315">
+                      <a href="categoria.html" class="has-icon">ESPETINHO</a>
+                    </li>
                   </li>
                   <li id="menu-item-1315">
-                    <a href="item_produto.html" class="has-icon">BRASIL570</a>
+                    <a href="categoria.html" class="has-icon">ELETRICA</a>
                   </li>
-                   <li id="menu-item-1315">
-                    <a href="item_produto.html" class="has-icon">CARVÃO A BAFO PÉ ALTO</a>
-                  </li>
-                   <li id="menu-item-1315">
-                    <a href="item_produto.html" class="has-icon">ESPETINHO</a>
-                  </li>
-                  </li>
-                   <li id="menu-item-1315">
-                    <a href="item_produto.html" class="has-icon">ELETRICA</a>
-                  </li>
-                  </li>
-                   <li id="menu-item-1315">
-                    <a href="item_produto.html" class="has-icon">A BAFO PE BAIXO</a>
-                  </li>
-                  </li>
-                   <li id="menu-item-1315">
-                    <a href="item_produto.html" class="has-icon">INOX VERTIVAL</a>
-                  </li>
-                  </li>
-                   <li id="menu-item-1315">
-                    <a href="item_produto.html" class="has-icon">GAUCHINHA</a>
-                  </li>
-                </ul>
+                </li>
+                <li id="menu-item-1315">
+                  <a href="categoria.html" class="has-icon">A BAFO PE BAIXO</a>
+                </li>
               </li>
-              <li id="menu-item-1301" class="has-dropdown not-click">
-                <a href="catalogo.html" class="has-icon">GRELHAS</a>
-                <ul class="sub-menu dropdown">
-                  <li class="title back js-generated">
-                    <h5>
-                      <a href="javascript:void(0)">Back</a>
-                    </h5>
-                  </li>
-                  <li class="parent-link hide-for-medium-up"><a class="parent-link js-generated" href="catalogo.html">Estilo II</a></li>
-                  <li id="menu-item-1319">
-                    <a href="item_produto.html" class="" ass="has-icon">INOX</a>
-                  </li>
-                  <li id="menu-item-1320">
-                    <a href="item_produto.html" class="has-icon">REDONDO</a>
-                  </li>
-                  <li id="menu-item-1321">
-                    <a href="item_produto.html" class="has-icon">RETANGULAR</a>
-                  </li>
-                  <li id="menu-item-1321">
-                    <a href="item_produto.html" class="has-icon">ESMALTADO</a>
-                  </li>
-                </ul>
+              <li id="menu-item-1315">
+                <a href="categoria.html" class="has-icon">INOX VERTIVAL</a>
               </li>
-              <li id="menu-item-1302" class="has-dropdown not-click">
-                <a href="catalogo.html" class="has-icon">ESPETO</a>
-                <ul class="sub-menu dropdown "><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li><li class="parent-link hide-for-medium-up"><a class="parent-link js-generated" href="catalogo.html"> Catalogo unico</a></li>
-                  <li id="menu-item-1303">
-                    <a href="item_produto.html" class="has-icon">Catalogo unico</a>
-                  </li>
-                </ul>
-              </li>
-              <li id="menu-item-1302" class="has-dropdown not-click">
-                <a href="catalogo.html" class="has-icon">FRIGIDEIRA A GAS</a>
-                <ul class="sub-menu dropdown "><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li><li class="parent-link hide-for-medium-up"><a class="parent-link js-generated" href="catalogo.html"> Catalogo unico</a></li>
-                  <li id="menu-item-1303">
-                    <a href="item_produto.html" class="has-icon">Catalogo unico</a>
-                  </li>
-                </ul>
-              </li>
-              <li id="menu-item-1302" class="has-dropdown not-click">
-                <a href="catalogo.html" class="has-icon">CHAPEIRA</a>
-                <ul class="sub-menu dropdown "><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li><li class="parent-link hide-for-medium-up"><a class="parent-link js-generated" href="catalogo.html"> Catalogo unico</a></li>
-                  <li id="menu-item-1303">
-                    <a href="item_produto.html" class="has-icon">Catalogo unico</a>
-                  </li>
-                </ul>
-              </li>
-              <li id="menu-item-1302" class="has-dropdown not-click">
-                <a href="catalogo.html" class="has-icon">GRILLS</a>
-                <ul class="sub-menu dropdown "><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li><li class="parent-link hide-for-medium-up"><a class="parent-link js-generated" href="catalogo.html"> Catalogo unico</a></li>
-                  <li id="menu-item-1303">
-                    <a href="item_produto.html" class="has-icon">Catalogo unico</a>
-                  </li>
-                </ul>
-              </li>
-              <li id="menu-item-1302" class="has-dropdown not-click">
-                <a href="catalogo.html" class="has-icon">FOGÕES</a>
-                <ul class="sub-menu dropdown "><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li><li class="parent-link hide-for-medium-up"><a class="parent-link js-generated" href="catalogo.html"> Catalogo unico</a></li>
-                  <li id="menu-item-1303">
-                    <a href="item_produto.html" class="has-icon">Catalogo unico</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-        <li id="menu-item-1295" class="has-dropdown not-click">
-          <a href="catalogo.html" class="has-icon">PAGINAS</a>
-          <ul class="sub-menu dropdown"><li class="title back js-generated"><h5><a href="javascript:void(0)">Voltar</a></h5></li><li class="parent-link hide-for-medium-up"><a class="parent-link js-generated" href="catalogo.html">PAGINAS</a></li>
-            <li id="menu-item-1309">
-              <a href="about-us.html" class="has-icon">QUEM SOMOS</a>
             </li>
-            <li id="menu-item-1308">
-              <a href="contact.html" class="has-icon">CONTATOS</a>
+            <li id="menu-item-1315">
+              <a href="categoria.html" class="has-icon">GAUCHINHA</a>
             </li>
           </ul>
-          
+        </li>
+        <li id="menu-item-1301" class="has-dropdown not-click">
+          <a href="catalogo.html" class="has-icon">FULCAN</a>
+          <ul class="sub-menu dropdown">
+            <li class="title back js-generated">
+              <h5>
+                <a href="javascript:void(0)">Back</a>
+              </h5>
+            </li>
+            <li class="parent-link hide-for-medium-up"><a class="parent-link js-generated" href="catalogo.html">Estilo II</a></li>
+            <li id="menu-item-1319">
+              <a href="categoria.html" class="" ass="has-icon">INOX</a>
+            </li>
+            <li id="menu-item-1320">
+              <a href="categoria.html" class="has-icon">REDONDO</a>
+            </li>
+            <li id="menu-item-1321">
+              <a href="categoria.html" class="has-icon">RETANGULAR</a>
+            </li>
+            <li id="menu-item-1321">
+              <a href="categoria.html" class="has-icon">ESMALTADO</a>
+            </li>
+          </ul>
+        </li>
+
+      </ul>
+    </li>
+    <li id="menu-item-1295" class="has-dropdown not-click">
+      <a href="catalogo.html" class="has-icon">PAGINAS</a>
+      <ul class="sub-menu dropdown"><li class="title back js-generated"><h5><a href="javascript:void(0)">Voltar</a></h5></li><li class="parent-link hide-for-medium-up"><a class="parent-link js-generated" href="catalogo.html">PAGINAS</a></li>
+        <li id="menu-item-1309">
+          <a href="about-us.html" class="has-icon">QUEM SOMOS</a>
         </li>
         <li id="menu-item-1308">
           <a href="contact.html" class="has-icon">CONTATOS</a>
         </li>
-        <li id="menu-item-1308">
-          <a href="contact.html" class="has-icon">TRABALHE CONOSCO</a>
-        </li>              
       </ul>
-    </div>
-  </section>
-      </nav>
-    </div>
-  </header>
 
-  <!-- End Header -->
+    </li>
+    <li id="menu-item-1308">
+      <a href="contact.html" class="has-icon">CONTATOS</a>
+    </li>
+    <li id="menu-item-1308">
+      <a href="contact.html" class="has-icon">TRABALHE CONOSCO</a>
+    </li>              
+  </ul>
+</div>
+</section>
+</nav>
+</div>
+</header>
 
-  <!-- Start Slider -->
+<!-- End Header -->
 
-  <section class="slider" style="height: 550px">
-    <div class="flexslider">
-      <ul class="slides">
-        <li style="background-image: url('images/slider/slide1.jpg');">
-          <div class="row">
-            <div class="slider-caption">
-              <h1 class="h1.slider">Nós fornecemos os melhores produtos e materiais com ótima qualidade.</h1>
-              <p>Nós tornamos prioritário oferecer serviços flexíveis para atender suas necessidades</p>
-              <a href="#">Obter uma cotação agora</a>
-            </div>
+<!-- Start Slider -->
+
+<section class="slider" style="height: 550px">
+  <div class="flexslider">
+    <ul class="slides">
+      <li style="background-image: url('images/slider/slide1.jpg');">
+        <div class="row">
+          <div class="slider-caption">
+            <h1 class="h1.slider">Nós fornecemos os melhores produtos e materiais com ótima qualidade.</h1>
+            <p>Nós tornamos prioritário oferecer serviços flexíveis para atender suas necessidades</p>
+            <a href="#">Obter uma cotação agora</a>
           </div>
-        </li>
-        <li style="background-image: url('images/slider/slide2.jpg');">
-          <div class="row">
-            <div class="slider-caption">
-              <h1>Nós fornecemos os melhores produtos e materiais com ótima qualidade.</h1>
-              <p>Nós tornamos prioritário oferecer serviços flexíveis para atender suas necessidades</p>
-              <a href="#">Obter uma cotação agora</a>
-            </div>
-          </div>
-        </li>
+        </div>
       </li>
-      <li style="background-image: url('images/slider/slide3.jpg');">
+      <li style="background-image: url('images/slider/slide2.jpg');">
         <div class="row">
           <div class="slider-caption">
             <h1>Nós fornecemos os melhores produtos e materiais com ótima qualidade.</h1>
@@ -212,7 +164,7 @@
         </div>
       </li>
     </li>
-    <li style="background-image: url('images/slider/slide4.jpg');">
+    <li style="background-image: url('images/slider/slide3.jpg');">
       <div class="row">
         <div class="slider-caption">
           <h1>Nós fornecemos os melhores produtos e materiais com ótima qualidade.</h1>
@@ -221,16 +173,26 @@
         </div>
       </div>
     </li>
-    <li style="background-image: url('images/slider/slider6.jpg');">
-      <div class="row">
-        <div class="slider-caption">
-          <h1>Nós fornecemos os melhores produtos e materiais com ótima qualidade.</h1>
-          <p>Nós tornamos prioritário oferecer serviços flexíveis para atender suas necessidades</p>
-          <a href="#">Obter uma cotação agora</a>
-        </div>
+  </li>
+  <li style="background-image: url('images/slider/slide4.jpg');">
+    <div class="row">
+      <div class="slider-caption">
+        <h1>Nós fornecemos os melhores produtos e materiais com ótima qualidade.</h1>
+        <p>Nós tornamos prioritário oferecer serviços flexíveis para atender suas necessidades</p>
+        <a href="#">Obter uma cotação agora</a>
       </div>
-    </li>
-  </ul>
+    </div>
+  </li>
+  <li style="background-image: url('images/slider/slider6.jpg');">
+    <div class="row">
+      <div class="slider-caption">
+        <h1>Nós fornecemos os melhores produtos e materiais com ótima qualidade.</h1>
+        <p>Nós tornamos prioritário oferecer serviços flexíveis para atender suas necessidades</p>
+        <a href="#">Obter uma cotação agora</a>
+      </div>
+    </div>
+  </li>
+</ul>
 </div>
 </section>
 
@@ -239,285 +201,287 @@
 <!-- Start Our Products -->
 
 <section class="our_products">
-      <div class="row">
-        <div class="small-12 large-12 large-offset- columns">
-          <div class="wd-title-section_c">
-            <h2>Nossos produtos</h2>
-            <h5>Linha Completa de Produtos</h5>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="small-12 large-12 columns-1">
-          <div class="wd-section-text-icon">
-            <a href="#">
-              <div class="wd-text-icon-style5 animated fadeInUp text-center" data-animated="fadeInUp">
-                <div class="box-icon">
-                  <img src="images/churrasco.jpg" alt="icon" width="1180" height="247">
-                </div>
-                <div class="box-description">
-                  <p>
-                    LINHA DE CHURRASCO
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="small-12 large-12 columns-1">
-          <div class="wd-section-text-icon">
-            <a href="#">
-              <div class="wd-text-icon-style5 animated fadeInUp text-center" data-animated="fadeInUp">
-                <div class="box-icon">
-                  <img src="images/cosinha.jpg" alt="icon" width="1180" height="247">
-                </div>
-                <div class="box-description">
-                  <p>
-                    There is many variantions of passages of Lerem ipsum available
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="small-12 large-12 columns-1">
-          <div class="wd-section-text-icon">
-            <a href="#">
-              <div class="wd-text-icon-style5 animated fadeInUp text-center" data-animated="fadeInUp">
-                <div class="box-icon">
-                  <img src="images/churrasco.jpg" alt="icon" width="1180" height="247">
-                </div>
-                <div class="box-description">
-                  <p>
-                    There is many variantions of passages of Lerem ipsum available
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="small-12 large-12 columns-1">
-          <div class="wd-section-text-icon">
-            <a href="#">
-              <div class="wd-text-icon-style5 animated fadeInUp text-center" data-animated="fadeInUp">
-                <div class="box-icon">
-                  <img src="images/cosinha.jpg" alt="icon" width="1180" height="247">
-                </div>
-                <div class="box-description">
-                  <p>
-                    There is many variantions of passages of Lerem ipsum available
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="small-12 large-12 columns-1">
-          <div class="wd-section-text-icon">
-            <a href="#">
-              <div class="wd-text-icon-style5 animated fadeInUp text-center" data-animated="fadeInUp">
-                <div class="box-icon">
-                  <img src="images/churrasco.jpg" alt="icon" width="1180" height="247">
-                </div>
-                <div class="box-description">
-                  <p>
-                    There is many variantions of passages of Lerem ipsum available
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="small-12 large-12 columns">
-          <div class="wd-section-text-icon">
-            <a href="#">
-              <div class="wd-text-icon-style5 animated fadeInUp text-center" data-animated="fadeInUp">
-                <div class="box-icon">
-                  <img src="images/cosinha.jpg" alt="icon" width="1180" height="247">
-                </div>
-                <div class="box-description">
-                  <p>
-                    There is many variantions of passages of Lerem ipsum available
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+  <div class="row">
+    <div class="small-12 large-12 large-offset- columns">
+      <div class="wd-title-section_c">
+        <h2>Nossos produtos</h2>
 
-  <!-- End Our Products -->
-
-  <!-- Start Call To Action -->
-
-  <section class="call-to-action-wrapper1">
-    <div class="row">
-      <div class="small-12 large-12 columns text-center">
-        <h4 style="color: #ffffff; font-weight: 300; display: inline-block;">Obtenha produtos profissionais, ligue-nos agora.</h4>
-        <h4 style="color: #ffffff; display: inline-block; padding: 0px 20px;">(11) 2511-2233 </h4>
+        <h5>Linha Completa de Produtos</h5>
       </div>
     </div>
-  </section>
-
-  <!-- End Call To Action -->
-
-  <!-- Start Our Clients & Free Quotes -->
-
-  <!-- End Our Clients & Free Quotes -->
-
-  <!-- Start Latest News -->
-
-  <section class="latest-news">
-    <div class="row">
-      <div class="small-12 large-8 large-offset-2 columns">
-        <div class="wd-title-section_c">
-          <h2>Nossas últimas notícias</h2>
-          <h5>veja ultimas novidade de linha de produtos</h5>
-        </div>
+  </div>
+  <div class="row">
+    <div class="small-12 large-12 columns-1">
+      <div class="wd-section-text-icon">
+        <a href="#">
+          <div class="wd-text-icon-style5 animated fadeInUp text-center" data-animated="fadeInUp">
+            <div class="box-icon">
+              <img src="images/churrasco.jpg" alt="icon" width="1180" height="247">
+            </div>
+            <div class="box-description">
+              <p>
+                LINHA DE CHURRASCO
+              </p>
+            </div>
+          </div>
+        </a>
       </div>
     </div>
-    <div class="row">
-      <div class="small-12 large-12 columns">
-        <ul class="simple-blog small-block-grid-1 medium-block-grid-2 large-block-grid-3">
-          <li>
-            <div class="wd-latest-news hvr-underline-from-center animated fadeInUp" data-animated="fadeInUp">
-              <div class="wd-image-date">
-                <img width="368" height="193" src="images/ultimas noticias/acendedordecarvao.jpg" class="attachment-flooring_blog size-flooring_blog wp-post-image" alt="">              <span><strong>05</strong>Fev</span>
-              </div>
-              <h4 class="wd-title-element"><a href="single-blog.html">Acendedor de carvão para Narguilé</a></h4>
+    <div class="small-12 large-12 columns-1">
+      <div class="wd-section-text-icon">
+        <a href="#">
+          <div class="wd-text-icon-style5 animated fadeInUp text-center" data-animated="fadeInUp">
+            <div class="box-icon">
+              <img src="images/cosinha.jpg" alt="icon" width="1180" height="247">
+            </div>
+            <div class="box-description">
               <p>
-                Agilidade e segurança para acender o carvão de fibra de coco do seu Narguilé.Não deixe que a falta de um equipamento adequado coloque em risco um momento de diversão com a família e amigos. 
-                <a class="hvr-pop read-more" href="single-blog.html">Mais Sobre  →</a>
+                There is many variantions of passages of Lerem ipsum available
               </p>
             </div>
-          </li>
-          <li>
-            <div class="wd-latest-news hvr-underline-from-center animated fadeInUp" data-animated="fadeInUp">
-              <div class="wd-image-date">
-                <img width="368" height="193" src="images/ultimas noticias/dirtysteak.jpg"" class="attachment-flooring_blog size-flooring_blog wp-post-image" alt="">              <span><strong>05</strong>Fev</span>
-              </div>
-              <h4 class="wd-title-element"><a href="single-blog.html">Dirty Steak</a></h4>
-              <p>
-                Já ouviu falar de darty steak?<p> é o cozimento sobre as brasas</p>
-                <a class="hvr-pop read-more" href="single-blog.html">Mais Sobre→</a>
-              </p>
-            </div>
-          </li>
-          <li>
-            <div class="wd-latest-news hvr-underline-from-center animated fadeInUp" data-animated="fadeInUp">
-              <div class="wd-image-date">
-                <img width="368" height="193" src="images/ultimas noticias/carvaofulkancoco.jpg" class="attachment-flooring_blog size-flooring_blog wp-post-image" alt="">              <span><strong>05</strong>Fev</span>
-              </div>
-              <h4 class="wd-title-element"><a href="single-blog.html">Carvão Premium</a></h4>
-              <p>
-                Olha a galera pedindo Fulkan Coco Hexagonal
-                <br>
-                <br>
-                <br>
-                <br>
-                <a class="hvr-pop read-more" href="single-blog.html">Mais Sobre  →</a>
-              </p>
-            </div>
-          </li>
-        </ul>
+          </div>
+        </a>
       </div>
     </div>
-  </section>
+    <div class="small-12 large-12 columns-1">
+      <div class="wd-section-text-icon">
+        <a href="#">
+          <div class="wd-text-icon-style5 animated fadeInUp text-center" data-animated="fadeInUp">
+            <div class="box-icon">
+              <img src="images/churrasco.jpg" alt="icon" width="1180" height="247">
+            </div>
+            <div class="box-description">
+              <p>
+                There is many variantions of passages of Lerem ipsum available
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="small-12 large-12 columns-1">
+      <div class="wd-section-text-icon">
+        <a href="#">
+          <div class="wd-text-icon-style5 animated fadeInUp text-center" data-animated="fadeInUp">
+            <div class="box-icon">
+              <img src="images/cosinha.jpg" alt="icon" width="1180" height="247">
+            </div>
+            <div class="box-description">
+              <p>
+                There is many variantions of passages of Lerem ipsum available
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="small-12 large-12 columns-1">
+      <div class="wd-section-text-icon">
+        <a href="#">
+          <div class="wd-text-icon-style5 animated fadeInUp text-center" data-animated="fadeInUp">
+            <div class="box-icon">
+              <img src="images/churrasco.jpg" alt="icon" width="1180" height="247">
+            </div>
+            <div class="box-description">
+              <p>
+                There is many variantions of passages of Lerem ipsum available
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="small-12 large-12 columns">
+      <div class="wd-section-text-icon">
+        <a href="#">
+          <div class="wd-text-icon-style5 animated fadeInUp text-center" data-animated="fadeInUp">
+            <div class="box-icon">
+              <img src="images/cosinha.jpg" alt="icon" width="1180" height="247">
+            </div>
+            <div class="box-description">
+              <p>
+                There is many variantions of passages of Lerem ipsum available
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <!-- End Latest News -->
+<!-- End Our Products -->
 
-  <!-- Start Footer -->
+<!-- Start Call To Action -->
 
-  <section class="wd-footer">
-    <div class="row animation-parent" data-animation-delay="180">
-      <ul class="block large-4 medium-4 columns animated fadeInRight" data-animated="fadeInRight">
+<section class="call-to-action-wrapper1">
+  <div class="row">
+    <div class="small-12 large-12 columns text-center">
+      <h4 style="color: #ffffff; font-weight: 300; display: inline-block;">Obtenha produtos profissionais, ligue-nos agora.</h4>
+      <h4 style="color: #ffffff; display: inline-block; padding: 0px 20px;">(11) 2511-2233 </h4>
+    </div>
+  </div>
+</section>
+
+<!-- End Call To Action -->
+
+<!-- Start Our Clients & Free Quotes -->
+
+<!-- End Our Clients & Free Quotes -->
+
+<!-- Start Latest News -->
+
+<section class="latest-news">
+  <div class="row">
+    <div class="small-12 large-8 large-offset-2 columns">
+      <div class="wd-title-section_c">
+        <h2>Nossas últimas notícias</h2>
+        <h5>veja ultimas novidade de linha de produtos</h5>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="small-12 large-12 columns">
+      <ul class="simple-blog small-block-grid-1 medium-block-grid-2 large-block-grid-3">
         <li>
-          <div class="textwidget">
-            <div class="widget-logo">
-              <img alt="logo" src="images/logo/logo alfa suportel .png">
-              <p>AlfaSuportel. é o líder em equipamentos e produtos alta qualidade.</p>
+          <div class="wd-latest-news hvr-underline-from-center animated fadeInUp" data-animated="fadeInUp">
+            <div class="wd-image-date">
+              <img width="368" height="193" src="images/ultimas noticias/acendedordecarvao.jpg" class="attachment-flooring_blog size-flooring_blog wp-post-image" alt="">              <span><strong>05</strong>Fev</span>
             </div>
+            <h4 class="wd-title-element"><a href="single-blog.html">Acendedor de carvão para Narguilé</a></h4>
+            <p>
+              Agilidade e segurança para acender o carvão de fibra de coco do seu Narguilé.Não deixe que a falta de um equipamento adequado coloque em risco um momento de diversão com a família e amigos. 
+              <a class="hvr-pop read-more" href="single-blog.html">Mais Sobre  →</a>
+            </p>
           </div>
         </li>
-      </ul>
-      <ul class="block large-4 medium-4 columns animated fadeInRight" data-animated="fadeInRight">
         <li>
-          <h2 class="block-title">Entrar em contato</h2>
-          <div class="textwidget">
-            <div class="widget-info">
-              <ul>
-                <li>
-                  <span><span>TEL:</span> (11) 2511-2233</span>
-                </li>
-                <li>
-                  <span><span>TEL:</span> (11) 2511-2144</span>
-                </li>
-                <li>
-                  <span><span>E-mail:</span> <a href="mailto:alfasuportel@alfasuportel.com.br">alfasuportel@alfasuportel.com.br</a></span>
-                </li>
-                <li>
-                  <span><span>endereço</span> Rua Nanci Ackel, 188, São Paulo - SP</span>
-                </li>
-              </ul>
+          <div class="wd-latest-news hvr-underline-from-center animated fadeInUp" data-animated="fadeInUp">
+            <div class="wd-image-date">
+              <img width="368" height="193" src="images/ultimas noticias/dirtysteak.jpg"" class="attachment-flooring_blog size-flooring_blog wp-post-image" alt="">              <span><strong>05</strong>Fev</span>
             </div>
+            <h4 class="wd-title-element"><a href="single-blog.html">Dirty Steak</a></h4>
+            <p>
+              Já ouviu falar de darty steak?<p> é o cozimento sobre as brasas</p>
+              <a class="hvr-pop read-more" href="single-blog.html">Mais Sobre→</a>
+            </p>
           </div>
         </li>
-      </ul>
-      <ul class="block large-4 medium-4 columns animated fadeInRight" data-animated="fadeInRight">
         <li>
-          <h2 class="block-title">Newsletter</h2>
-          <div class="textwidget">
-            <div class="wd-newsletter">
-              Assine seu boletim informativo
-              <div>
-                <input type="text" class="email-adress" placeholder="EMAIL ADRESS" size="20" value="" name="email-adress">
-                <input type="submit" class="newslettersubmit" value="GO">
-                <ul class="inline-list">              
-                  <li class="facebook">
-                    <a href="https://www.facebook.com/Alfasuportel/"><i class="fa fa-facebook"></i></a>
-                  </li>
-                  <li class="instagram">
-                    <a href="https://www.instagram.com/explore/tags/alfasuportel/"><i class="fa fa-instagram"></i></a>
-                  </li>                
-                </ul>
-              </div>
+          <div class="wd-latest-news hvr-underline-from-center animated fadeInUp" data-animated="fadeInUp">
+            <div class="wd-image-date">
+              <img width="368" height="193" src="images/ultimas noticias/carvaofulkancoco.jpg" class="attachment-flooring_blog size-flooring_blog wp-post-image" alt="">              <span><strong>05</strong>Fev</span>
             </div>
+            <h4 class="wd-title-element"><a href="single-blog.html">Carvão Premium</a></h4>
+            <p>
+              Olha a galera pedindo Fulkan Coco Hexagonal
+              <br>
+              <br>
+              <br>
+              <br>
+              <a class="hvr-pop read-more" href="single-blog.html">Mais Sobre  →</a>
+            </p>
           </div>
         </li>
       </ul>
     </div>
-    <footer class="wd-copyright">
-      <div class="row">
-        <div class="small-12 large-12 columns">
-          <div class="copyright-menu">
-            <ul id="menu-footer-menu" class="menu">
-              <li><a href="index.html">Inicio</a></li>
-              <li><a href="about-us.html">Quem Somos</a></li>
-              <li><a href="blog.html">Blog</a></li>
-              <li><a href="contact.html">Contato</a></li>
+  </div>
+</section>
+
+<!-- End Latest News -->
+
+<!-- Start Footer -->
+
+<section class="wd-footer">
+  <div class="row animation-parent" data-animation-delay="180">
+    <ul class="block large-4 medium-4 columns animated fadeInRight" data-animated="fadeInRight">
+      <li>
+        <div class="textwidget">
+          <div class="widget-logo">
+            <img alt="logo" src="images/logo/logo alfa suportel .png">
+            <p>AlfaSuportel. é o líder em equipamentos e produtos alta qualidade.</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <ul class="block large-4 medium-4 columns animated fadeInRight" data-animated="fadeInRight">
+      <li>
+        <h2 class="block-title">Entrar em contato</h2>
+        <div class="textwidget">
+          <div class="widget-info">
+            <ul>
+              <li>
+                <span><span>TEL:</span> (11) 2511-2233</span>
+              </li>
+              <li>
+                <span><span>TEL:</span> (11) 2511-2144</span>
+              </li>
+              <li>
+                <span><span>E-mail:</span> <a href="mailto:alfasuportel@alfasuportel.com.br">alfasuportel@alfasuportel.com.br</a></span>
+              </li>
+              <li>
+                <span><span>endereço</span> Rua Nanci Ackel, 188, São Paulo - SP</span>
+              </li>
             </ul>
           </div>
         </div>
-        <div class="copyright small-12 large-12 columns">
-          <p>
-            © 2018 SDmarketingMobile All rights reserved.
-          </p>
+      </li>
+    </ul>
+    <ul class="block large-4 medium-4 columns animated fadeInRight" data-animated="fadeInRight">
+      <li>
+        <h2 class="block-title">Newsletter</h2>
+        <div class="textwidget">
+          <div class="wd-newsletter">
+            Assine seu boletim informativo
+            <div>
+              <input type="text" class="email-adress" placeholder="EMAIL ADRESS" size="20" value="" name="email-adress">
+              <input type="submit" class="newslettersubmit" value="GO">
+              <ul class="inline-list">              
+                <li class="facebook">
+                  <a href="https://www.facebook.com/Alfasuportel/"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li class="instagram">
+                  <a href="https://www.instagram.com/explore/tags/alfasuportel/"><i class="fa fa-instagram"></i></a>
+                </li>                
+              </ul>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <footer class="wd-copyright">
+    <div class="row">
+      <div class="small-12 large-12 columns">
+        <div class="copyright-menu">
+          <ul id="menu-footer-menu" class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="about-us.html">Quem Somos</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contato</a></li>
+          </ul>
         </div>
       </div>
-    </footer>
-  </section>
+      <div class="copyright small-12 large-12 columns">
+        <p>
+          © 2018 SDmarketingMobile All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+</section>
 
-  <!-- End Footer -->
+<!-- End Footer -->
 
-  <script src="js/jquery-1.12.3.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/shortcode/script-shortcodes.js"></script>
-  <script src="js/jquery.flexslider-min.js"></script>
-  <script src="js/wd_owlcarousel.js"></script>
-  <script src="js/scripts.js"></script>
-  <script src="bower_components/angular/angular.js"></script>
+<script src="js/jquery-1.12.3.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/shortcode/script-shortcodes.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+<script src="js/wd_owlcarousel.js"></script>
+<script src="js/scripts.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="js/angular-controller/index-controller.js"></script>
 </body>
 </html>
