@@ -47,14 +47,12 @@
 							<li id="menu-item-1299" class="has-dropdown not-click">
 								<a href="linhasdeprodutos.html" class="has-icon">LINHA DE PRODUTOS</a>
 								<ul class="sub-menu dropdown">
-									<li class="title back js-generated">
-										<h5><a href="javascript:void(0)">Voltar</a></h5>
-									</li>
-									<li class="parent-link hide-for-medium-up"><a class="parent-link js-generated" href="catalogo.html">Catalogo</a></li>
 									<li id="menu-item-1300" class="has-dropdown not-click" ng-repeat="item in categorias">
-										<a href="subcategoria.html?id={{ item.id }}" class="has-icon">{{ item.descricao_categoria }}</a>
+										<a href="subcategoria.html?id={{ item.id }}" ng-mouseover="loadSubCategorias(item)" class="has-icon">{{ item.descricao_categoria }}</a>
 										<ul class="sub-menu dropdown">
-											<li id="menu-item-1316"><a href="categoria.html" class="has-icon">{ subcategorias }</a></li>
+											<li id="menu-item-1316" ng-repeat="item in subcategorias">
+												<a href="produtos.html?{{ item.id }}" class="has-icon">{{ item.descricao_categoria }}</a>
+											</li>
 										</ul>
 									</li>
 								</ul>

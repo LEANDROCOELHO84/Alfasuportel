@@ -7,11 +7,16 @@ app.controller('indexController', function($scope, $http){
 
 		$http.get(baseUrlApi()+"categorias/treeview?tce->id_empreendimento=217").then(function(response){
 			$scope.categorias = response.data;
-			$scope.subcategorias = response.data.filhos;
 		}, function(err){
 			console.log(err);
 		});
-	}
-	$scope.loadCategorias();
+	};
 
+	$scope.loadSubCategorias = function(item){
+		$scope.subcategorias = [];
+		if (item.filhos != null) {
+			$scope.subcategorias = item.filhos
+		}
+	};
+	$scope.loadCategorias();
 });
