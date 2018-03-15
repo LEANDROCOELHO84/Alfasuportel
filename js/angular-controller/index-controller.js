@@ -18,5 +18,6 @@ app.controller('indexController', function($scope, $http){
 			$scope.subcategorias = item.filhos
 		}
 	};
+	
 	$scope.loadCategorias();
 });
