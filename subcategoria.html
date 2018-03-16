@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br" ng-app="alfasuportel">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,8 +15,9 @@
   <link rel="stylesheet" href="stylesheets/custom-style.css">
   <link rel="stylesheet" href="stylesheets/header.css">
   <link rel="icon" href="images/logo/logo alfa suportel .png" width="140" height="140">
+  <script src="bower_components/angular/angular.js"></script>
 </head>
-  <body>
+  <body ng-controller="subcategoriaController">
 
     <!-- Start Header -->
 
@@ -63,9 +64,6 @@
                   </li>
                 </ul>
               </li>
-              <li id="menu-item-1308">
-                <a href="contact.html" class="has-icon">CONTATOS</a>
-              </li> 
               <li id="menu-item-1308">
                 <a href="contact.html" class="has-icon">TRABALHE CONOSCO</a>
               </li>              
@@ -260,7 +258,8 @@
   </footer>
 </section>
     <!-- End Footer -->
-
+    <script src="js/angular-controller/subcategoria-controller.js"></script>
+    <script src="js/extras.js"></script>
     <script src="js/jquery-1.12.3.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/shortcode/script-shortcodes.js"></script>

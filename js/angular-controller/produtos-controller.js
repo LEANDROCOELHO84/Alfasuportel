@@ -1,5 +1,5 @@
 var app = angular.module('alfasuportel', []);
-app.controller('categoriasController', function($scope, $http){
+app.controller('produtosController', function($scope, $http){
 
 	$scope.loadCategorias = function() {
 		$scope.categorias = [];
