@@ -81,7 +81,7 @@
 <section class="wd-title-bar">
   <div class="row">
     <div class="large-12 columns p-t-70 text-left">
-      <h2 id="page-title" class="title">Categoria</h2>
+      <h2 id="page-title" class="title">{{ titulo }}</h2>
     </div>
   </div>
 </section>
@@ -103,53 +103,10 @@
     <div class="small-12 large-12 columns">
       <div class="wd-section-project">
         <ul class="slider masque portfolio-grid small-block-grid-1	medium-block-grid-2 large-block-grid-4">
-          <li>
+          <li ng-repeat="item in itens">
             <div class="wd-project hvr-underline-from-center">
-              <img width="380" height="254" src="http://via.placeholder.com/380x254" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image" alt="">
-              <a href="single-portfolio.html"><h4>Nome do Produto</h4></a>
-            </div>
-          </li>
-          <li>
-            <div class="wd-project hvr-underline-from-center">
-              <img width="380" height="254" src="http://via.placeholder.com/380x254" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image" alt="">
-              <a href="single-portfolio.html"><h4>Nome do Produto</h4></a>
-            </div>
-
-          </li>
-          <li>
-            <div class="wd-project hvr-underline-from-center">
-              <img width="380" height="254" src="http://via.placeholder.com/380x254" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image" alt="">
-              <a href="single-portfolio.html"><h4>Nome do Produto</h4></a>
-            </div>
-          </li>
-          <li>
-            <div class="wd-project hvr-underline-from-center">
-              <img width="380" height="254" src="http://via.placeholder.com/380x254" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image" alt="">
-              <a href="single-portfolio.html"><h4>Nome do Produto</h4></a>
-            </div>
-          </li>
-          <li>
-            <div class="wd-project hvr-underline-from-center">
-              <img width="380" height="254" src="http://via.placeholder.com/380x254" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image" alt="">
-              <a href="single-portfolio.html"><h4>Nome do Produto</h4></a>
-            </div>
-          </li>
-          <li>
-            <div class="wd-project hvr-underline-from-center">
-              <img width="380" height="254" src="http://via.placeholder.com/380x254" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image" alt="">
-              <a href="single-portfolio.html"><h4>Nome do Produto</h4></a>
-            </div>
-          </li>
-          <li>
-            <div class="wd-project hvr-underline-from-center">
-              <img width="380" height="254" src="http://via.placeholder.com/380x254" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image" alt="">
-              <a href="single-portfolio.html"><h4>Nome do Produto</h4></a>
-            </div>
-          </li>
-          <li>
-            <div class="wd-project hvr-underline-from-center">
-              <img width="380" height="254" src="http://via.placeholder.com/380x254" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image" alt="">
-              <a href="single-portfolio.html"><h4>Nome do Produto</h4></a>
+              <img width="380" height="254" src="http://webliniaerp.com.br/assets/imagens/produtos/{{ item.img }}" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image" alt="">
+              <a href="item_produtos.html?produto={{ item.id }}"><h4>{{ item.nome }}</h4></a>
             </div>
           </li>
         </ul>

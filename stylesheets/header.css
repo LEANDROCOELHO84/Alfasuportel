@@ -125,3 +125,19 @@ header.navigation {
 
   }
 }
+.title-banner{
+  width: auto;
+  background-color: rgba(0,0,0,0.6);
+  float: right;
+}
+
+.title-product{
+  width: auto;
+  background-color: rgba(0,0,0,0.6);
+  float: left;
+}
+
+.teste{
+  height: 350px;
+  overflow: auto; 
+}

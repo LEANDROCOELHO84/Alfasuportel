@@ -84,7 +84,7 @@
   <section class="wd-title-bar">
     <div class="row">
       <div class="large-12 columns p-t-70 text-left">
-        <h2 id="page-title" class="title">Catalogo Churrasqueiras </h2>
+        <h2 id="page-title" class="title title-product">{{ produto.nome }}</h2>
       </div>
     </div>
   </section>
@@ -97,33 +97,24 @@
     <div class="row">
       <div class="small-12 large-6 columns">
         <div class="owl-testimonail owl-carousel owl-theme">
-          <img width="840" height="424" src="images/catalogo/fotossuportel/aspect II.jpg" class="attachment-flooring_blog-thumb size-flooring_blog-thumb wp-post-image" alt="Churrasqueiras de Aspect II">
-          <img width="840" height="424" src="images/catalogo/fotossuportel/ASPECT III .jpg" class="attachment-flooring_blog-thumb size-flooring_blog-thumb wp-post-image" alt="Aspect III">  
+          <img width="840" height="424" src="http://webliniaerp.com.br/assets/imagens/produtos/{{ produto.img }}" class="attachment-flooring_blog-thumb size-flooring_blog-thumb wp-post-image" alt="Churrasqueiras de Aspect II">
         </div>
       </div>
-      <div class="small-12 large-6 columns">
+      <div class="small-12 large-6 columns teste">
         <div class="wd-title-block">
           <h6>Descrição</h6>
         </div>
-        <p>A churrasqueira gauchinha é ideal para acampamentos e pescarias, fácil de montar e transportar assa qualquer tipo de alimento rapidamente.</p>
-        <h6>Compoisição</h6>
-        <p><li>01 Caixa litografada.</li>
-          <li>  01 Grelha de arame estanhado.</li>
-          <li> 02 Espetos de arame estanhados.</li>
-          <li> 02 Pés de arame cromado desmontável.</li>
-          <li>02 Apoios de grelha desmontável.</li>
-          <li>01 Cuba de aço pintada.</li>
-          <div class="small-12 large-6 columns">
-            <h6></h6>
-          </div>
-        </p>
+          <span>{{ produto.descricao_curta }}</span>
+          <br><br>
+          <h6>Informações Adicionais</h6>
+          <p ng-bind-html="descricao"></p>
       </div>
     </div>
   </section>
   <section class="wd-section-project-page">
     <div class="row animation-parent" data-animation-delay="100">
       <div class="row">
-        <h4 class="m-b-15">PRODUTOS RELACIONADO</h4>
+        <h4 class="m-b-15">PRODUTOS RELACIONADOS</h4>
         <div class="wd-section-project">
           <ul class="masque portfolio-grid small-block-grid-1  medium-block-grid-3 large-block-grid-4">
             <li class="flipInX" data-animated="flipInX" style="opacity: 1; animation-delay: 0ms;">
@@ -131,26 +122,6 @@
                 <img width="380" height="254" src="http://via.placeholder.com/380x254" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image" alt="">
                 <a href="single-portfolio.html"><h4>PRODUTO</h4></a>
               </div>
-            </li>
-            <li class="flipInX" data-animated="flipInX" style="opacity: 1; animation-delay: 100ms;">
-              <div class="wd-project hvr-underline-from-center">
-                <img width="380" height="254" src="http://via.placeholder.com/380x254" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image" alt="">
-                <a href="single-portfolio.html"><h4>PRODUTO</h4></a>
-              </div>
-            </li>
-            <li class="flipInX" data-animated="flipInX" style="opacity: 1; animation-delay: 200ms;">
-              <div class="wd-project hvr-underline-from-center">
-                <img width="380" height="254" src="http://via.placeholder.com/380x254" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image" alt="">
-                <a href="single-portfolio.html"><h4>PRODUTO</h4></a>
-              </div>
-            </li>
-            <li class="flipInX" data-animated="flipInX" style="opacity: 1; animation-delay: 300ms;">
-              <div class="wd-project hvr-underline-from-center">
-                <img width="380" height="254" src="http://via.placeholder.com/380x254" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image" alt="">
-                <a href="single-portfolio.html"><h4>PRODUTO</h4></a>
-                <p><span> - </span>ALFASUPORTEL<span>- </span></p>
-              </div>
-            </li>
           </ul>
         </div>
       </div>
