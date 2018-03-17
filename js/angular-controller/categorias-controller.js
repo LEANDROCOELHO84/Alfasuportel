@@ -1,6 +1,8 @@
 var app = angular.module('alfasuportel', []);
 app.controller('categoriasController', function($scope, $http){
 
+	// Menu Header
+	
 	$scope.loadCategorias = function() {
 		$scope.categorias = [];
 		$scope.subcategorias = [];

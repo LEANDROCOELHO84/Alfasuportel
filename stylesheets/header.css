@@ -137,7 +137,7 @@ header.navigation {
   float: left;
 }
 
-.teste{
+.box-scroll{
   height: 350px;
   overflow: auto; 
 }

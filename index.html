@@ -145,108 +145,39 @@
 		<div class="small-12 large-12 large-offset- columns">
 			<div class="wd-title-section_c">
 				<h2>Nossos produtos</h2>
-
 				<h5>Linha Completa de Produtos</h5>
 			</div>
 		</div>
 	</div>
 	<div class="row">
 		<div class="small-12 large-12 columns-1">
-			<div class="wd-section-text-icon">
-				<a href="#">
-					<div class="wd-text-icon-style5 animated fadeInUp text-center" data-animated="fadeInUp">
-						<div class="box-icon">
-							<img src="images/churrasco.jpg" alt="icon" width="1180" height="247">
+			<div class="wd-section-text-icon wd-section-project">
+				<ul class="masque">
+					<li ng-repeat="categoria in categorias_body">
+						<a href="#">
+							<div class="wd-text-icon-style5 animated fadeInUp text-center" data-animated="fadeInUp">
+								<div class="box-icon">
+									<img src="images/churrasco.jpg" alt="icon" width="1180" height="247">
+								</div>
+								<div class="box-description">
+									<h3>
+										Clique aqui para ver mais produtos da linha {{ categoria.descricao_categoria }}
+									</h3>
+								</div>
+							</div>
+						</a>
+						<div class="wd-text-icon-style5 animated fadeInUp" data-animated="fadeInUp">
+							<ul class="slider masque portfolio-grid small-block-grid-1	medium-block-grid-2 large-block-grid-4">
+								<li ng-repeat="produto in categoria.itens">
+									<div class="wd-project hvr-underline-from-center">
+										<img width="380" height="254" src="http://webliniaerp.com.br/assets/imagens/produtos/{{ produto.img }}" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image" alt="">
+										<a href="item_produtos.html?produto={{ produto.id }}"><h4>{{ produto.nome }}</h4></a>
+									</div>
+								</li>
+							</ul>
 						</div>
-						<div class="box-description">
-							<p>
-								LINHA DE CHURRASCO
-							</p>
-						</div>
-					</div>
-				</a>
-			</div>
-		</div>
-		<div class="small-12 large-12 columns-1">
-			<div class="wd-section-text-icon">
-				<a href="#">
-					<div class="wd-text-icon-style5 animated fadeInUp text-center" data-animated="fadeInUp">
-						<div class="box-icon">
-							<img src="images/cosinha.jpg" alt="icon" width="1180" height="247">
-						</div>
-						<div class="box-description">
-							<p>
-								There is many variantions of passages of Lerem ipsum available
-							</p>
-						</div>
-					</div>
-				</a>
-			</div>
-		</div>
-		<div class="small-12 large-12 columns-1">
-			<div class="wd-section-text-icon">
-				<a href="#">
-					<div class="wd-text-icon-style5 animated fadeInUp text-center" data-animated="fadeInUp">
-						<div class="box-icon">
-							<img src="images/churrasco.jpg" alt="icon" width="1180" height="247">
-						</div>
-						<div class="box-description">
-							<p>
-								There is many variantions of passages of Lerem ipsum available
-							</p>
-						</div>
-					</div>
-				</a>
-			</div>
-		</div>
-	</div>
-	<div class="row">
-		<div class="small-12 large-12 columns-1">
-			<div class="wd-section-text-icon">
-				<a href="#">
-					<div class="wd-text-icon-style5 animated fadeInUp text-center" data-animated="fadeInUp">
-						<div class="box-icon">
-							<img src="images/cosinha.jpg" alt="icon" width="1180" height="247">
-						</div>
-						<div class="box-description">
-							<p>
-								There is many variantions of passages of Lerem ipsum available
-							</p>
-						</div>
-					</div>
-				</a>
-			</div>
-		</div>
-		<div class="small-12 large-12 columns-1">
-			<div class="wd-section-text-icon">
-				<a href="#">
-					<div class="wd-text-icon-style5 animated fadeInUp text-center" data-animated="fadeInUp">
-						<div class="box-icon">
-							<img src="images/churrasco.jpg" alt="icon" width="1180" height="247">
-						</div>
-						<div class="box-description">
-							<p>
-								There is many variantions of passages of Lerem ipsum available
-							</p>
-						</div>
-					</div>
-				</a>
-			</div>
-		</div>
-		<div class="small-12 large-12 columns">
-			<div class="wd-section-text-icon">
-				<a href="#">
-					<div class="wd-text-icon-style5 animated fadeInUp text-center" data-animated="fadeInUp">
-						<div class="box-icon">
-							<img src="images/cosinha.jpg" alt="icon" width="1180" height="247">
-						</div>
-						<div class="box-description">
-							<p>
-								There is many variantions of passages of Lerem ipsum available
-							</p>
-						</div>
-					</div>
-				</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</div>

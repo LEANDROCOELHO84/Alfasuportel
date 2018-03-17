@@ -100,7 +100,7 @@
           <img width="840" height="424" src="http://webliniaerp.com.br/assets/imagens/produtos/{{ produto.img }}" class="attachment-flooring_blog-thumb size-flooring_blog-thumb wp-post-image" alt="Churrasqueiras de Aspect II">
         </div>
       </div>
-      <div class="small-12 large-6 columns teste">
+      <div class="small-12 large-6 columns box-scroll">
         <div class="wd-title-block">
           <h6>Descrição</h6>
         </div>
@@ -117,10 +117,11 @@
         <h4 class="m-b-15">PRODUTOS RELACIONADOS</h4>
         <div class="wd-section-project">
           <ul class="masque portfolio-grid small-block-grid-1  medium-block-grid-3 large-block-grid-4">
-            <li class="flipInX" data-animated="flipInX" style="opacity: 1; animation-delay: 0ms;">
+            <li ng-repeat="item in relacionados" class="flipInX" data-animated="flipInX" style="opacity: 1; animation-delay: 0ms;">
               <div class="wd-project hvr-underline-from-center">
-                <img width="380" height="254" src="http://via.placeholder.com/380x254" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image" alt="">
-                <a href="single-portfolio.html"><h4>PRODUTO</h4></a>
+                <img width="380" height="254" src="http://webliniaerp.com.br/assets/imagens/produtos/{{ item.img }}" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image" alt="">
+                <a href="item_produtos.html?produto={{ item.id }}"><h4>{{ item.nome }}</h4></a>
+                <br>
               </div>
           </ul>
         </div>

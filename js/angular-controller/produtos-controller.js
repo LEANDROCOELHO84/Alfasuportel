@@ -21,7 +21,7 @@ app.controller('produtosController', function($scope, $http){
 
 	var params = getUrlVars();
 
-	// Menu Start
+	// Menu Header
 
 	$scope.loadCategorias = function() {
 		$scope.categorias = [];
@@ -41,8 +41,18 @@ app.controller('produtosController', function($scope, $http){
 		}
 	};
 	
-	$scope.loadCategorias();
+	// Title Banner
 
+	$scope.loadTitulo = function() {
+		$http.get(baseUrlApi()+"categorias?cat->id="+params.subcategoria).then(function(response){
+			$scope.titulo = response.data.categorias[0].descricao_categoria;
+		}, function(err){
+			console.log(err);
+		});
+	};
+
+	// Itens Body
+	
 	$scope.loadItens = function() {
 		$scope.itens = [];
 
@@ -52,15 +62,8 @@ app.controller('produtosController', function($scope, $http){
 			console.log(err);
 		});
 	};
-
-	$scope.loadItens();
-
-	$scope.loadTitulo = function() {
-		$http.get(baseUrlApi()+"categorias?cat->id="+params.subcategoria).then(function(response){
-			$scope.titulo = response.data.categorias[0].descricao_categoria;
-		}, function(err){
-			console.log(err);
-		});
-	};
+	
+	$scope.loadCategorias();
 	$scope.loadTitulo();
+	$scope.loadItens();
 });

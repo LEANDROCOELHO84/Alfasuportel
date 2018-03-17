@@ -41,8 +41,8 @@ app.controller('subcategoriaController', function($scope, $http){
 		}
 	};
 	
-	$scope.loadCategorias();
-
+	// Load Subcategory by Category
+	
 	$scope.loadSubcategoriasByCategorias = function() {
 		$scope.itens = [];
 
@@ -52,7 +52,8 @@ app.controller('subcategoriaController', function($scope, $http){
 			console.log(err);
 		});
 	};
-	$scope.loadSubcategoriasByCategorias();
+
+	// Title Banner
 
 	$scope.loadTitulo = function() {
 		$http.get(baseUrlApi()+"categorias?cat->id="+params.categoria).then(function(response){
@@ -61,5 +62,8 @@ app.controller('subcategoriaController', function($scope, $http){
 			console.log(err);
 		});
 	};
+
+	$scope.loadCategorias();
+	$scope.loadSubcategoriasByCategorias();
 	$scope.loadTitulo();
 });

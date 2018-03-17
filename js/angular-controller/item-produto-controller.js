@@ -21,7 +21,8 @@ app.controller('itemProdutoController', function($scope, $http, $sce){
 
 	var params = getUrlVars();
 
-	// Menu 
+	// Menu Header
+
 	$scope.loadCategorias = function() {
 		$scope.categorias = [];
 		$scope.subcategorias = [];
@@ -40,29 +41,34 @@ app.controller('itemProdutoController', function($scope, $http, $sce){
 		}
 	};
 	
-	$scope.loadCategorias();
-	
+
+	// Load Product Data
+
 	$scope.loadProduto = function() {
 		$scope.produto = [];
 		$http.get(baseUrlApi()+"produtos?pro->id="+params.produto).then(function(response){
 			$scope.produto = response.data.produtos[0];
+			var id_categoria_referencia = response.data.produtos[0].id_categoria;
 			$scope.descricao = $sce.trustAsHtml(response.data.produtos[0].descricao);
+			$scope.loadProdutosRelacionados(id_categoria_referencia);
+
 		}, function(err){
 			console.log(err);
 		});
 	};
 
-	$scope.loadProduto();
-
-	$scope.loadProdutosRelacionados = function() {
+	// Load Related Products
+	
+	$scope.loadProdutosRelacionados = function(id_categoria) {
 		$scope.relacionados = [];
 
-		$http.get(baseUrlApi()+"produtos?cat->id="+$scope.produto.id_categoria).then(function(response){
+		$http.get(baseUrlApi()+"produtos?cat->id="+id_categoria).then(function(response){
 			$scope.relacionados = response.data.produtos;
 		}, function(err){
 			console.log(err);
 		});
 	};
-
-	$scope.loadProdutosRelacionados();
+	
+	$scope.loadCategorias();
+	$scope.loadProduto();
 });
