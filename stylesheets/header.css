@@ -131,6 +131,11 @@ header.navigation {
   float: right;
 }
 
+.title-banner-2{
+  width: auto;
+  background-color: rgba(0,0,0,0.6);
+}
+
 .title-product{
   width: auto;
   background-color: rgba(0,0,0,0.6);
@@ -140,4 +145,13 @@ header.navigation {
 .box-scroll{
   height: 350px;
   overflow: auto; 
+}
+
+.banner-category{
+  min-height: 289px;
+  padding-top: 150px;
+}
+
+.banner-category h2{
+  color: #FFFFFF;
 }

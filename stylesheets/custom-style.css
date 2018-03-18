@@ -111,14 +111,6 @@ a:hover, a:focus {
 .creative-layout .fixed .top-bar-section ul li > a:hover, .creative-layout .fixed .top-bar-section ul li.active_menu > a {
   color: rgba(232, 17, 48,1);
 }
-.wd-title-bar {
-  background: url("../images/slider/slide3.jpg") no-repeat center center;
-  min-height: 289px;
-  padding-top: 150px;
-  .single-portfolio & {
-    margin-bottom: 90px;
-  }
- 
 .call-to-action-wrapper {
   padding: 70px 0;
   background-color: $primary-color;
