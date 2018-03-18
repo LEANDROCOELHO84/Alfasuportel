@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br" ng-app="alfasuportel">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,8 +16,10 @@
     <link rel="stylesheet" href="stylesheets/header.css">
     <link rel="stylesheet" href="stylesheets/sections.css">
     <link rel="icon" href="images/logo/logo alfa suportel .png" width="140" height="140">
+    <!--bower_components -->
+    <script src="bower_components/angular/angular.js"></script>
   </head>
-  <body>
+  <body ng-controller="contactController">
 
     <!-- Start Header -->
 
@@ -27,7 +29,7 @@
           <ul class="title-area">
             <li class="name">
               <h1>
-                <a title="Flooring Company WordPress Theme" rel="home" href="index.html">
+                <a title="alfasuportel" rel="home" href="index.html" pa>
                   <img alt="logo" width="auto" height="auto" src="images/logo/logo alfa suportel .png">
                 </a>
               </h1>
@@ -36,135 +38,39 @@
               <a href="#"><span>Menu</span></a>
             </li>
           </ul>
-        <section class="creative top-bar-section right">
-    <div class="menu-main-menu-container">  
-      <ul id="menu-main-menu" class="menu">
-        <li id="menu-item-1299" class="has-dropdown not-click">
-            <a href="#" class="has-icon">PRODUTOS</a>
-            <ul class="sub-menu dropdown">
-              <li class="title back js-generated"><h5><a href="javascript:void(0)">Voltar</a></h5></li><li class="parent-link hide-for-medium-up"><a class="parent-link js-generated" href="catalogo.html">Catalogo</a></li>
-              <li id="menu-item-1300" class="has-dropdown not-click">
-                <a href="catalogo.html" class="has-icon">CHURRASQUEIRAS</a>
-                <ul class="sub-menu dropdown"><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li><li class="parent-link hide-for-medium-up"><a class="parent-link js-generated" href="#">Estilo I</a></li>
-                  <li id="menu-item-1316">
-                    <a href="item_produto.html" class="has-icon">ASPECT II</a>
-                  </li>
-                  <li id="menu-item-1316">
-                    <a href="item_produto.html" class="has-icon">ASPECT III</a>
-                  </li>
-                  <li id="menu-item-1315">
-                    <a href="item_produto.html" class="has-icon">BRASIL570</a>
-                  </li>
-                   <li id="menu-item-1315">
-                    <a href="item_produto.html" class="has-icon">CARVÃO A BAFO PÉ ALTO</a>
-                  </li>
-                   <li id="menu-item-1315">
-                    <a href="item_produto.html" class="has-icon">ESPETINHO</a>
-                  </li>
-                  </li>
-                   <li id="menu-item-1315">
-                    <a href="item_produto.html" class="has-icon">ELETRICA</a>
-                  </li>
-                  </li>
-                   <li id="menu-item-1315">
-                    <a href="item_produto.html" class="has-icon">A BAFO PE BAIXO</a>
-                  </li>
-                  </li>
-                   <li id="menu-item-1315">
-                    <a href="item_produto.html" class="has-icon">INOX VERTIVAL</a>
-                  </li>
-                  </li>
-                   <li id="menu-item-1315">
-                    <a href="item_produto.html" class="has-icon">GAUCHINHA</a>
-                  </li>
-                </ul>
-              </li>
-              <li id="menu-item-1301" class="has-dropdown not-click">
-                <a href="catalogo.html" class="has-icon">GRELHAS</a>
-                <ul class="sub-menu dropdown">
-                  <li class="title back js-generated">
-                    <h5>
-                      <a href="javascript:void(0)">Back</a>
-                    </h5>
-                  </li>
-                  <li class="parent-link hide-for-medium-up"><a class="parent-link js-generated" href="catalogo.html">Estilo II</a></li>
-                  <li id="menu-item-1319">
-                    <a href="item_produto.html" class="" ass="has-icon">INOX</a>
-                  </li>
-                  <li id="menu-item-1320">
-                    <a href="item_produto.html" class="has-icon">REDONDO</a>
-                  </li>
-                  <li id="menu-item-1321">
-                    <a href="item_produto.html" class="has-icon">RETANGULAR</a>
-                  </li>
-                  <li id="menu-item-1321">
-                    <a href="item_produto.html" class="has-icon">ESMALTADO</a>
-                  </li>
-                </ul>
-              </li>
-              <li id="menu-item-1302" class="has-dropdown not-click">
-                <a href="catalogo.html" class="has-icon">ESPETO</a>
-                <ul class="sub-menu dropdown "><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li><li class="parent-link hide-for-medium-up"><a class="parent-link js-generated" href="catalogo.html"> Catalogo unico</a></li>
-                  <li id="menu-item-1303">
-                    <a href="item_produto.html" class="has-icon">Catalogo unico</a>
-                  </li>
-                </ul>
-              </li>
-              <li id="menu-item-1302" class="has-dropdown not-click">
-                <a href="catalogo.html" class="has-icon">FRIGIDEIRA A GAS</a>
-                <ul class="sub-menu dropdown "><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li><li class="parent-link hide-for-medium-up"><a class="parent-link js-generated" href="catalogo.html"> Catalogo unico</a></li>
-                  <li id="menu-item-1303">
-                    <a href="item_produto.html" class="has-icon">Catalogo unico</a>
-                  </li>
-                </ul>
-              </li>
-              <li id="menu-item-1302" class="has-dropdown not-click">
-                <a href="catalogo.html" class="has-icon">CHAPEIRA</a>
-                <ul class="sub-menu dropdown "><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li><li class="parent-link hide-for-medium-up"><a class="parent-link js-generated" href="catalogo.html"> Catalogo unico</a></li>
-                  <li id="menu-item-1303">
-                    <a href="item_produto.html" class="has-icon">Catalogo unico</a>
-                  </li>
-                </ul>
-              </li>
-              <li id="menu-item-1302" class="has-dropdown not-click">
-                <a href="catalogo.html" class="has-icon">GRILLS</a>
-                <ul class="sub-menu dropdown "><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li><li class="parent-link hide-for-medium-up"><a class="parent-link js-generated" href="catalogo.html"> Catalogo unico</a></li>
-                  <li id="menu-item-1303">
-                    <a href="item_produto.html" class="has-icon">Catalogo unico</a>
-                  </li>
-                </ul>
-              </li>
-              <li id="menu-item-1302" class="has-dropdown not-click">
-                <a href="catalogo.html" class="has-icon">FOGÕES</a>
-                <ul class="sub-menu dropdown "><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li><li class="parent-link hide-for-medium-up"><a class="parent-link js-generated" href="catalogo.html"> Catalogo unico</a></li>
-                  <li id="menu-item-1303">
-                    <a href="item_produto.html" class="has-icon">Catalogo unico</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-        <li id="menu-item-1295" class="has-dropdown not-click">
-          <a href="catalogo.html" class="has-icon">PAGINAS</a>
-          <ul class="sub-menu dropdown"><li class="title back js-generated"><h5><a href="javascript:void(0)">Voltar</a></h5></li><li class="parent-link hide-for-medium-up"><a class="parent-link js-generated" href="catalogo.html">PAGINAS</a></li>
-            <li id="menu-item-1309">
-              <a href="about-us.html" class="has-icon">QUEM SOMOS</a>
-            </li>
-            <li id="menu-item-1308">
-              <a href="contact.html" class="has-icon">CONTATOS</a>
-            </li>
-          </ul>
-          
-        </li>
-        <li id="menu-item-1308">
-          <a href="contact.html" class="has-icon">CONTATOS</a>
-        </li>
-        <li id="menu-item-1308">
-          <a href="contact.html" class="has-icon">TRABALHE CONOSCO</a>
-        </li>              
-      </ul>
-    </div>
-  </section>
+          <section class="creative top-bar-section right">
+            <div class="menu-main-menu-container">  
+              <ul id="menu-main-menu" class="menu">
+                <li id="menu-item-1299" class="has-dropdown not-click">
+                  <a href="categorias.html" class="has-icon">LINHA DE PRODUTOS</a>
+                  <ul class="sub-menu dropdown">
+                    <li id="menu-item-1300" class="has-dropdown not-click" ng-repeat="item in categorias">
+                      <a href="subcategoria.html?categoria={{ item.id }}" ng-mouseover="loadSubCategorias(item)" class="has-icon">{{ item.descricao_categoria }}</a>
+                      <ul class="sub-menu dropdown">
+                        <li id="menu-item-1316" ng-repeat="item in subcategorias">
+                          <a href="produtos.html?subcategoria={{ item.id }}" class="has-icon">{{ item.descricao_categoria }}</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li id="menu-item-1295" class="has-dropdown not-click">
+                  <a class="has-icon">PÁGINAS</a>
+                  <ul class="sub-menu dropdown">
+                    <li id="menu-item-1309">
+                      <a href="about-us.html" class="has-icon">QUEM SOMOS</a>
+                    </li>
+                    <li id="menu-item-1308">
+                      <a href="contact.html" class="has-icon">CONTATO</a>
+                    </li>
+                  </ul>
+                </li>
+                <li id="menu-item-1308">
+                  <a href="contact.html" class="has-icon">TRABALHE CONOSCO</a>
+                </li>              
+              </ul>
+            </div>
+          </section>
         </nav>
       </div>
     </header>
@@ -335,5 +241,7 @@
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script src="js/wd_owlcarousel.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/angular-controller/contact-controller.js"></script>
+    <script src="js/extras.js"></script>
   </body>
 </html>

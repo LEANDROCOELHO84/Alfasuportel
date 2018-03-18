@@ -53,17 +53,19 @@ app.controller('subcategoriaController', function($scope, $http){
 		});
 	};
 
-	// Title Banner
+	// Banner
 
-	$scope.loadTitulo = function() {
+	$scope.loadCategoriaPai = function() {
 		$http.get(baseUrlApi()+"categorias?cat->id="+params.categoria).then(function(response){
-			$scope.titulo = response.data.categorias[0].descricao_categoria;
+			$scope.categoria_pai = response.data.categorias[0];
 		}, function(err){
 			console.log(err);
 		});
 	};
 
+	$scope.teste = "http://via.placeholder.com/1240x768";
+
 	$scope.loadCategorias();
 	$scope.loadSubcategoriasByCategorias();
-	$scope.loadTitulo();
+	$scope.loadCategoriaPai();
 });

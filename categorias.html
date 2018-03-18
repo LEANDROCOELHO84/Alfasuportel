@@ -25,56 +25,56 @@
 
 
   <header class="l-header creative-layout">
-    <div class="top-bar-container contain-to-grid sticky">
-      <nav class="top-bar" data-topbar="">
-        <ul class="title-area">
-          <li class="name">
-            <h1>
-              <a title="alfasuportel" rel="home" href="index.html" pa>
-                <img alt="logo" width="auto" height="auto" src="images/logo/logo alfa suportel .png">
-              </a>
-            </h1>
-          </li>
-          <li class="toggle-topbar menu-icon">
-            <a href="#"><span>Menu</span></a>
-          </li>
-        </ul>
-        <section class="creative top-bar-section right">
-          <div class="menu-main-menu-container">  
-            <ul id="menu-main-menu" class="menu">
-              <li id="menu-item-1299" class="has-dropdown not-click">
-                <a href="categorias.html" class="has-icon">LINHA DE PRODUTOS</a>
-                <ul class="sub-menu dropdown">
-                  <li id="menu-item-1300" class="has-dropdown not-click" ng-repeat="item in categorias">
-                    <a href="subcategoria.html?categoria={{ item.id }}" ng-mouseover="loadSubCategorias(item)" class="has-icon">{{ item.descricao_categoria }}</a>
-                    <ul class="sub-menu dropdown">
-                      <li id="menu-item-1316" ng-repeat="item in subcategorias">
-                          <a href="produtos.html?subcategoria={{ item.id }}" class="has-icon">{{ item.descricao_categoria }}</a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li id="menu-item-1295" class="has-dropdown not-click">
-                <a href="catalogo.html" class="has-icon">PAGINAS</a>
-                <ul class="sub-menu dropdown">
-                  <li id="menu-item-1309">
-                    <a href="about-us.html" class="has-icon">QUEM SOMOS</a>
-                  </li>
-                  <li id="menu-item-1308">
-                    <a href="contact.html" class="has-icon">CONTATOS</a>
-                  </li>
-                </ul>
-              </li>
-              <li id="menu-item-1308">
-                <a href="contact.html" class="has-icon">TRABALHE CONOSCO</a>
-              </li>              
-            </ul>
-          </div>
-        </section>
-      </nav>
-    </div>
-  </header>
+		<div class="top-bar-container contain-to-grid sticky">
+			<nav class="top-bar" data-topbar="">
+				<ul class="title-area">
+					<li class="name">
+						<h1>
+							<a title="alfasuportel" rel="home" href="index.html" pa>
+								<img alt="logo" width="auto" height="auto" src="images/logo/logo alfa suportel .png">
+							</a>
+						</h1>
+					</li>
+					<li class="toggle-topbar menu-icon">
+						<a href="#"><span>Menu</span></a>
+					</li>
+				</ul>
+				<section class="creative top-bar-section right">
+					<div class="menu-main-menu-container">  
+						<ul id="menu-main-menu" class="menu">
+							<li id="menu-item-1299" class="has-dropdown not-click">
+								<a href="categorias.html" class="has-icon">LINHA DE PRODUTOS</a>
+								<ul class="sub-menu dropdown">
+									<li id="menu-item-1300" class="has-dropdown not-click" ng-repeat="item in categorias">
+										<a href="subcategoria.html?categoria={{ item.id }}" ng-mouseover="loadSubCategorias(item)" class="has-icon">{{ item.descricao_categoria }}</a>
+										<ul class="sub-menu dropdown">
+											<li id="menu-item-1316" ng-repeat="item in subcategorias">
+												<a href="produtos.html?subcategoria={{ item.id }}" class="has-icon">{{ item.descricao_categoria }}</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li id="menu-item-1295" class="has-dropdown not-click">
+								<a class="has-icon">PÁGINAS</a>
+								<ul class="sub-menu dropdown">
+									<li id="menu-item-1309">
+										<a href="about-us.html" class="has-icon">QUEM SOMOS</a>
+									</li>
+									<li id="menu-item-1308">
+										<a href="contact.html" class="has-icon">CONTATO</a>
+									</li>
+								</ul>
+							</li>
+							<li id="menu-item-1308">
+								<a href="contact.html" class="has-icon">TRABALHE CONOSCO</a>
+							</li>              
+						</ul>
+					</div>
+				</section>
+			</nav>
+		</div>
+	</header>
 
     <!-- End Header -->
 
@@ -106,7 +106,7 @@
             <ul class="masque portfolio-grid small-block-grid-1	medium-block-grid-2 large-block-grid-2">
               <li ng-repeat="item in categorias">
                 <div class="wd-project hvr-underline-from-center">
-                  <img width="380" height="254" src="http://via.placeholder.com/380x254" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image" alt="">
+                  <img width="380" height="254" src="http://webliniaerp.com.br/assets/imagens/produtos/{{ item.pth_thumbnail }}" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image" alt="">
                   <a href="subcategoria.html?categoria={{ item.id }}"><h4>{{ item.descricao_categoria }}</h4></a><br>
                 </div>
               </li>

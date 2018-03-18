@@ -41,11 +41,11 @@ app.controller('produtosController', function($scope, $http){
 		}
 	};
 	
-	// Title Banner
+	// Banner
 
-	$scope.loadTitulo = function() {
+	$scope.loadCategoriaProduto = function() {
 		$http.get(baseUrlApi()+"categorias?cat->id="+params.subcategoria).then(function(response){
-			$scope.titulo = response.data.categorias[0].descricao_categoria;
+			$scope.categoria_produto = response.data.categorias[0];
 		}, function(err){
 			console.log(err);
 		});
@@ -64,6 +64,6 @@ app.controller('produtosController', function($scope, $http){
 	};
 	
 	$scope.loadCategorias();
-	$scope.loadTitulo();
+	$scope.loadCategoriaProduto();
 	$scope.loadItens();
 });

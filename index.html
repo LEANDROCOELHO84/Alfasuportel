@@ -58,13 +58,13 @@
 								</ul>
 							</li>
 							<li id="menu-item-1295" class="has-dropdown not-click">
-								<a href="catalogo.html" class="has-icon">PAGINAS</a>
+								<a class="has-icon">PÁGINAS</a>
 								<ul class="sub-menu dropdown">
 									<li id="menu-item-1309">
 										<a href="about-us.html" class="has-icon">QUEM SOMOS</a>
 									</li>
 									<li id="menu-item-1308">
-										<a href="contact.html" class="has-icon">CONTATOS</a>
+										<a href="contact.html" class="has-icon">CONTATO</a>
 									</li>
 								</ul>
 							</li>
@@ -154,10 +154,10 @@
 			<div class="wd-section-text-icon wd-section-project">
 				<ul class="masque">
 					<li ng-repeat="categoria in categorias_body">
-						<a href="#">
+						<a href="subcategoria.html?categoria={{ categoria.id }}">
 							<div class="wd-text-icon-style5 animated fadeInUp text-center" data-animated="fadeInUp">
 								<div class="box-icon">
-									<img src="images/churrasco.jpg" alt="icon" width="1180" height="247">
+									<img src="http://webliniaerp.com.br/assets/imagens/produtos/{{ categoria.pth_banner }}" alt="icon" width="1180" height="247">
 								</div>
 								<div class="box-description">
 									<h3>
@@ -190,8 +190,7 @@
 <section class="call-to-action-wrapper1">
 	<div class="row">
 		<div class="small-12 large-12 columns text-center">
-			<h4 style="color: #ffffff; font-weight: 300; display: inline-block;">Obtenha produtos profissionais, ligue-nos agora.</h4>
-			<h4 style="color: #ffffff; display: inline-block; padding: 0px 20px;">(11) 2511-2233 </h4>
+			<h4 style="color: #ffffff; font-weight: 300; display: inline-block;">Obtenha produtos profissionais, ligue-nos agora <b>(11) 2511-2233</b>.</h4>
 		</div>
 	</div>
 </section>
@@ -356,7 +355,7 @@
 <script src="js/jquery.flexslider-min.js"></script>
 <script src="js/wd_owlcarousel.js"></script>
 <script src="js/scripts.js"></script>
-<script src="js/angular-controller/index-controller.js"></script>
 <script src="js/extras.js"></script>
+<script src="js/angular-controller/index-controller.js"></script>
 </body>
 </html>

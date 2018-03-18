@@ -47,20 +47,20 @@
                     <a href="subcategoria.html?categoria={{ item.id }}" ng-mouseover="loadSubCategorias(item)" class="has-icon">{{ item.descricao_categoria }}</a>
                     <ul class="sub-menu dropdown">
                       <li id="menu-item-1316" ng-repeat="item in subcategorias">
-                          <a href="produtos.html?subcategoria={{ item.id }}" class="has-icon">{{ item.descricao_categoria }}</a>
+                        <a href="produtos.html?subcategoria={{ item.id }}" class="has-icon">{{ item.descricao_categoria }}</a>
                       </li>
                     </ul>
                   </li>
                 </ul>
               </li>
               <li id="menu-item-1295" class="has-dropdown not-click">
-                <a href="catalogo.html" class="has-icon">PAGINAS</a>
+                <a class="has-icon">PÁGINAS</a>
                 <ul class="sub-menu dropdown">
                   <li id="menu-item-1309">
                     <a href="about-us.html" class="has-icon">QUEM SOMOS</a>
                   </li>
                   <li id="menu-item-1308">
-                    <a href="contact.html" class="has-icon">CONTATOS</a>
+                    <a href="contact.html" class="has-icon">CONTATO</a>
                   </li>
                 </ul>
               </li>
@@ -78,10 +78,10 @@
 
 <!-- Start Title Bar -->
 
-<section class="wd-title-bar">
+<section class="banner-category" style="background: url('http://webliniaerp.com.br/assets/imagens/produtos/{{ categoria_produto.pth_banner }}') no-repeat center center;">
   <div class="row">
-    <div class="large-12 columns p-t-70 text-left">
-      <h2 id="page-title" class="title">{{ titulo }}</h2>
+    <div class="large-12 columns p-t-70 text-left title-banner-2">
+      <h2 id="page-title" class="title">{{ categoria_produto.descricao_categoria }}</h2>
     </div>
   </div>
 </section>
