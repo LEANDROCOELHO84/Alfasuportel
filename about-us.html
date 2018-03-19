@@ -14,65 +14,8 @@
     <link rel="stylesheet" href="stylesheets/app.css">
     <link rel="stylesheet" href="stylesheets/custom-style.css">
     <link rel="stylesheet" href="stylesheets/header.css">
+    <link rel="stylesheet" href="stylesheets/sections.css">
     <link rel="icon" href="images/logo/logo alfa suportel .png" width="140" height="140">
-<<<<<<< HEAD
-    <script src="bower_components/angular/angular.js"></script>
-
-  </head>
-<body ng-controller="itemProdutoController">
-  <!-- Start Header -->
-  <header class="l-header creative-layout">
-    <div class="top-bar-container contain-to-grid sticky">
-      <nav class="top-bar" data-topbar="">
-        <ul class="title-area">
-          <li class="name">
-            <h1>
-              <a title="alfasuportel" rel="home" href="index.html" pa>
-                <img alt="logo" width="auto" height="auto" src="images/logo/logo alfa suportel .png">
-              </a>
-            </h1>
-          </li>
-          <li class="toggle-topbar menu-icon">
-            <a href="#"><span>Menu</span></a>
-          </li>
-        </ul>
-        <section class="creative top-bar-section right">
-          <div class="menu-main-menu-container">  
-            <ul id="menu-main-menu" class="menu">
-              <li id="menu-item-1299" class="has-dropdown not-click">
-                <a href="categorias.html" class="has-icon">LINHA DE PRODUTOS</a>
-                <ul class="sub-menu dropdown">
-                  <li id="menu-item-1300" class="has-dropdown not-click" ng-repeat="item in categorias">
-                    <a href="subcategoria.html?categoria={{ item.id }}" ng-mouseover="loadSubCategorias(item)" class="has-icon">{{ item.descricao_categoria }}</a>
-                    <ul class="sub-menu dropdown">
-                      <li id="menu-item-1316" ng-repeat="item in subcategorias">
-                        <a href="produtos.html?subcategoria={{ item.id }}" class="has-icon">{{ item.descricao_categoria }}</a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li id="menu-item-1295" class="has-dropdown not-click">
-                <a href="catalogo.html" class="has-icon">PAGINAS</a>
-                <ul class="sub-menu dropdown">
-                  <li id="menu-item-1309">
-                    <a href="about-us.html" class="has-icon">QUEM SOMOS</a>
-                  </li>
-                  <li id="menu-item-1308">
-                    <a href="contact.html" class="has-icon">CONTATOS</a>
-                  </li>
-                </ul>
-              </li>
-              <li id="menu-item-1308">
-                <a href="contact.html" class="has-icon">TRABALHE CONOSCO</a>
-              </li>              
-            </ul>
-          </div>
-        </section>
-      </nav>
-    </div>
-  </header>
-=======
     <!--bower_components -->
     <script src="bower_components/angular/angular.js"></script>
   </head>
@@ -129,242 +72,231 @@
         </nav>
       </div>
     </header>
->>>>>>> e08ab10d2a2d19ad2b11bb6ac91d9f5605617586
 
-  <!-- End Header -->
+    <!-- End Header -->
 
-  <!-- Start Title Bar -->
+    <!-- Start Title Bar -->
 
-  <section class="wd-title-bar">
-    <div class="row">
-      <div class="large-12 columns p-t-70 text-left">
-        <h2 id="page-title" class="title">Quem Somos</h2>
-      </div>
-    </div>
-  </section>
-
-  <!-- End Title Bar -->
-
-  <!-- Start About ALFASUPORTEL-->
-
-  <section class="section.aboutalfasuportel">
-    <div class="row">
-      <div class="small-12 large-6 large-offset-3 columns">
-        <div class="wd-title-section_c">
-          <h2>Nos Somos AlfaSuportel</h2>
-          <h5>Nos Fazemos e vendemos produtos para trabalho e lazer</h5>
+    <section class="wd-title-bar">
+      <div class="row">
+        <div class="large-12 columns p-t-70 text-left">
+          <h2 id="page-title" class="title">Quem Somos</h2>
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="small-12 large-6 columns">
-        <div class="about-flooring-img">
-          <img src="images/usuarios/negocios.jpg" alt="">
-        </div>
-      </div>
-      <div class="small-12 large-6 columns">
-        <div class="wd-title-block"
-        <h5>Porque escolher a Alfa Suportel</h5>
-      </div>
-      <p>A Suportel foi fundada em 1989, na época era apenas uma empresa que produzia trempe de fogão para reposição de peças, mas com o passar dos anos foi adquirindo experiência, credibilidade, maquinário para poder desenvolver novos produtos.
+    </section>
 
-        Passamos por varias crises mundiais e internas, mas nunca deixamos de honrar com o nosso nome e compromisso junto aos clientes, fornecedores e não podemos esquecer de nossos colaboradores (funcionários), que são nossa riqueza.
-      </p>
-      <div class="row p-t-30 full-width">
-        <div class="small-12 large-6 columns">
-          <ul class="list-icon check-square-o">
-            <li>Somos pessoas determinadas</li>
-            <li>Ficamos felizes em ajudar na compra</li>
-            <li>Temos as últimas tecnologias</li>
-            <li>Nosso produtos são de alta qualidade</li>
-          </ul>
-        </div>
-        <div class="small-12 large-6 columns">
-          <ul class="list-icon check-square-o">
-            <li>A qualidade é nosso objetivo</li>
-            <li>Otimizar o recurso é bom</li>
-            <li>Churrasqueiras é nosso foco</li>
-            <li>nossa linha de produção e a melhor</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    <!-- End Title Bar -->
 
-<!-- End About Flooring -->
+    <!-- Start About ALFASUPORTEL-->
 
-<!-- Start Facts -->
-
-<section class="facts1" style="background: #e81130;">
-  <div class="row">
-    <div class="small-12 large-12 columns">
-      <div class="wd-title-section_l">
-        <h2>Nossos Produtos</h2>
-        <h6>Nossos números</h5>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="small-12 large-3 columns">
-        <div class="wd-fucts">
-          <div class="number" data-file="1000">1523</div>
-          <div class="title"><span>RESIDENCIAL</span></div>
-        </div>
-      </div>
-      <div class="small-12 large-3 columns">
-        <div class="wd-fucts">
-          <div class="number" data-file="1000">2119</div>
-          <div class="title"><span>RESTAURANTES</span></div>
-        </div>
-      </div>
-      <div class="small-12 large-3 columns">
-        <div class="wd-fucts">
-          <div class="number" data-file="1000">2303</div>
-          <div class="title"><span>CARRINHO DE RUA</span></div>
-        </div>
-      </div>
-      <div class="small-12 large-3 columns">
-        <div class="wd-fucts">
-          <div class="number" data-file="1000">1023</div>
-          <div class="title"><span>BARES</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- End Facts -->
-
-
-  <!-- End Our Team -->
-
-  <!-- Start Latest News -->
-
-
-  <!-- End Latest News -->
-
-  <!-- Start Our Clients -->
-
-  <section class="our-clients">
-    <div class="row">
-      <div class="small-12 large-12 columns">
-        <div class="wd-title-section_l">
-          <h2>Nossos Clientes</h2>
-          <h5>Estes são nosso forte!</h5>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="small-12 large-12 columns">
-        <div class="carousel_client owl-carousel text-center owl-theme" data-clienttoshow="5">
-          <img class="prettyphoto" stile="width: 226px; margin-right: 10px;" src="images/clientes/casasbahia.jpeg" alt="">
-          <img class="prettyphoto" stile="width: 226px; margin-right: 10px;" src="images/clientes/fastshop.png" alt="">
-          <img class="prettyphoto" stile="width: 226px; margin-right: 10px;" src="images/clientes/lojasamericanas.png" alt="">
-          <img class="prettyphoto" stile="width: 226px; margin-right: 10px;" src="images/clientes/magazineluiza.jpeg" alt="">
-          <img class="prettyphoto" stile="width: 226px; margin-right: 10px;" src="images/clientes/pontofrio.jpeg" alt="">
-          <img class="prettyphoto" stile="width: 226px; margin-right: 10px;" src="images/clientes/ricardoeletro.jpeg" alt="">
-          <img class="prettyphoto" stile="width: 226px; margin-right: 10px;" src="images/clientes/extra.png" alt="">
-          <img class="prettyphoto" stile="width: 226px; margin-right: 10px;" src="images/clientes/walmart.png" alt="">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- End Our Clients -->
-
-  <!-- Start Footer -->
-
-  <section class="wd-footer">
-    <div class="row animation-parent" data-animation-delay="180">
-      <ul class="block large-4 medium-4 columns animated fadeInRight" data-animated="fadeInRight">
-        <li>
-          <div class="textwidget">
-            <div class="widget-logo">
-              <img alt="logo" src="images/logo/logo alfa suportel .png">
-              <p>AlfaSuportel. é o líder em equipamentos e produtos alta qualidade.</p>
-            </div>
+    <section class="section.aboutalfasuportel">
+      <div class="row">
+        <div class="small-12 large-6 large-offset-3 columns">
+          <div class="wd-title-section_c">
+            <h2>Nos Somos AlfaSuportel</h2>
+            <h5>Nos Fazemos e vendemos produtos para trabalho e lazer</h5>
           </div>
-        </li>
-      </ul>
-      <ul class="block large-4 medium-4 columns animated fadeInRight" data-animated="fadeInRight">
-        <li>
-          <h2 class="block-title">Entrar em contato</h2>
-          <div class="textwidget">
-            <div class="widget-info">
-              <ul>
-                <li>
-                  <span><span>TEL:</span> (11) 2511-2233</span>
-                </li>
-                <li>
-                  <span><span>TEL:</span> (11) 2511-2144</span>
-                </li>
-                <li>
-                  <span><span>E-mail:</span> <a href="mailto:alfasuportel@alfasuportel.com.br">alfasuportel@alfasuportel.com.br</a></span>
-                </li>
-                <li>
-                  <span><span>endereço</span> Rua Nanci Ackel, 188, São Paulo - SP</span>
-                </li>
+        </div>
+      </div>
+      <div class="row">
+        <div class="small-12 large-6 columns">
+          <div class="about-flooring-img">
+            <img src="images/usuarios/negocios.jpg" alt="">
+          </div>
+        </div>
+        <div class="small-12 large-6 columns">
+          <div class="wd-title-block"
+            <h5>Porque escolher a Alfa Suportel</h5>
+          </div>
+          <p>A Suportel foi fundada em 1989, na época era apenas uma empresa que produzia trempe de fogão para reposição de peças, mas com o passar dos anos foi adquirindo experiência, credibilidade, maquinário para poder desenvolver novos produtos.
+
+            Passamos por varias crises mundiais e internas, mas nunca deixamos de honrar com o nosso nome e compromisso junto aos clientes, fornecedores e não podemos esquecer de nossos colaboradores (funcionários), que são nossa riqueza.
+          </p>
+          <div class="row p-t-30 full-width">
+            <div class="small-12 large-6 columns">
+              <ul class="list-icon check-square-o">
+                <li>Somos pessoas determinadas</li>
+                <li>Ficamos felizes em ajudar na compra</li>
+                <li>Temos as últimas tecnologias</li>
+                <li>Nosso produtos são de alta qualidade</li>
+              </ul>
+            </div>
+            <div class="small-12 large-6 columns">
+              <ul class="list-icon check-square-o">
+                <li>A qualidade é nosso objetivo</li>
+                <li>Otimizar o recurso é bom</li>
+                <li>Churrasqueiras é nosso foco</li>
+                <li>nossa linha de produção e a melhor</li>
               </ul>
             </div>
           </div>
-        </li>
-      </ul>
-      <ul class="block large-4 medium-4 columns animated fadeInRight" data-animated="fadeInRight">
-        <li>
-          <h2 class="block-title">Newsletter</h2>
-          <div class="textwidget">
-            <div class="wd-newsletter">
-              Assine seu boletim informativo
-              <div>
-                <input type="text" class="email-adress" placeholder="EMAIL ADRESS" size="20" value="" name="email-adress">
-                <input type="submit" class="newslettersubmit" value="GO">
-                <ul class="inline-list">              
-                  <li class="facebook">
-                    <a href="https://www.facebook.com/Alfasuportel/"><i class="fa fa-facebook"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- End About Flooring -->
+
+    <!-- Start Facts -->
+
+    <section class="facts1" style="background: #e81130;">
+      <div class="row">
+        <div class="small-12 large-12 columns">
+          <div class="wd-title-section_l">
+            <h2>Nossos Produtos</h2>
+            <h6>Nossos números</h5>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="small-12 large-3 columns">
+          <div class="wd-fucts">
+            <div class="number" data-file="1000">1523</div>
+            <div class="title"><span>RESIDENCIAL</span></div>
+          </div>
+        </div>
+        <div class="small-12 large-3 columns">
+          <div class="wd-fucts">
+            <div class="number" data-file="1000">2119</div>
+            <div class="title"><span>RESTAURANTES</span></div>
+          </div>
+        </div>
+        <div class="small-12 large-3 columns">
+          <div class="wd-fucts">
+            <div class="number" data-file="1000">2303</div>
+            <div class="title"><span>CARRINHO DE RUA</span></div>
+          </div>
+        </div>
+        <div class="small-12 large-3 columns">
+          <div class="wd-fucts">
+            <div class="number" data-file="1000">1023</div>
+            <div class="title"><span>BARES</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End Facts -->
+
+    
+    <!-- End Our Team -->
+
+    <!-- Start Latest News -->
+
+   
+    <!-- End Latest News -->
+
+    <!-- Start Our Clients -->
+
+    <section class="our-clients">
+      <div class="row">
+        <div class="small-12 large-12 columns">
+          <div class="wd-title-section_l">
+            <h2>Nossos Clientes</h2>
+            <h5>Estes são nosso forte!</h5>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="small-12 large-12 columns">
+          <div class="carousel_client owl-carousel text-center owl-theme" data-clienttoshow="5">
+            <img class="prettyphoto" stile="width: 226px; margin-right: 10px;" src="images/clientes/casasbahia.jpeg" alt="">
+            <img class="prettyphoto" stile="width: 226px; margin-right: 10px;" src="images/clientes/fastshop.png" alt="">
+            <img class="prettyphoto" stile="width: 226px; margin-right: 10px;" src="images/clientes/lojasamericanas.png" alt="">
+            <img class="prettyphoto" stile="width: 226px; margin-right: 10px;" src="images/clientes/magazineluiza.jpeg" alt="">
+            <img class="prettyphoto" stile="width: 226px; margin-right: 10px;" src="images/clientes/pontofrio.jpeg" alt="">
+            <img class="prettyphoto" stile="width: 226px; margin-right: 10px;" src="images/clientes/ricardoeletro.jpeg" alt="">
+            <img class="prettyphoto" stile="width: 226px; margin-right: 10px;" src="images/clientes/extra.png" alt="">
+            <img class="prettyphoto" stile="width: 226px; margin-right: 10px;" src="images/clientes/walmart.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End Our Clients -->
+
+    <!-- Start Footer -->
+
+    <section class="wd-footer">
+      <div class="row animation-parent" data-animation-delay="180">
+        <ul class="block large-4 medium-4 columns animated fadeInRight" data-animated="fadeInRight">
+          <li>
+            <div class="textwidget">
+              <div class="widget-logo">
+                <img alt="logo" src="images/logo/logo alfa suportel .png">
+                <p>AlfaSuportel. é o líder em equipamentos e produtos alta qualidade.</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <ul class="block large-4 medium-4 columns animated fadeInRight" data-animated="fadeInRight">
+          <li>
+            <h2 class="block-title">Entrar em contato</h2>
+            <div class="textwidget">
+              <div class="widget-info">
+                <ul>
+                  <li>
+                    <span><span>TEL:</span> (11) 2511-2233</span>
                   </li>
-                  <li class="instagram">
-                    <a href="https://www.instagram.com/explore/tags/alfasuportel/"><i class="fa fa-instagram"></i></a>
-                  </li>                
+                  <li>
+                    <span><span>TEL:</span> (11) 2511-2144</span>
+                  </li>
+                  <li>
+                    <span><span>E-mail:</span> <a href="mailto:alfasuportel@alfasuportel.com.br">alfasuportel@alfasuportel.com.br</a></span>
+                  </li>
+                  <li>
+                    <span><span>endereço</span> Rua Nanci Ackel, 188, São Paulo - SP</span>
+                  </li>
                 </ul>
               </div>
             </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <footer class="wd-copyright">
-      <div class="row">
-        <div class="small-12 large-12 columns">
-          <div class="copyright-menu">
-            <ul id="menu-footer-menu" class="menu">
-              <li><a href="index.html">Inicio</a></li>
-              <li><a href="about-us.html">Quem Somos</a></li>
-              <li><a href="blog.html">Blog</a></li>
-              <li><a href="contact.html">Contato</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="copyright small-12 large-12 columns">
-          <p>
-            © 2018 SDmarketingMobile All rights reserved.
-          </p>
-        </div>
+          </li>
+        </ul>
+        <ul class="block large-4 medium-4 columns animated fadeInRight" data-animated="fadeInRight">
+          <li>
+            <h2 class="block-title">Newsletter</h2>
+            <div class="textwidget">
+              <div class="wd-newsletter">
+                Assine seu boletim informativo
+                <div>
+                  <input type="text" class="email-adress" placeholder="EMAIL ADRESS" size="20" value="" name="email-adress">
+                  <input type="submit" class="newslettersubmit" value="GO">
+                  <ul class="inline-list">              
+                    <li class="facebook">
+                      <a href="https://www.facebook.com/Alfasuportel/"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li class="instagram">
+                      <a href="https://www.instagram.com/explore/tags/alfasuportel/"><i class="fa fa-instagram"></i></a>
+                    </li>                
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
-    </footer>
-  </section>
+      <footer class="wd-copyright">
+        <div class="row">
+          <div class="small-12 large-12 columns">
+            <div class="copyright-menu">
+              <ul id="menu-footer-menu" class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about-us.html">Quem Somos</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contato</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="copyright small-12 large-12 columns">
+            <p>
+              © 2018 SDmarketingMobile All rights reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </section>
 
-  <!-- End Footer -->
+    <!-- End Footer -->
 
-<<<<<<< HEAD
- <script src="js/angular-controller/item-produto-controller.js"></script>
-  <script src="js/extras.js"></script>
-  <script src="js/jquery-1.12.3.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/shortcode/script-shortcodes.js"></script>
-  <script src="js/wd_owlcarousel.js"></script>
-  <script src="js/scripts.js"></script>
-</body>
-=======
     <script src="js/jquery-1.12.3.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/shortcode/script-shortcodes.js"></script>
@@ -373,5 +305,4 @@
     <script src="js/angular-controller/about-us-controller.js"></script>
     <script src="js/extras.js"></script>
   </body>
->>>>>>> e08ab10d2a2d19ad2b11bb6ac91d9f5605617586
 </html>
