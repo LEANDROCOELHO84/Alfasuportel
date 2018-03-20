@@ -24,7 +24,7 @@
 </head>
 <body ng-controller="indexController">
 
-	<!-- Start Header -->
+<!-- Start Header -->
 
 	<header class="l-header creative-layout">
 		<div class="top-bar-container contain-to-grid sticky">
@@ -69,7 +69,7 @@
 								</ul>
 							</li>
 							<li id="menu-item-1308">
-								<a href="contact.html" class="has-icon">TRABALHE CONOSCO</a>
+								<a href="http://webliniaerp.com.br/alfasuportel/cadastro" class="has-icon">TRABALHE CONOSCO</a>
 							</li>              
 						</ul>
 					</div>
@@ -78,7 +78,7 @@
 		</div>
 	</header>
 
-	<!-- End Header -->
+<!-- End Header -->
 
 <!-- Start Slider -->
 
@@ -88,18 +88,14 @@
 			<li style="background-image: url('images/slider/slide1.jpg');">
 				<div class="row">
 					<div class="slider-caption">
-						<h1 class="h1.slider">Nós fornecemos os melhores produtos e materiais com ótima qualidade.</h1>
-						<p>Nós tornamos prioritário oferecer serviços flexíveis para atender suas necessidades</p>
-						<a href="#">Obter uma cotação agora</a>
+						<h1 class="h1.slider">Melhores momentos com sua familia</h1>
 					</div>
-				</div>
 			</li>
 			<li style="background-image: url('images/slider/slide2.jpg');">
 				<div class="row">
 					<div class="slider-caption">
-						<h1>Nós fornecemos os melhores produtos e materiais com ótima qualidade.</h1>
-						<p>Nós tornamos prioritário oferecer serviços flexíveis para atender suas necessidades</p>
-						<a href="#">Obter uma cotação agora</a>
+						<h1>Compartilhe com Seus amigos</h1>
+						<p>conforto e comodidade</p>
 					</div>
 				</div>
 			</li>
@@ -107,9 +103,8 @@
 		<li style="background-image: url('images/slider/slide3.jpg');">
 			<div class="row">
 				<div class="slider-caption">
-					<h1>Nós fornecemos os melhores produtos e materiais com ótima qualidade.</h1>
-					<p>Nós tornamos prioritário oferecer serviços flexíveis para atender suas necessidades</p>
-					<a href="#">Obter uma cotação agora</a>
+					<h1>os melhores produtos</h1>
+					<p>materiais com ótima qualidade.</p>
 				</div>
 			</div>
 		</li>
@@ -117,18 +112,16 @@
 	<li style="background-image: url('images/slider/slide4.jpg');">
 		<div class="row">
 			<div class="slider-caption">
-				<h1>Nós fornecemos os melhores produtos e materiais com ótima qualidade.</h1>
-				<p>Nós tornamos prioritário oferecer serviços flexíveis para atender suas necessidades</p>
-				<a href="#">Obter uma cotação agora</a>
+				<h1>Nós tornamos prioritário</h1>
+				<p>atender suas necessidades</p>
 			</div>
 		</div>
 	</li>
 	<li style="background-image: url('images/slider/slider6.jpg');">
 		<div class="row">
 			<div class="slider-caption">
-				<h1>Nós fornecemos os melhores produtos e materiais com ótima qualidade.</h1>
-				<p>Nós tornamos prioritário oferecer serviços flexíveis para atender suas necessidades</p>
-				<a href="#">Obter uma cotação agora</a>
+				<h1>Durabilidade</h1>
+				<p>alta qualidade</p>
 			</div>
 		</div>
 	</li>
@@ -197,73 +190,31 @@
 
 <!-- End Call To Action -->
 
-<!-- Start Our Clients & Free Quotes -->
-
-<!-- End Our Clients & Free Quotes -->
-
 <!-- Start Latest News -->
-
 <section class="latest-news" style="large-block-grid-3">
 	<div class="row">
 		<div class="small-12 large-8 large-offset-2 columns">
 			<div class="wd-title-section_c">
 				<h2>Novidades</h2>
-				<h5>veja ultimas novidade de linha de produtos</h5>
 			</div>
 		</div>
 	</div>
 	<div class="row">
-		<div class="small-12 large-12 columns">
-			<ul class="simple-blog small-block-grid-1 medium-block-grid-2 large-block-grid-4">
-				<li>
+		<div class="small-12 large-12 columns ">
+			<ul class="simp'le-blog small-block-grid-2 medium-block-grid-2 large-block-grid-4">
+				<li ng-repeat="feed_item in instagram_feed.items">
 					<div class="wd-latest-news hvr-underline-from-center animated fadeInUp" data-animated="fadeInUp">
 						<div class="wd-image-date">
-							<img width="368" height="193" src="images/ultimas noticias/acendedordecarvao.jpg" class="attachment-flooring_blog size-flooring_blog wp-post-image" alt="">              <span><strong>05</strong>Fev</span>
+							<a href="{{ feed_item.carousel_media[0].image_versions2.candidates[0].url }}" data-fancybox="instagram_feed" data-caption="{{ feed_item.caption.text }}" ng-if="(feed_item.carousel_media)">
+								<img uib-tooltip="{{ feed_item.caption.text }}" tooltip-trigger="focus" src="{{ feed_item.carousel_media[0].image_versions2.candidates[0].url }}">
+							</a>
 						</div>
-						<h4 class="wd-title-element"><a href="single-blog.html">Acendedor de carvão para Narguilé</a></h4>
-						<p>
-							<a class="hvr-pop read-more" href="single-blog.html">Mais Sobre  →</a>
-						</p>
 					</div>
-				</li>
-        <li>
-          <div class="wd-latest-news hvr-underline-from-center animated fadeInUp" data-animated="fadeInUp">
-            <div class="wd-image-date">
-              <img width="368" height="193" src="images/ultimas noticias/dirtysteak.jpg"" class="attachment-flooring_blog size-flooring_blog wp-post-image" alt="">              <span><strong>05</strong>Fev</span>
-            </div>
-            <h4 class="wd-title-element"><a href="single-blog.html">Dirty Steak</a></h4>
-            <p>
-              <a class="hvr-pop read-more" href="single-blog.html">Mais Sobre→</a>
-            </p>
-          </div>
-        </li>
-				<li>
-					<div class="wd-latest-news hvr-underline-from-center animated fadeInUp" data-animated="fadeInUp">
-						<div class="wd-image-date">
-							<img width="368" height="193" src="images/ultimas noticias/carvaofulkancoco.jpg" class="attachment-flooring_blog size-flooring_blog wp-post-image" alt="">              <span><strong>05</strong>Fev</span>
-						</div>
-						<h4 class="wd-title-element"><a href="single-blog.html">Carvão Premium</a></h4>
-						<p>
-							<a class="hvr-pop read-more" href="single-blog.html">Mais Sobre  →</a>
-						</p>
-					</div>
-				</li>
-        <li>
-          <div class="wd-latest-news hvr-underline-from-center animated fadeInUp" data-animated="fadeInUp">
-            <div class="wd-image-date">
-              <img width="368" height="193" src="images/ultimas noticias/dirtysteak.jpg"" class="attachment-flooring_blog size-flooring_blog wp-post-image" alt="">              <span><strong>05</strong>Fev</span>
-            </div>
-            <h4 class="wd-title-element"><a href="single-blog.html">Dirty Steak</a></h4>
-            <p>
-              <a class="hvr-pop read-more" href="single-blog.html">Mais Sobre→</a>
-            </p>
-          </div>
-        </li>
+				</li>    
 			</ul>
 		</div>
 	</div>
 </section>
-
 <!-- End Latest News -->
 
 <!-- Start Footer -->

@@ -49,4 +49,22 @@ app.controller('indexController', function($scope, $http){
 
 	$scope.loadCategorias();
 	$scope.loadCategoriasBody();
+
+
+	$scope.loadInstagramFeed = function() {
+		$scope.instagram_feed = {};
+		$http({
+			method: 'GET',
+			url: 'http://186.226.56.5:1972/external/instagram/feed'
+		}).then(
+			function successCallback(response) {
+				$scope.instagram_feed = response.data;
+			},
+			function erroCallback(response){
+				$scope.instagram_feed = null;
+			});
+	}
+
+	$scope.loadInstagramFeed();
+
 });
