@@ -163,8 +163,8 @@
 							<ul class="slider masque portfolio-grid small-block-grid-1	medium-block-grid-2 large-block-grid-4">
 								<li ng-repeat="produto in categoria.itens">
 									<div class="wd-project hvr-underline-from-center">
-										<img width="380" height="254" src="http://webliniaerp.com.br/assets/imagens/produtos/{{ produto.img }}" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image" alt="">
-										<a href="item_produtos.html?produto={{ produto.id }}"><h4>{{ produto.nome }}</h4></a>
+										<img width="380" height="254" src="http://webliniaerp.com.br/assets/imagens/produtos/{{ produto.img }}" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image hvr-pop" alt="">
+										<a href="item_produtos.html?produto={{ produto.id }}"><h4 class="hvr-pop">{{ produto.nome }}</h4></a>
 									</div>
 								</li>
 							</ul>
@@ -182,8 +182,8 @@
 
 <section class="call-to-action-wrapper1">
 	<div class="row">
-		<div class="small-12 large-12 columns text-center">
-			<h4 style="color: #ffffff; font-weight: 300; display: inline-block;">Obtenha produtos profissionais, ligue-nos agora <b>(11) 2511-2233</b>.</h4>
+		<div class="small-12 large-12 columns text-center fadeInRight">
+			<h4 style="color: #ffffff; font-weight: 300; display: inline-block;">Obtenha produtos profissionais, ligue-nos agora <b class="fadeInRight hvr-pop">(11) 2511-2233</b>.</h4>
 		</div>
 	</div>
 </section>
@@ -191,29 +191,41 @@
 <!-- End Call To Action -->
 
 <!-- Start Latest News -->
-<section class="latest-news" style="large-block-grid-3">
+
+<section class="latest-news">
 	<div class="row">
 		<div class="small-12 large-8 large-offset-2 columns">
-			<div class="wd-title-section_c">
-				<h2>Novidades</h2>
+			<div class="wd-title-section_c ">
+				<h2>Blog de Noticias</h2>
 			</div>
 		</div>
 	</div>
 	<div class="row">
-		<div class="small-12 large-12 columns ">
-			<ul class="simp'le-blog small-block-grid-2 medium-block-grid-2 large-block-grid-4">
-				<li ng-repeat="feed_item in instagram_feed.items">
-					<div class="wd-latest-news hvr-underline-from-center animated fadeInUp" data-animated="fadeInUp">
-						<div class="wd-image-date">
-							<a href="{{ feed_item.carousel_media[0].image_versions2.candidates[0].url }}" data-fancybox="instagram_feed" data-caption="{{ feed_item.caption.text }}" ng-if="(feed_item.carousel_media)">
-								<img uib-tooltip="{{ feed_item.caption.text }}" tooltip-trigger="focus" src="{{ feed_item.carousel_media[0].image_versions2.candidates[0].url }}">
-							</a>
-						</div>
-					</div>
-				</li>    
-			</ul>
-		</div>
-	</div>
+		<div class="small-12 large-12 columns">
+			<ul class="simple-blog small-block-grid-1 medium-block-grid-2 large-block-grid-4">
+				<li ng-repeat="feed_item in instagram_feed.items"
+				ng-if="(!feed_item.video_versions)">
+				<a href="{{ feed_item.carousel_media[0].image_versions2.candidates[0].url }}" 
+				data-fancybox="instagram_feed" data-caption="{{ feed_item.caption.text }}"
+				ng-if="(feed_item.carousel_media)">
+				<img class="img-fluid img-thumbnail mx-auto hvr-pop"
+				uib-tooltip="{{ feed_item.caption.text }}" tooltip-trigger="focus"
+				src="{{ feed_item.carousel_media[0].image_versions2.candidates[0].url }}">
+			</a>
+			<a href="{{ feed_item.image_versions2.candidates[0].url }}" 
+			data-fancybox="instagram_feed" data-caption="{{ feed_item.caption.text }}"
+			ng-if="(feed_item.image_versions2)">
+			<img class="img-fluid img-thumbnail mx-auto hvr-pop"
+			uib-tooltip="{{ feed_item.caption.text }}" tooltip-trigger="focus"
+			src="{{ feed_item.image_versions2.candidates[0].url }}">
+		</a>
+		<p class="hvr-pop read-more">{{ feed_item.caption.text }}
+			<a class="hvr-pop read-more" href="single-blog.html">Saiba Mais →</a>
+		</p>
+	</li>
+</ul>
+</div>
+</div>
 </section>
 <!-- End Latest News -->
 
