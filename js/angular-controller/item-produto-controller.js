@@ -48,6 +48,11 @@ app.controller('itemProdutoController', function($scope, $http, $sce){
 		$scope.produto = [];
 		$http.get(baseUrlApi()+"produtos?pro->id="+params.produto).then(function(response){
 			$scope.produto = response.data.produtos[0];
+			$scope.produto.images = [{
+				path: $scope.produto.img,
+				selected: true
+			}];
+
 			var id_categoria_referencia = response.data.produtos[0].id_categoria;
 			$scope.descricao = $sce.trustAsHtml(response.data.produtos[0].descricao);
 			$scope.loadProdutosRelacionados(id_categoria_referencia);
@@ -56,6 +61,11 @@ app.controller('itemProdutoController', function($scope, $http, $sce){
 			console.log(err);
 		});
 	};
+
+	$scope.getSelectedProductImage = function() {
+		// vai retornar um objeto {path: '/path/to/image', selected: true}
+		return _.findWhere($scope.produto.images, {selected: true});
+	}
 
 	// Load Related Products
 	
