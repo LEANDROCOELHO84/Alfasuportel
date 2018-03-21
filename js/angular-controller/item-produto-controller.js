@@ -40,6 +40,17 @@ app.controller('itemProdutoController', function($scope, $http, $sce){
 			$scope.subcategorias = item.filhos
 		}
 	};
+
+	// Load Banner
+
+	$scope.loadCategoriaProduto = function(id_categoria) {
+		$http.get(baseUrlApi()+"categorias?cat->id="+id_categoria).then(function(response){
+			$scope.categoria_produto = response.data.categorias[0];
+			$scope.categoria_produto.banner = $scope.categoria_produto.pth_banner.substring($scope.categoria_produto.pth_banner.indexOf('assets'), $scope.categoria_produto.pth_banner.length);
+		}, function(err){
+			console.log(err);
+		});
+	};
 	
 
 	// Load Product Data
@@ -57,6 +68,7 @@ app.controller('itemProdutoController', function($scope, $http, $sce){
 			$scope.descricao = $sce.trustAsHtml(response.data.produtos[0].descricao);
 			$scope.loadProdutosRelacionados(id_categoria_referencia);
 			$scope.loadFotosProduto();
+			$scope.loadCategoriaProduto($scope.produto.id_categoria);
 		}, function(err){
 			console.log(err);
 		});
