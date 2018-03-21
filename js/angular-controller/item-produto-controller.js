@@ -48,14 +48,44 @@ app.controller('itemProdutoController', function($scope, $http, $sce){
 		$scope.produto = [];
 		$http.get(baseUrlApi()+"produtos?pro->id="+params.produto).then(function(response){
 			$scope.produto = response.data.produtos[0];
+			$scope.produto.images = [{
+				path: $scope.produto.img,
+				selected: true
+			}];
+
 			var id_categoria_referencia = response.data.produtos[0].id_categoria;
 			$scope.descricao = $sce.trustAsHtml(response.data.produtos[0].descricao);
 			$scope.loadProdutosRelacionados(id_categoria_referencia);
-
+			$scope.loadFotosProduto();
 		}, function(err){
 			console.log(err);
 		});
 	};
+
+	$scope.loadFotosProduto = function() {
+		$http.get(baseUrlApi()+"produto/fotos/"+$scope.produto.id_produto).then(function(response){
+			angular.forEach(response.data, function(foto){
+				$scope.produto.images.push({
+					path: foto.path.substr(foto.path.lastIndexOf('/')+1, foto.path.length),
+					selected: false
+				});
+			});
+		}, function(err){
+			console.log(err);
+		});
+	};
+
+	$scope.getProductSelectedImage = function() {
+		// vai retornar um objeto {path: '/path/to/image', selected: true}
+		return _.findWhere($scope.produto.images, {selected: true});
+	}
+
+	$scope.selectProductImage = function(selected_image) {
+		angular.forEach($scope.produto.images, function(image){
+			image.selected = false;
+		});
+		selected_image.selected = true;
+	}
 
 	// Load Related Products
 	

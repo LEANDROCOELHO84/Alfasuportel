@@ -15,8 +15,15 @@
     <link rel="stylesheet" href="stylesheets/custom-style.css">
     <link rel="stylesheet" href="stylesheets/header.css">
     <link rel="icon" href="images/logo/logo alfa suportel .png" width="140" height="140">
-    <script src="bower_components/angular/angular.js"></script>
 
+    <style type="text/css">
+      .column+.column:last-child, 
+      .columns.sub-images+.column:last-child, 
+      .column+.columns.sub-images:last-child, 
+      .columns.sub-images+.columns:last-child {
+        float: left;
+      }
+    </style>
   </head>
 <body ng-controller="itemProdutoController">
 
@@ -96,12 +103,20 @@
 
   <section class="portfolio-wrapper">
     <div class="row">
-      <div class="small-12 large-6 columns">
+      <div class="small-12 large-4 columns">
         <div class="owl-testimonail owl-carousel owl-theme">
-          <img width="840" height="424" src="http://webliniaerp.com.br/assets/imagens/produtos/{{ produto.img }}" class="attachment-flooring_blog-thumb size-flooring_blog-thumb wp-post-image" alt="Churrasqueiras de Aspect II">
+          <img class="attachment-flooring_blog-thumb size-flooring_blog-thumb wp-post-image"
+            src="http://webliniaerp.com.br/assets/imagens/produtos/{{ getProductSelectedImage().path }}">
+        </div>
+        <div>
+          <div class="small-12 large-3 columns sub-images"
+            ng-repeat="image in produto.images | filter : { selected : false }">
+            <img src="http://webliniaerp.com.br/assets/imagens/produtos/{{ image.path }}"
+              ng-click="selectProductImage(image)">
+          </div>
         </div>
       </div>
-      <div class="small-12 large-6 columns box-scroll">
+      <div class="small-12 large-8 columns box-scroll">
         <div class="wd-title-block">
           <h6>Descrição</h6>
         </div>
@@ -120,7 +135,7 @@
           <ul class="masque portfolio-grid small-block-grid-1  medium-block-grid-3 large-block-grid-4">
             <li ng-repeat="item in relacionados" class="flipInX" data-animated="flipInX" style="opacity: 1; animation-delay: 0ms;">
               <div class="wd-project hvr-underline-from-center">
-                <img width="380" height="254" src="http://webliniaerp.com.br/assets/imagens/produtos/{{ item.img }}" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image" alt="">
+                <img src="http://webliniaerp.com.br/assets/imagens/produtos/{{ item.img }}" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image" alt="">
                 <a href="item_produtos.html?produto={{ item.id }}"><h4>{{ item.nome }}</h4></a>
                 <br>
               </div>
@@ -212,6 +227,8 @@
   </footer>
 </section>
   <!-- End Footer -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/underscore/underscore-min.js"></script>
   <script src="js/angular-controller/item-produto-controller.js"></script>
   <script src="js/extras.js"></script>
   <script src="js/jquery-1.12.3.min.js"></script>
