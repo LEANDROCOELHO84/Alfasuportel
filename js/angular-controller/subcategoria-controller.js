@@ -48,6 +48,9 @@ app.controller('subcategoriaController', function($scope, $http){
 
 		$http.get(baseUrlApi()+"categorias?id_pai="+params.categoria).then(function(response){
 			$scope.itens = response.data.categorias;
+			angular.forEach($scope.itens, function(item, index){
+				item.pth_thumbnail = item.pth_thumbnail.substring(item.pth_thumbnail.indexOf('assets'), item.pth_thumbnail.length);
+			});
 		}, function(err){
 			console.log(err);
 		});
@@ -58,6 +61,7 @@ app.controller('subcategoriaController', function($scope, $http){
 	$scope.loadCategoriaPai = function() {
 		$http.get(baseUrlApi()+"categorias?cat->id="+params.categoria).then(function(response){
 			$scope.categoria_pai = response.data.categorias[0];
+			$scope.categoria_pai.banner = $scope.categoria_pai.pth_banner.substring($scope.categoria_pai.pth_banner.indexOf('assets'), $scope.categoria_pai.pth_banner.length);
 		}, function(err){
 			console.log(err);
 		});
