@@ -78,7 +78,7 @@
 
     <!-- Start Title Bar -->
 
-    <section class="banner-category" style="background: url('http://webliniaerp.com.br/assets/imagens/produtos/{{ categoria_pai.pth_banner }}') no-repeat center center;">
+    <section class="banner-category" style="background: url('http://webliniaerp.com.br/{{ categoria_pai.banner }}') no-repeat center center;">
       <div class="row">
         <div class="large-12 columns p-t-70 text-left title-banner">
           <h2 id="page-title" class="title hvr-pop">{{ categoria_pai.descricao_categoria }}</h2>
@@ -104,8 +104,10 @@
             <ul class="wd-section-portfolio small-block-grid-1 medium-block-grid-2 large-block-grid-3">
               <li ng-repeat="item in itens">
                 <div class="wd-project hvr-underline-from-center hvr-pop">
-                  <img width="380" height="254" src="http://webliniaerp.com.br/assets/imagens/produtos/{{ item.pth_thumbnail }}" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image" alt="">
-                  <a href="produtos.html?subcategoria={{ item.id }}"><h4>{{ item.descricao_categoria }}</h4></a><br>
+                  <img width="380" height="254" src="http://webliniaerp.com.br/{{ item.pth_thumbnail }}" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image" alt="">
+                  <a ng-if="(item.qtd_filhos == 0)" href="produtos.html?subcategoria={{ item.id }}"><h4>{{ item.descricao_categoria }}</h4></a>
+                  <a ng-if="(item.qtd_filhos > 0)" href="subcategoria.html?categoria={{ item.id }}"><h4>{{ item.descricao_categoria }}</h4></a>
+                  <br>
                 </div>
               </li>
             </ul>

@@ -30,6 +30,7 @@ app.controller('indexController', function($scope, $http){
 			$scope.categorias_body = response.data;
 			angular.forEach($scope.categorias_body,function(item,index){
 				item.itens = [];
+				item.banner = item.pth_banner.substring(item.pth_banner.indexOf('assets'), item.pth_banner.length);
 				$scope.loadItens(item);
 			})
 		}, function(err){

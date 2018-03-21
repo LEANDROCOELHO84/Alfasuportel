@@ -46,6 +46,7 @@ app.controller('produtosController', function($scope, $http){
 	$scope.loadCategoriaProduto = function() {
 		$http.get(baseUrlApi()+"categorias?cat->id="+params.subcategoria).then(function(response){
 			$scope.categoria_produto = response.data.categorias[0];
+			$scope.categoria_produto.banner = $scope.categoria_produto.pth_banner.substring($scope.categoria_produto.pth_banner.indexOf('assets'), $scope.categoria_produto.pth_banner.length);
 		}, function(err){
 			console.log(err);
 		});

@@ -9,6 +9,9 @@ app.controller('categoriasController', function($scope, $http){
 
 		$http.get(baseUrlApi()+"categorias/treeview?tce->id_empreendimento=217").then(function(response){
 			$scope.categorias = response.data;
+			angular.forEach($scope.categorias, function(item, index){
+				item.thumbnail = item.pth_thumbnail.substring(item.pth_thumbnail.indexOf('assets'), item.pth_thumbnail.length);
+			})
 		}, function(err){
 			console.log(err);
 		});
