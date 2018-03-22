@@ -15,9 +15,9 @@ jQuery(document).ready(function($) {
       prevItem = '',
       ValidPrevItem = '';
     prevItem       = $('.slider .flexslider .slides li').prev().css('background-image');
-    ValidPrevItem  = prevItem.substr(5, prevItem.length - 11).concat('-100x50.jpg');
+    ValidPrevItem  = prevItem.substr(5, prevItem.length - 11).concat('../images/slider/slider6.jpg');
     nextItem       = $('.slider .flexslider .slides li').next().css('background-image');
-    ValidNextItem  = nextItem.substr(5, nextItem.length - 11).concat('-100x50.jpg');
+    ValidNextItem  = nextItem.substr(5, nextItem.length - 11).concat('../images/slider/slider6.jpg');
   $('.slider .flexslider .flex-next').hover(function () {
     $(this).css('background-image', 'url(' + ValidNextItem + ')');
   }, function () {

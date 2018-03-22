@@ -20,6 +20,9 @@
 	<link rel="icon" href="images/logo/logo alfa suportel .png" width="140" height="140">
 	<!--bower_components -->
 	<script src="bower_components/angular/angular.js"></script>
+	<!-- Bootstrap core CSS -->
+	<link href="assets/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="assets/bower_components/fancybox/dist/jquery.fancybox.min.css" rel="stylesheet">
 
 </head>
 <body ng-controller="indexController">
@@ -203,7 +206,7 @@
 	</div>
 	<div class="row">
 		<div class="small-12 large-12 columns">
-			<ul class="simple-blog small-block-grid-1 medium-block-grid-2 large-block-grid-4">
+			<ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-4">
 				<li ng-repeat="feed_item in instagram_feed.items"
 				ng-if="(!feed_item.video_versions)">
 				<a href="{{ feed_item.carousel_media[0].image_versions2.candidates[0].url }}" 
@@ -221,7 +224,8 @@
 			src="{{ feed_item.image_versions2.candidates[0].url }}">
 		</a>
 		<p class="hvr-pop read-more">{{ feed_item.caption.text }}
-			<a class="hvr-pop read-more" href="single-blog.html">Saiba Mais →</a>
+			<a class="hvr-pop read-more" data-fancybox="instagram_feed" data-caption="{{ feed_item.caption.text }}"
+				ng-if="(feed_item.carousel_media)">">Saiba Mais →</a>
 		</p>
 	</li>
 </ul>
