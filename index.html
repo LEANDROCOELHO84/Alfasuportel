@@ -25,12 +25,10 @@
 	<link href="assets/bower_components/fancybox/dist/jquery.fancybox.min.css" rel="stylesheet">
 
 </head>
-<body ng-controller="indexController">
-
+<body ng-controller="indexController" style="padding-top: 3px;">
 <!-- Start Header -->
-
 	<header class="l-header creative-layout">
-		<div class="top-bar-container contain-to-grid sticky">
+		<div class="top-bar-container contain-to-grid sticky fixed">
 			<nav class="top-bar" data-topbar="">
 				<ul class="title-area">
 					<li class="name">
@@ -44,7 +42,7 @@
 						<a href="#"><span>Menu</span></a>
 					</li>
 				</ul>
-				<section class="creative top-bar-section right">
+				<section class="creative top-bar-section left">
 					<div class="menu-main-menu-container">  
 						<ul id="menu-main-menu" class="menu">
 							<li id="menu-item-1299" class="has-dropdown not-click">
@@ -61,20 +59,19 @@
 									</li>
 								</ul>
 							</li>
-							<li id="menu-item-1295" class="has-dropdown not-click">
-								<a class="has-icon">PÁGINAS</a>
-								<ul class="sub-menu dropdown">
-									<li id="menu-item-1309">
-										<a href="about-us.html" class="has-icon">QUEM SOMOS</a>
-									</li>
-									<li id="menu-item-1308">
-										<a href="contact.html" class="has-icon">CONTATO</a>
-									</li>
-								</ul>
+						</ul>
+					</div>
+					<div class="creative top-bar-section hight">
+						<ul class="menu-main-menu">
+							<li >
+								<a href="about-us.html" class="has-icon">QUEM SOMOS</a>
+							</li>
+							<li id="menu-item-1308">
+								<a href="contact.html" class="has-icon">CONTATO</a>
 							</li>
 							<li id="menu-item-1308">
 								<a href="http://webliniaerp.com.br/alfasuportel/cadastro" class="has-icon">TRABALHE CONOSCO</a>
-							</li>              
+							</li>
 						</ul>
 					</div>
 				</section>
@@ -86,14 +83,15 @@
 
 <!-- Start Slider -->
 
-<section class="slider" style="height: 550px">
-	<div class="flexslider">
+<section class="slider" style="height: 400px; margin-top: 0px">
+	<div class="flexslider" style="height: 400px;">
 		<ul class="slides">
-			<li style="background-image: url('images/slider/slide1.jpg');">
+			<li style="background-image: url('images/slider/slide1.jpg');height: all;">
 				<div class="row">
 					<div class="slider-caption">
 						<h1 class="h1.slider">Melhores momentos com sua familia</h1>
 					</div>
+				</div>	
 			</li>
 			<li style="background-image: url('images/slider/slide2.jpg');">
 				<div class="row">
@@ -139,10 +137,9 @@
 
 <section class="our_products">
 	<div class="row">
-		<div class="small-12 large-12 large-offset- columns">
+		<div class="small-12 large-12 large-offset- columns" style="height: 60px;">
 			<div class="wd-title-section_c">
-				<h2>Nossos produtos</h2>
-				<h5>Linha Completa de Produtos</h5>
+				<h2>Linha de Produtos</h2>
 			</div>
 		</div>
 	</div>

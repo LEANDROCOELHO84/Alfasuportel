@@ -22,7 +22,7 @@
 
  
   <header class="l-header creative-layout">
-    <div class="top-bar-container contain-to-grid sticky">
+    <div class="top-bar-container contain-to-grid sticky fixed">
       <nav class="top-bar" data-topbar="">
         <ul class="title-area">
           <li class="name">
@@ -36,7 +36,7 @@
             <a href="#"><span>Menu</span></a>
           </li>
         </ul>
-        <section class="creative top-bar-section right">
+        <section class="creative top-bar-section left">
           <div class="menu-main-menu-container">  
             <ul id="menu-main-menu" class="menu">
               <li id="menu-item-1299" class="has-dropdown not-click">
@@ -47,26 +47,25 @@
                     <ul class="sub-menu dropdown">
                       <li id="menu-item-1316" ng-repeat="item in subcategorias">
                         <a class="has-icon" ng-show="(item.filhos == null)" href="produtos.html?subcategoria={{ item.id }}">{{ item.descricao_categoria }}</a>
-                        <a class="has-icon" ng-show="(item.filhos != null)" href="subcategoria.html?categoria={{ item.id }}">{{ item.descricao_categoria }}</a>
+                                  <a class="has-icon" ng-show="(item.filhos != null)" href="subcategoria.html?categoria={{ item.id }}">{{ item.descricao_categoria }}</a>
                       </li>
                     </ul>
                   </li>
                 </ul>
               </li>
-              <li id="menu-item-1295" class="has-dropdown not-click">
-                <a class="has-icon">PÁGINAS</a>
-                <ul class="sub-menu dropdown">
-                  <li id="menu-item-1309">
-                    <a href="about-us.html" class="has-icon">QUEM SOMOS</a>
-                  </li>
-                  <li id="menu-item-1308">
-                    <a href="contact.html" class="has-icon">CONTATO</a>
-                  </li>
-                </ul>
+            </ul>
+          </div>
+          <div class="creative top-bar-section hight">
+            <ul class="menu-main-menu">
+              <li >
+                <a href="about-us.html" class="has-icon">QUEM SOMOS</a>
+              </li>
+              <li id="menu-item-1308">
+                <a href="contact.html" class="has-icon">CONTATO</a>
               </li>
               <li id="menu-item-1308">
                 <a href="http://webliniaerp.com.br/alfasuportel/cadastro" class="has-icon">TRABALHE CONOSCO</a>
-              </li>              
+              </li>
             </ul>
           </div>
         </section>
@@ -82,7 +81,7 @@
     <section class="banner-category" style="background: url('http://webliniaerp.com.br/{{ categoria_pai.banner }}') no-repeat center center;">
       <div class="row">
         <div class="large-12 columns p-t-70 text-left title-banner">
-          <h2 id="page-title" class="title hvr-pop">{{ categoria_pai.descricao_categoria }}</h2>
+          
         </div>
       </div>
     </section>
@@ -95,7 +94,7 @@
       <div class="row">
         <div class="small-12 large-8 large-offset-2 columns">
           <div class="wd-title-section_c">
-            <h2>Subcategorias</h2>
+            <h2>Linha de Produtos</h2>
           </div>
         </div>
       </div>
