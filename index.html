@@ -78,7 +78,6 @@
 			</nav>
 		</div>
 	</header>
-
 <!-- End Header -->
 
 <!-- Start Slider -->
@@ -101,34 +100,32 @@
 					</div>
 				</div>
 			</li>
-		</li>
-		<li style="background-image: url('images/slider/slide3.jpg');">
-			<div class="row">
-				<div class="slider-caption">
-					<h1>os melhores produtos</h1>
-					<p>materiais com ótima qualidade.</p>
+			<li style="background-image: url('images/slider/slide3.jpg');">
+				<div class="row">
+					<div class="slider-caption">
+						<h1>os melhores produtos</h1>
+						<p>materiais com ótima qualidade.</p>
+					</div>
 				</div>
-			</div>
-		</li>
-	</li>
-	<li style="background-image: url('images/slider/slide4.jpg');">
-		<div class="row">
-			<div class="slider-caption">
-				<h1>Nós tornamos prioritário</h1>
-				<p>atender suas necessidades</p>
-			</div>
-		</div>
-	</li>
-	<li style="background-image: url('images/slider/slider6.jpg');">
-		<div class="row">
-			<div class="slider-caption">
-				<h1>Durabilidade</h1>
-				<p>alta qualidade</p>
-			</div>
-		</div>
-	</li>
-</ul>
-</div>
+			</li>
+			<li style="background-image: url('images/slider/slide4.jpg');">
+				<div class="row">
+					<div class="slider-caption">
+						<h1>Nós tornamos prioritário</h1>
+						<p>atender suas necessidades</p>
+					</div>
+				</div>
+			</li>
+			<li style="background-image: url('images/slider/slider6.jpg');">
+				<div class="row">
+					<div class="slider-caption">
+						<h1>Durabilidade</h1>
+						<p>alta qualidade</p>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
 </section>
 
 <!-- End Slider -->
@@ -164,7 +161,7 @@
 							<ul class="slider masque portfolio-grid small-block-grid-1	medium-block-grid-2 large-block-grid-4">
 								<li ng-repeat="produto in categoria.itens | limitTo: 4">
 									<div class="wd-project hvr-underline-from-center">
-										<img width="380" height="254" src="http://webliniaerp.com.br/assets/imagens/produtos/{{ produto.img }}" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image hvr-pop" alt="">
+										<img width="380" height="254" src="http://webliniaerp.com.br/assets/imagens/produtos/{{ produto.img }}" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image hvr-pop" alt="" style="height: 100px; width: 100px;">
 										<a href="item_produtos.html?produto={{ produto.id }}"><h4 class="hvr-pop">{{ produto.nome }}</h4></a>
 									</div>
 								</li>
@@ -204,7 +201,7 @@
 	<div class="row">
 		<div class="small-12 large-12 columns">
 			<ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-4">
-				<li ng-repeat="feed_item in instagram_feed.items"
+				<li ng-repeat="feed_item in instagram_feed.items | limitTo: 4"
 				ng-if="(!feed_item.video_versions)">
 				<a href="{{ feed_item.carousel_media[0].image_versions2.candidates[0].url }}" 
 				data-fancybox="instagram_feed" data-caption="{{ feed_item.caption.text }}"
