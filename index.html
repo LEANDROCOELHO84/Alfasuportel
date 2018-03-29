@@ -4,7 +4,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	
 	<title>AlfaSuportel Churrasqueiras Frigideiras Grelhas</title>
+	
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800">
 	<link rel="stylesheet" href="stylesheets/owl.carousel.css">
 	<link rel="stylesheet" href="stylesheets/owl.theme.css">
@@ -18,15 +20,17 @@
 	<link rel="stylesheet" href="stylesheets/sections.css">
 	<link rel="stylesheet" href="stylesheets/header.css">
 	<link rel="icon" href="images/logo/logo alfa suportel .png" width="140" height="140">
-	<!--bower_components -->
-	<script src="bower_components/angular/angular.js"></script>
+
 	<!-- Bootstrap core CSS -->
 	<link href="assets/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	<link href="assets/bower_components/fancybox/dist/jquery.fancybox.min.css" rel="stylesheet">
 
+	<!--bower_components -->
+	<script src="bower_components/angular/angular.js"></script>
 </head>
 <body ng-controller="indexController" style="padding-top: 3px;">
-<!-- Start Header -->
+
+	<!-- Start Header -->
 	<header class="l-header creative-layout">
 		<div class="top-bar-container contain-to-grid sticky fixed">
 			<nav class="top-bar" data-topbar="">
@@ -78,245 +82,237 @@
 			</nav>
 		</div>
 	</header>
-<!-- End Header -->
+	<!-- End Header -->
 
-<!-- Start Slider -->
+	<!-- Start Slider -->
+	<section class="slider" style="height: 400px; margin-top: 0px">
+		<div class="flexslider" style="height: 400px;">
+			<ul class="slides">
+				<li style="background-image: url('images/slider/slide1.jpg');height: all;">
+					<div class="row">
+						<div class="slider-caption">
+							<h1 class="h1.slider">Melhores momentos com sua familia</h1>
+						</div>
+					</div>	
+				</li>
+				<li style="background-image: url('images/slider/slide2.jpg');">
+					<div class="row">
+						<div class="slider-caption">
+							<h1>Compartilhe com Seus amigos</h1>
+							<p>conforto e comodidade</p>
+						</div>
+					</div>
+				</li>
+				<li style="background-image: url('images/slider/slide3.jpg');">
+					<div class="row">
+						<div class="slider-caption">
+							<h1>os melhores produtos</h1>
+							<p>materiais com ótima qualidade.</p>
+						</div>
+					</div>
+				</li>
+				<li style="background-image: url('images/slider/slide4.jpg');">
+					<div class="row">
+						<div class="slider-caption">
+							<h1>Nós tornamos prioritário</h1>
+							<p>atender suas necessidades</p>
+						</div>
+					</div>
+				</li>
+				<li style="background-image: url('images/slider/slider6.jpg');">
+					<div class="row">
+						<div class="slider-caption">
+							<h1>Durabilidade</h1>
+							<p>alta qualidade</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<!-- End Slider -->
 
-<section class="slider" style="height: 400px; margin-top: 0px">
-	<div class="flexslider" style="height: 400px;">
-		<ul class="slides">
-			<li style="background-image: url('images/slider/slide1.jpg');height: all;">
-				<div class="row">
-					<div class="slider-caption">
-						<h1 class="h1.slider">Melhores momentos com sua familia</h1>
-					</div>
-				</div>	
-			</li>
-			<li style="background-image: url('images/slider/slide2.jpg');">
-				<div class="row">
-					<div class="slider-caption">
-						<h1>Compartilhe com Seus amigos</h1>
-						<p>conforto e comodidade</p>
-					</div>
+	<!-- Start Our Products -->
+	<section class="our_products">
+		<div class="row">
+			<div class="small-12 large-12 large-offset- columns">
+				<div class="wd-title-section_c">
+					<h2>Linha de Produtos</h2>
 				</div>
-			</li>
-			<li style="background-image: url('images/slider/slide3.jpg');">
-				<div class="row">
-					<div class="slider-caption">
-						<h1>os melhores produtos</h1>
-						<p>materiais com ótima qualidade.</p>
-					</div>
-				</div>
-			</li>
-			<li style="background-image: url('images/slider/slide4.jpg');">
-				<div class="row">
-					<div class="slider-caption">
-						<h1>Nós tornamos prioritário</h1>
-						<p>atender suas necessidades</p>
-					</div>
-				</div>
-			</li>
-			<li style="background-image: url('images/slider/slider6.jpg');">
-				<div class="row">
-					<div class="slider-caption">
-						<h1>Durabilidade</h1>
-						<p>alta qualidade</p>
-					</div>
-				</div>
-			</li>
-		</ul>
-	</div>
-</section>
-
-<!-- End Slider -->
-
-<!-- Start Our Products -->
-
-<section class="our_products">
-	<div class="row">
-		<div class="small-12 large-12 large-offset- columns" style="height: 60px;">
-			<div class="wd-title-section_c">
-				<h2>Linha de Produtos</h2>
 			</div>
 		</div>
-	</div>
-	<div class="row">
-		<div class="small-12 large-12 columns-1">
-			<div class="wd-section-text-icon wd-section-project">
-				<ul class="masque">
-					<li ng-repeat="categoria in categorias_body">
-						<a href="subcategoria.html?categoria={{ categoria.id }}">
-							<div class="wd-text-icon-style5 animated fadeInUp text-center" data-animated="fadeInUp">
-								<div class="box-icon">
-									<img src="http://webliniaerp.com.br/{{ categoria.banner }}" alt="icon" width="1180" height="247">
-								</div>
-								<div class="box-description">
-									<h3>
-										Clique aqui para ver mais produtos da linha {{ categoria.descricao_categoria }}
-									</h3>
-								</div>
-							</div>
-						</a>
-						<div class="wd-text-icon-style5 animated fadeInUp" data-animated="fadeInUp">
-							<ul class="slider masque portfolio-grid small-block-grid-1	medium-block-grid-2 large-block-grid-4">
-								<li ng-repeat="produto in categoria.itens | limitTo: 4">
-									<div class="wd-project hvr-underline-from-center">
-										<img width="380" height="254" src="http://webliniaerp.com.br/assets/imagens/produtos/{{ produto.img }}" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image hvr-pop" alt="" style="height: 100px; width: 100px;">
-										<a href="item_produtos.html?produto={{ produto.id }}"><h4 class="hvr-pop">{{ produto.nome }}</h4></a>
+		<div class="row">
+			<div class="small-12 large-12 columns-1">
+				<div class="wd-section-text-icon wd-section-project">
+					<ul class="masque">
+						<li ng-repeat="categoria in categorias_body">
+							<a href="subcategoria.html?categoria={{ categoria.id }}">
+								<div class="wd-text-icon-style5 animated fadeInUp text-center" data-animated="fadeInUp">
+									<div class="box-icon">
+										<img src="http://webliniaerp.com.br/{{ categoria.banner }}" alt="icon" width="1180" height="247">
 									</div>
-								</li>
-							</ul>
-						</div>
+									<div class="box-description">
+										<h3>
+											Clique aqui para ver mais produtos da linha {{ categoria.descricao_categoria }}
+										</h3>
+									</div>
+								</div>
+							</a>
+							<div class="wd-text-icon-style5 animated fadeInUp" data-animated="fadeInUp">
+								<ul class="slider masque portfolio-grid small-block-grid-1	medium-block-grid-2 large-block-grid-4">
+									<li ng-repeat="item in categoria.filhos | limitTo: 4">
+										<div class="wd-project hvr-underline-from-center">
+											<img width="380" height="254" src="http://webliniaerp.com.br/{{ item.thumbnail }}" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image hvr-pop" alt="" style="height: 100px; width: 100px;">
+											<a href="#"><h4 class="hvr-pop">{{ item.descricao_categoria }}</h4></a>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Our Products -->
+
+	<!-- Start Call To Action -->
+	<section class="call-to-action-wrapper1">
+		<div class="row">
+			<div class="small-12 large-12 columns text-center fadeInRight">
+				<h4 style="color: #ffffff; font-weight: 300; display: inline-block;">Obtenha produtos profissionais, ligue-nos agora <b class="fadeInRight hvr-pop">(11) 2511-2233</b>.</h4>
+			</div>
+		</div>
+	</section>
+	<!-- End Call To Action -->
+
+	<!-- Start Latest News -->
+	<section class="latest-news">
+		<div class="row">
+			<div class="small-12 large-8 large-offset-2 columns">
+				<div class="wd-title-section_c ">
+					<h2>Blog de Noticias</h2>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="small-12 large-12 columns">
+				<ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-4">
+					<li ng-repeat="feed_item in instagram_feed.items | limitTo: 4"
+						ng-if="(!feed_item.video_versions)">
+						<a 	href="{{ feed_item.carousel_media[0].image_versions2.candidates[0].url }}" 
+							data-fancybox="instagram_feed" 
+							data-caption="{{ feed_item.caption.text }}" 
+							ng-if="(feed_item.carousel_media)">
+								<img class="img-fluid img-thumbnail mx-auto hvr-pop" uib-tooltip="{{ feed_item.caption.text }}" tooltip-trigger="focus" src="{{ feed_item.carousel_media[0].image_versions2.candidates[0].url }}">
+						</a>
+						<a 	href="{{ feed_item.image_versions2.candidates[0].url }}" 
+							data-fancybox="instagram_feed" 
+							data-caption="{{ feed_item.caption.text }}" 
+							ng-if="(feed_item.image_versions2)">
+								<img class="img-fluid img-thumbnail mx-auto hvr-pop" uib-tooltip="{{ feed_item.caption.text }}" tooltip-trigger="focus" src="{{ feed_item.image_versions2.candidates[0].url }}">
+						</a>
+						<p class="hvr-pop read-more">{{ feed_item.caption.text }}
+							<a 	class="hvr-pop read-more" 
+								data-fancybox="instagram_feed" 
+								data-caption="{{ feed_item.caption.text }}" 
+								ng-if="(feed_item.carousel_media)">Saiba Mais →
+							</a>
+						</p>
 					</li>
 				</ul>
 			</div>
 		</div>
-	</div>
-</section>
+	</section>
+	<!-- End Latest News -->
 
-<!-- End Our Products -->
-
-<!-- Start Call To Action -->
-
-<section class="call-to-action-wrapper1">
-	<div class="row">
-		<div class="small-12 large-12 columns text-center fadeInRight">
-			<h4 style="color: #ffffff; font-weight: 300; display: inline-block;">Obtenha produtos profissionais, ligue-nos agora <b class="fadeInRight hvr-pop">(11) 2511-2233</b>.</h4>
-		</div>
-	</div>
-</section>
-
-<!-- End Call To Action -->
-
-<!-- Start Latest News -->
-
-<section class="latest-news">
-	<div class="row">
-		<div class="small-12 large-8 large-offset-2 columns">
-			<div class="wd-title-section_c ">
-				<h2>Blog de Noticias</h2>
-			</div>
-		</div>
-	</div>
-	<div class="row">
-		<div class="small-12 large-12 columns">
-			<ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-4">
-				<li ng-repeat="feed_item in instagram_feed.items | limitTo: 4"
-				ng-if="(!feed_item.video_versions)">
-				<a href="{{ feed_item.carousel_media[0].image_versions2.candidates[0].url }}" 
-				data-fancybox="instagram_feed" data-caption="{{ feed_item.caption.text }}"
-				ng-if="(feed_item.carousel_media)">
-				<img class="img-fluid img-thumbnail mx-auto hvr-pop"
-				uib-tooltip="{{ feed_item.caption.text }}" tooltip-trigger="focus"
-				src="{{ feed_item.carousel_media[0].image_versions2.candidates[0].url }}">
-			</a>
-			<a href="{{ feed_item.image_versions2.candidates[0].url }}" 
-			data-fancybox="instagram_feed" data-caption="{{ feed_item.caption.text }}"
-			ng-if="(feed_item.image_versions2)">
-			<img class="img-fluid img-thumbnail mx-auto hvr-pop"
-			uib-tooltip="{{ feed_item.caption.text }}" tooltip-trigger="focus"
-			src="{{ feed_item.image_versions2.candidates[0].url }}">
-		</a>
-		<p class="hvr-pop read-more">{{ feed_item.caption.text }}
-			<a class="hvr-pop read-more" data-fancybox="instagram_feed" data-caption="{{ feed_item.caption.text }}"
-				ng-if="(feed_item.carousel_media)">">Saiba Mais →</a>
-		</p>
-	</li>
-</ul>
-</div>
-</div>
-</section>
-<!-- End Latest News -->
-
-<!-- Start Footer -->
-
-<section class="wd-footer">
-	<div class="row animation-parent" data-animation-delay="180">
-		<ul class="block large-4 medium-4 columns animated fadeInRight" data-animated="fadeInRight">
-			<li>
-				<div class="textwidget">
-					<div class="widget-logo">
-						<img alt="logo" src="images/logo/logo alfa suportel .png">
-						<p>AlfaSuportel. é o líder em equipamentos e produtos alta qualidade.</p>
+	<!-- Start Footer -->
+	<section class="wd-footer">
+		<div class="row animation-parent" data-animation-delay="180">
+			<ul class="block large-4 medium-4 columns animated fadeInRight" data-animated="fadeInRight">
+				<li>
+					<div class="textwidget">
+						<div class="widget-logo">
+							<img alt="logo" src="images/logo/logo alfa suportel .png">
+							<p>AlfaSuportel. é o líder em equipamentos e produtos alta qualidade.</p>
+						</div>
 					</div>
-				</div>
-			</li>
-		</ul>
-		<ul class="block large-4 medium-4 columns animated fadeInRight" data-animated="fadeInRight">
-			<li>
-				<h2 class="block-title">Entrar em contato</h2>
-				<div class="textwidget">
-					<div class="widget-info">
-						<ul>
-							<li>
-								<span><span>TEL:</span> (11) 2511-2233</span>
-							</li>
-							<li>
-								<span><span>TEL:</span> (11) 2511-2144</span>
-							</li>
-							<li>
-								<span><span>E-mail:</span> <a href="mailto:alfasuportel@alfasuportel.com.br">alfasuportel@alfasuportel.com.br</a></span>
-							</li>
-							<li>
-								<span><span>endereço</span> Rua Nanci Ackel, 188, São Paulo - SP</span>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</li>
-		</ul>
-		<ul class="block large-4 medium-4 columns animated fadeInRight" data-animated="fadeInRight">
-			<li>
-				<h2 class="block-title">Newsletter</h2>
-				<div class="textwidget">
-					<div class="wd-newsletter">
-						Assine seu boletim informativo
-						<div>
-							<input type="text" class="email-adress" placeholder="EMAIL ADRESS" size="20" value="" name="email-adress">
-							<input type="submit" class="newslettersubmit" value="GO">
-							<ul class="inline-list">              
-								<li class="facebook">
-									<a href="https://www.facebook.com/Alfasuportel/"><i class="fa fa-facebook"></i></a>
+				</li>
+			</ul>
+			<ul class="block large-4 medium-4 columns animated fadeInRight" data-animated="fadeInRight">
+				<li>
+					<h2 class="block-title">Entrar em contato</h2>
+					<div class="textwidget">
+						<div class="widget-info">
+							<ul>
+								<li>
+									<span><span>TEL:</span> (11) 2511-2233</span>
 								</li>
-								<li class="instagram">
-									<a href="https://www.instagram.com/explore/tags/alfasuportel/"><i class="fa fa-instagram"></i></a>
-								</li>                
+								<li>
+									<span><span>TEL:</span> (11) 2511-2144</span>
+								</li>
+								<li>
+									<span><span>E-mail:</span> <a href="mailto:alfasuportel@alfasuportel.com.br">alfasuportel@alfasuportel.com.br</a></span>
+								</li>
+								<li>
+									<span><span>endereço</span> Rua Nanci Ackel, 188, São Paulo - SP</span>
+								</li>
 							</ul>
 						</div>
 					</div>
-				</div>
-			</li>
-		</ul>
-	</div>
-	<footer class="wd-copyright">
-		<div class="row">
-			<div class="small-12 large-12 columns">
-				<div class="copyright-menu">
-					<ul id="menu-footer-menu" class="menu">
-						<li><a href="index.html">Inicio</a></li>
-						<li><a href="about-us.html">Quem Somos</a></li>
-						<li><a href="contact.html">Contato</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="copyright small-12 large-12 columns">
-				<p>
-					© 2018 SDmarketingMobile All rights reserved.
-				</p>
-			</div>
+				</li>
+			</ul>
+			<ul class="block large-4 medium-4 columns animated fadeInRight" data-animated="fadeInRight">
+				<li>
+					<h2 class="block-title">Newsletter</h2>
+					<div class="textwidget">
+						<div class="wd-newsletter">
+							Assine seu boletim informativo
+							<div>
+								<input type="text" class="email-adress" placeholder="EMAIL ADRESS" size="20" value="" name="email-adress">
+								<input type="submit" class="newslettersubmit" value="GO">
+								<ul class="inline-list">              
+									<li class="facebook">
+										<a href="https://www.facebook.com/Alfasuportel/"><i class="fa fa-facebook"></i></a>
+									</li>
+									<li class="instagram">
+										<a href="https://www.instagram.com/explore/tags/alfasuportel/"><i class="fa fa-instagram"></i></a>
+									</li>                
+								</ul>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
 		</div>
-	</footer>
-</section>
+		<footer class="wd-copyright">
+			<div class="row">
+				<div class="small-12 large-12 columns">
+					<div class="copyright-menu">
+						<ul id="menu-footer-menu" class="menu">
+							<li><a href="index.html">Inicio</a></li>
+							<li><a href="about-us.html">Quem Somos</a></li>
+							<li><a href="contact.html">Contato</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="copyright small-12 large-12 columns">
+					<p>
+						© 2018 SDmarketingMobile All rights reserved.
+					</p>
+				</div>
+			</div>
+		</footer>
+	</section>
+	<!-- End Footer -->
 
-<!-- End Footer -->
-
-<script src="js/jquery-1.12.3.min.js"></script>
-<script src="js/plugins.js"></script>
-<script src="js/shortcode/script-shortcodes.js"></script>
-<script src="js/jquery.flexslider-min.js"></script>
-<script src="js/wd_owlcarousel.js"></script>
-<script src="js/scripts.js"></script>
-<script src="js/extras.js"></script>
-<script src="js/angular-controller/index-controller.js"></script>
+	<script src="js/jquery-1.12.3.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/shortcode/script-shortcodes.js"></script>
+	<script src="js/jquery.flexslider-min.js"></script>
+	<script src="js/wd_owlcarousel.js"></script>
+	<script src="js/scripts.js"></script>
+	<script src="js/extras.js"></script>
+	<script src="js/angular-controller/index-controller.js"></script>
 </body>
 </html>

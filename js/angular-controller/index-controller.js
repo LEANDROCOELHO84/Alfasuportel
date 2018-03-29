@@ -29,20 +29,11 @@ app.controller('indexController', function($scope, $http){
 		$http.get(baseUrlApi()+"categorias/treeview?tce->id_empreendimento=217").then(function(response){
 			$scope.categorias_body = response.data;
 			angular.forEach($scope.categorias_body,function(item,index){
-				item.itens = [];
 				item.banner = item.pth_banner.substring(item.pth_banner.indexOf('assets'), item.pth_banner.length);
-				$scope.loadItens(item);
+				angular.forEach(item.filhos, function(item,index){
+					item.thumbnail = item.pth_thumbnail.substring(item.pth_thumbnail.indexOf('assets'), item.pth_thumbnail.length);	
+				})
 			})
-		}, function(err){
-			console.log(err);
-		});
-	};
-
-	// Load Product by Category
-	
-	$scope.loadItens = function(categoria) {
-		$http.get(baseUrlApi()+"produtos?cat->id_pai="+categoria.id).then(function(response){
-			categoria.itens = response.data.produtos;
 		}, function(err){
 			console.log(err);
 		});
