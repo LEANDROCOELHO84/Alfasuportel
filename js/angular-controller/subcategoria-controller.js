@@ -50,6 +50,7 @@ app.controller('subcategoriaController', function($scope, $http){
 			$scope.itens = response.data.categorias;
 			angular.forEach($scope.itens, function(item, index){
 				item.pth_thumbnail = item.pth_thumbnail.substring(item.pth_thumbnail.indexOf('assets'), item.pth_thumbnail.length);
+				item.pth_banner = item.pth_banner.substring(item.pth_banner.indexOf('assets'), item.pth_banner.length);
 			});
 		}, function(err){
 			console.log(err);
