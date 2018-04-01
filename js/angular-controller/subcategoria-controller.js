@@ -46,11 +46,41 @@ app.controller('subcategoriaController', function($scope, $http){
 	$scope.loadSubcategoriasByCategorias = function() {
 		$scope.itens = [];
 
-		$http.get(baseUrlApi()+"categorias?id_pai="+params.categoria).then(function(response){
-			$scope.itens = response.data.categorias;
-			angular.forEach($scope.itens, function(item, index){
-				item.pth_thumbnail = item.pth_thumbnail.substring(item.pth_thumbnail.indexOf('assets'), item.pth_thumbnail.length);
-				item.pth_banner = item.pth_banner.substring(item.pth_banner.indexOf('assets'), item.pth_banner.length);
+		$http.get(baseUrlApi()+"categorias/treeview?tce->id_empreendimento=217").then(function(response){
+			angular.forEach(response.data, function(item, index){
+				if(item.id == params.categoria){
+					$scope.itens = item.filhos;
+					angular.forEach($scope.itens, function(x,y){
+						if(x.pth_thumbnail != null)
+							x.pth_thumbnail = x.pth_thumbnail.substring(x.pth_thumbnail.indexOf('assets'), x.pth_thumbnail.length);
+						else
+							x.pth_thumbnail = '/path/to/sample/image.png';
+
+						if(x.pth_banner != null)
+							x.pth_banner = x.pth_banner.substring(x.pth_banner.indexOf('assets'), x.pth_banner.length);
+						else
+							x.pth_banner = '/path/to/sample/image.png';
+
+						if (x.filhos == null) {
+							$http.get(baseUrlApi()+"produtos?cat->id="+x.id).then(function(response){
+								x.produtos = [];
+								x.produtos = response.data.produtos;
+							}, function(err){
+								console.log(err);
+							});
+						}
+
+						if (x.filhos != null) {
+							angular.forEach(x.filhos, function(a,b){
+								if(a.pth_thumbnail != null)
+									a.pth_thumbnail = a.pth_thumbnail.substring(a.pth_thumbnail.indexOf('assets'), a.pth_thumbnail.length);
+
+								else
+									a.pth_thumbnail = '/path/to/sample/image.png';
+							});
+						}
+					});
+				}
 			});
 		}, function(err){
 			console.log(err);
