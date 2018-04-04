@@ -18,7 +18,7 @@
   <script src="bower_components/angular/angular.js"></script>
 
 </head>
-<body ng-controller="produtosController" style="padding-top: 3px;">
+<body ng-controller="produtosController" style="padding-top: 87px;">
 
   <!-- Start Header -->
 <header class="l-header creative-layout">
@@ -79,7 +79,7 @@
 <section class="banner-category" style="background: url('http://webliniaerp.com.br/{{ categoria_produto.banner }}') no-repeat center center;">
   <div class="row">
     <div class="large-12 columns p-t-70 text-left title-banner-2">
-      <h2 id="page-title" class="title hvr-pop">{{ categoria_produto.descricao_categoria }}</h2>
+      
     </div>
   </div>
 </section>
@@ -103,7 +103,7 @@
         <ul class="slider masque portfolio-grid small-block-grid-1	medium-block-grid-2 large-block-grid-4">
           <li ng-repeat="item in itens">
             <div class="wd-project hvr-underline-from-center hvr-pop">
-              <img width="380" height="254" src="http://webliniaerp.com.br/assets/imagens/produtos/{{ item.img }}" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image" alt="">
+              <img src="http://webliniaerp.com.br/assets/imagens/produtos/{{ item.img }}" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image" alt="{{ item.nome }}" style="height: 200px; width: 200px;" >
               <a href="item_produtos.html?produto={{ item.id }}"><h4>{{ item.nome }}</h4></a>
             </div>
           </li>

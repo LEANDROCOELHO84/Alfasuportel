@@ -25,7 +25,7 @@
       }
     </style>
   </head>
-<body ng-controller="itemProdutoController">
+<body ng-controller="itemProdutoController" style="padding-top: 87px;">
 
   <!-- Start Header -->
 
@@ -133,9 +133,9 @@
         <h4 class="m-b-15">PRODUTOS RELACIONADOS</h4>
         <div class="wd-section-project">
           <ul class="masque portfolio-grid small-block-grid-1  medium-block-grid-3 large-block-grid-4">
-            <li ng-repeat="item in relacionados" class="flipInX" data-animated="flipInX" style="opacity: 1; animation-delay: 0ms;">
+            <li ng-repeat="item in relacionados | limitTo: 4"  class="flipInX" data-animated="flipInX" style="opacity: 1; animation-delay: 0ms;">
               <div class="wd-project hvr-underline-from-center">
-                <img src="http://webliniaerp.com.br/assets/imagens/produtos/{{ item.img }}" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image" alt="">
+                <img src="http://webliniaerp.com.br/assets/imagens/produtos/{{ item.img }}" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image" alt="" style="height: 200px; width: 200px;">
                 <a href="item_produtos.html?produto={{ item.id }}"><h4>{{ item.nome }}</h4></a>
                 <br>
               </div>
