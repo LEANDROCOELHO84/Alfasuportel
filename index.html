@@ -136,8 +136,9 @@
 	<section class="our_products">
 		<div class="row">
 			<div class="small-12 large-12 large-offset- columns">
-				<div class="wd-title-section_c">
-					<h2>Linha de Produtos</h2>
+				<div class="">
+					<br>
+					<h4 class="text-center">Veja nossas linhas produtos</h3>
 				</div>
 			</div>
 		</div>
@@ -153,7 +154,7 @@
 									</div>
 									<div class="box-description">
 										<h3>
-											Clique aqui para ver mais produtos da linha {{ categoria.descricao_categoria }}
+											Clique aqui para mais da nossa linha {{ categoria.descricao_categoria }}
 										</h3>
 									</div>
 								</div>
@@ -162,10 +163,9 @@
 								<ul class="slider masque portfolio-grid small-block-grid-1	medium-block-grid-2 large-block-grid-4">
 									<li ng-repeat="item in categoria.filhos | limitTo: 4">
 										<div class="wd-project hvr-underline-from-center">
-											<a href="{{ item.descricao_categoria }}"></a><img width="380" height="254" src="http://webliniaerp.com.br/{{ item.thumbnail }}" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image hvr-pop" alt="" style="height: 100px; width: 100px;">
-										</a>
-											<br>
-											<a href="produtos.html?subcategoria={{ item.id }}"><h4 class="hvr-pop">{{ item.descricao_categoria }}</h4></a>
+											<a href="produtos.html?subcategoria={{ item.id }}"><img width="380" height="254" src="http://webliniaerp.com.br/{{ item.thumbnail }}" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image hvr-pop" alt="" style="height: 100px; width: 100px;">
+												<br>
+												<h4 class="hvr-pop">{{ item.descricao_categoria }}</h4></a>
 										</div>
 									</li>
 								</ul>
@@ -193,7 +193,7 @@
 		<div class="row">
 			<div class="small-12 large-8 large-offset-2 columns">
 				<div class="wd-title-section_c ">
-					<h2>Blog de Noticias</h2>
+					<h2>Instagram</h2>
 				</div>
 			</div>
 		</div>
@@ -251,10 +251,10 @@
 									<span><span>TEL:</span> (11) 2511-2233</span>
 								</li>
 								<li>
-									<span><span>TEL:</span> (11) 2511-2144</span>
+									<span><span>WHATSAPP</span> (11) 9947-4250</span>
 								</li>
 								<li>
-									<span><span>E-mail:</span> <a href="mailto:alfasuportel@alfasuportel.com.br">alfasuportel@alfasuportel.com.br</a></span>
+									<span><span>E-mail:</span> <a href="mailto:contato@alfasuportel.com.br">contato@alfasuportel.com.br</a></span>
 								</li>
 								<li>
 									<span><span>endereço</span> Rua Nanci Ackel, 188, São Paulo - SP</span>
@@ -279,7 +279,8 @@
 									</li>
 									<li class="instagram">
 										<a href="https://www.instagram.com/explore/tags/alfasuportel/"><i class="fa fa-instagram"></i></a>
-									</li>      
+									</li> 
+									    
 									<li class="facebook">
 										<a href="https://www.facebook.com/fulkancoco/"><i class="fa fa-facebook"></i></a>
 									</li>

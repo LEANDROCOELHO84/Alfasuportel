@@ -155,3 +155,23 @@ header.navigation {
 .banner-category h2{
   color: #FFFFFF;
 }
+
+.wd-newsletter li {
+  border-right: 1px solid #fff;
+}
+
+.wd-newsletter li:last-child {
+  border-right: none;
+}
+
+.wd-newsletter li a i {
+  text-align: center;
+}
+
+.wd-newsletter li.alfasuportel a i:hover {
+  color: #f50606; 
+}
+
+.wd-newsletter li.fulkan a i:hover {
+  color: ; 
+}

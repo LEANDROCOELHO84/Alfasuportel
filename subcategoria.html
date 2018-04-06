@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="pt-br" ng-app="alfasuportel">
 <head>
   <meta charset="UTF-8">
@@ -101,11 +101,10 @@
           <div class="wd-section-project">
             <ul class="wd-section-portfolio small-block-grid-1 medium-block-grid-1 large-block-grid-1">
               <li ng-repeat="item in itens">
-                <div class="wd-project hvr-underline-from-center hvr-pop">
+                <div class="wd-project">
                   <img src="http://webliniaerp.com.br/{{ item.pth_banner }}" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image" alt="">
                   <a ng-if="(item.filhos == null)" href="produtos.html?subcategoria={{ item.id }}"><h4>{{ item.descricao_categoria }}</h4></a>
                   <a ng-if="(item.filhos != null)" href="subcategoria.html?categoria={{ item.id }}"><h4>{{ item.descricao_categoria }}</h4></a>
-                  <br>
                 </div>
                 <div class="wd-text-icon-style5 animated fadeInUp" data-animated="fadeInUp">
                   <ul class="slider masque portfolio-grid small-block-grid-1  medium-block-grid-2 large-block-grid-4">
@@ -185,8 +184,9 @@
                     <a href="https://www.facebook.com/Alfasuportel/"><i class="fa fa-facebook"></i></a>
                     </li>
                     <li class="instagram">
-                      <a href="https://www.instagram.com/explore/tags/alfasuportel/"><i class="fa fa-instagram"></i></a>
-                    </li>      
+                      <a href="https://www.instagram.com/explore/tags/alfasuportel/"><i class="fa fa-instagram"></i></a>|
+                    </li>  
+                    |    
                     <li class="facebook">
                       <a href="https://www.facebook.com/fulkancoco/"><i class="fa fa-facebook"></i></a>
                     </li>
