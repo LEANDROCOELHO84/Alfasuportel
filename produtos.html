@@ -88,23 +88,26 @@
 
 <!-- Start Portfolio -->
 
-<section class="portfolio-wrapper">
-  <div class="row">
+<section class="portfolio-wrapper" style="padding: 15px;">
+  <div class="row" style="margin-bottom: 0px;>
     <div class="small-12 large-8 large-offset-2 columns">
-      <div class="wd-title-section_c">
-        <h2>Produtos</h2>
-        <h5>Lista de Produtos</h5>
+      <div class="wd-title-section_c" style="margin-bottom: 27px;">
+        <h4>Veja Nossa Lista de Produtos</h4>
       </div>
     </div>
   </div>
-  <div class="row">
+  <div class="row" style="text-align: center; margin-bottom: 0px;">
     <div class="small-12 large-12 columns">
       <div class="wd-section-project">
         <ul class="slider masque portfolio-grid small-block-grid-1	medium-block-grid-2 large-block-grid-4">
           <li ng-repeat="item in itens">
-            <div class="wd-project hvr-underline-from-center hvr-pop">
-              <img src="http://webliniaerp.com.br/assets/imagens/produtos/{{ item.img }}" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image" alt="{{ item.nome }}" style="height: 200px; width: 200px;" >
-              <a href="item_produtos.html?produto={{ item.id }}"><h4>{{ item.nome }}</h4></a>
+            <div class="wd-project hvr-underline-from-center hvr">
+              <a href="item_produtos.html?produto={{ item.id }}">
+                <img src="http://webliniaerp.com.br/assets/imagens/produtos/{{ item.img }}" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image" alt="{{ item.nome }}" style="height: 200px; width: 200px;" >
+                  <h4>
+                    {{ item.nome }}
+                  </h4>
+              </a>
             </div>
           </li>
         </ul>

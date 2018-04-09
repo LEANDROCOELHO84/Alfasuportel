@@ -154,18 +154,18 @@
 									</div>
 									<div class="box-description">
 										<h3>
-											Clique aqui para mais da nossa linha {{ categoria.descricao_categoria }}
+											 linha de produtos {{ categoria.descricao_categoria }} 
 										</h3>
 									</div>
 								</div>
 							</a>
-							<div class="wd-text-icon-style5 animated fadeInUp" data-animated="fadeInUp">
+							<div class="wd-text-icon-style5  " data-animated="fadeInUp">
 								<ul class="slider masque portfolio-grid small-block-grid-1	medium-block-grid-2 large-block-grid-4">
 									<li ng-repeat="item in categoria.filhos | limitTo: 4">
 										<div class="wd-project hvr-underline-from-center">
-											<a href="produtos.html?subcategoria={{ item.id }}"><img width="380" height="254" src="http://webliniaerp.com.br/{{ item.thumbnail }}" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image hvr-pop" alt="" style="height: 100px; width: 100px;">
+											<a href="produtos.html?subcategoria={{ item.id }}"><img width="380" height="254" src="http://webliniaerp.com.br/{{ item.thumbnail }}" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image" alt="" style="height: 100px; width: 100px;">
 												<br>
-												<h4 class="hvr-pop">{{ item.descricao_categoria }}</h4></a>
+												<h4 class="">{{ item.descricao_categoria }}</h4></a>
 										</div>
 									</li>
 								</ul>

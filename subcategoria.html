@@ -89,14 +89,7 @@
     <!-- Start Portfolio -->
 
     <section class="portfolio-wrapper">
-      <div class="row">
-        <div class="small-12 large-8 large-offset-2 columns">
-          <div class="wd-title-section_c">
-            <h2>Linha de Produtos</h2>
-          </div>
-        </div>
-      </div>
-      <div class="row">
+       <div class="row">
         <div class="small-12 large-12 columns">
           <div class="wd-section-project">
             <ul class="wd-section-portfolio small-block-grid-1 medium-block-grid-1 large-block-grid-1">
@@ -110,16 +103,16 @@
                   <ul class="slider masque portfolio-grid small-block-grid-1  medium-block-grid-2 large-block-grid-4">
                     <li ng-if="(item.filhos == null)" ng-repeat="produto in item.produtos | limitTo: 4">
                       <div class="wd-project hvr-underline-from-center">
-                        <img width="380" height="254" src="http://webliniaerp.com.br/assets/imagens/produtos/{{ produto.img }}" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image hvr-pop" alt="" style="height: 100px; width: 100px;">
-                        <br>
-                        <a href="item_produtos.html?produto={{ produto.id }}"><h4 class="hvr-pop">{{ produto.nome }}</h4></a>
+                        <a href="item_produtos.html?produto={{ produto.id }}"><img width="380" height="254" src="http://webliniaerp.com.br/assets/imagens/produtos/{{ produto.img }}" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image hvr" alt="" style="height: 100px; width: 100px;">
+                          <h4 class="hvr">{{ produto.nome }}</h4>
+                        </a>
                       </div>
                     </li>
                     <li ng-if="(item.filhos != null)" ng-repeat="filho in item.filhos | limitTo: 4">
                       <div class="wd-project hvr-underline-from-center">
-                        <img width="380" height="254" src="http://webliniaerp.com.br/{{ filho.pth_thumbnail }}" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image hvr-pop" alt="" style="height: 100px; width: 100px;">
+                        <img width="380" height="254" src="http://webliniaerp.com.br/{{ filho.pth_thumbnail }}" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image hvr" alt="" style="height: 100px; width: 100px;">
                         <br>
-                        <a href="subcategoria.html?categoria={{ filho.id }}"><h4 class="hvr-pop">{{ filho.descricao_categoria }}</h4></a>
+                        <a href="subcategoria.html?categoria={{ filho.id }}"><h4 class="hvr">{{ filho.descricao_categoria }}</h4></a>
                       </div>
                     </li>
                   </ul>
