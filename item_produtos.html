@@ -89,19 +89,14 @@
   <!-- Start Title Bar -->
 
   <section class="banner-category" style="background: url('http://webliniaerp.com.br/{{ categoria_produto.banner }}') no-repeat center center;">
-    <div class="row">
-      <div class="large-12 columns p-t-70 text-left title-banner-2">
-        <h2 id="page-title" class="title hvr-pop">{{ produto.nome }}</h2>
-      </div>
-    </div>
   </section>
-
   <!-- End Title Bar -->
 
   <!-- Start Portfolio -->
-
-  <section class="portfolio-wrapper">
+  <section class="portfolio-wrapper" style=" padding: 10px 10px 10px;">
     <div class="row">
+      <h2 id="page-title" style="text-align: center;" class="title"> {{ produto.nome }} </h2><h4 >  </h4>
+      <br>
       <div class="small-12 large-4 columns">
         <div class="owl-testimonail owl-carousel owl-theme">
           <img class="attachment-flooring_blog-thumb size-flooring_blog-thumb wp-post-image"
@@ -135,8 +130,9 @@
           <ul class="masque portfolio-grid small-block-grid-1  medium-block-grid-3 large-block-grid-4">
             <li ng-repeat="item in relacionados | limitTo: 4"  class="flipInX" data-animated="flipInX" style="opacity: 1; animation-delay: 0ms;">
               <div class="wd-project hvr-underline-from-center">
-                <img src="http://webliniaerp.com.br/assets/imagens/produtos/{{ item.img }}" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image" alt="" style="height: 200px; width: 200px;">
-                <a href="item_produtos.html?produto={{ item.id }}"><h4>{{ item.nome }}</h4></a>
+                  <a href="item_produtos.html?produto={{ item.id }}"><img src="http://webliniaerp.com.br/assets/imagens/produtos/{{ item.img }}" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image" alt="" style="height: 200px; width: 200px;">
+                    <h4>{{ item.nome }}</h4>
+                  </a>
                 <br>
               </div>
           </ul>
