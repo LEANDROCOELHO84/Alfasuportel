@@ -88,6 +88,15 @@ button.alert, .button.alert, .wd-newsletter .newslettersubmit{
   background-color: rgba(232, 17, 48,1);
   border-color: rgba(232, 17, 48,1);
 }
+a {
+    color: #000000;
+    line-height: inherit;
+    text-decoration: none;
+
+
+}
+
+
 a:hover, a:focus {
   color: rgba(232, 17, 48,1);
 }
@@ -100,7 +109,7 @@ a:hover, a:focus {
   }
 }
 .creative-layout .contain-to-grid.sticky.fixed{
-  background-color: rgba(0,0,0,0.8);
+  background-color: #000000;
 }
 .creative-layout .top-bar-section ul li > a {
   color: rgba(255,255,255,1);
@@ -115,4 +124,13 @@ a:hover, a:focus {
 .call-to-action-wrapper {
   padding: 70px 0;
   background-color: $primary-color;
+}
+.wd-newsletter i:hover {
+    color: #e81130;
+}
+.wd-newsletter1 i:hover {
+    color: #ffb900;
+}
+.creative-layout .top-bar-section ul li {
+    background-color: black;
 }

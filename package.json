@@ -21,11 +21,10 @@
   },
   "homepage": "https://github.com/LEANDROCOELHO84/Alfasuportel#readme",
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-sass": "^3.1.0"
+    "gulp-sass": "^4.0.1"
   },
   "dependencies": {
     "angular-route": "^1.6.9",
-    "node-sass": "^4.8.3"
+    "node-sass": "^4.9.0"
   }
 }

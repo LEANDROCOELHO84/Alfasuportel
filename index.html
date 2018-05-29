@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+			<!DOCTYPE html>
 <html lang="pt-br" ng-app="alfasuportel">
 <head>
 	<meta charset="UTF-8">
@@ -38,7 +38,7 @@
 					<li class="name">
 						<h1>
 							<a title="alfasuportel" rel="home" href="index.html" pa>
-								<img alt="logo" width="auto" height="auto" src="images/logo/logo alfa suportel .png">
+								<img alt="logo" width="auto" height="auto" src="images/logo/logo alfa suportel 	.png">
 							</a>
 						</h1>
 					</li>
@@ -74,7 +74,7 @@
 								<a href="contact.html" class="has-icon">CONTATO</a>
 							</li>
 							<li id="menu-item-1308">
-								<a href="http://webliniaerp.com.br/alfasuportel/cadastro" class="has-icon">TRABALHE CONOSCO</a>
+								<a href="http://webliniaerp.com.br/alfasuportel/cadastro" class="has-icon">FAÇA AQUI SEU PEDIDO</a>
 							</li>
 						</ul>
 					</div>
@@ -88,7 +88,7 @@
 	<section class="slider" style="height: 400px; margin-top: 66px">
 		<div class="flexslider" style="height: 400px;">
 			<ul class="slides">
-				<li style="background-image: url('images/slider/banner home fulkan.jpg');height: all;">
+				<li style="background-image: url('images/slider/slide8.jpg');height: all;">
 					
 					<div class="row">
 						<div class="slider-caption">
@@ -102,7 +102,7 @@
 						</div>
 					</div>
 				</li>
-				<li style="background-image: url('images/slider/slide8.jpg');">
+				<li style="background-image: url('images/slider/banner home fulkan.jpg');">
 					<div class="row">
 						<div class="slider-caption">
 							
@@ -130,24 +130,25 @@
 					<ul class="masque">
 						<li ng-repeat="categoria in categorias_body">
 							<a href="subcategoria.html?categoria={{ categoria.id }}">
-								<div class="wd-text-icon-style5 animated fadeInUp text-center" data-animated="fadeInUp">
-									<div class="box-icon">
+								<div class="wd-text-icon-style5 text-center " data-animated="fadeInUp">
+									<div class="">
 										<img src="http://webliniaerp.com.br/{{ categoria.banner }}" alt="icon" width="1180" height="247">
 									</div>
 									<div class="box-description">
+										<br>
 										<h3>
-											 linha de produtos {{ categoria.descricao_categoria }} 
+											 confira nossas categorias {{ categoria.descricao_categoria }} 
 										</h3>
 									</div>
 								</div>
 							</a>
-							<div class="wd-text-icon-style5  " data-animated="fadeInUp">
-								<ul class="slider masque portfolio-grid small-block-grid-1	medium-block-grid-2 large-block-grid-4">
-									<li ng-repeat="item in categoria.filhos | limitTo: 4">
-										<div class="wd-project hvr-underline-from-center">
-											<a href="produtos.html?subcategoria={{ item.id }}"><img width="380" height="254" src="http://webliniaerp.com.br/{{ item.thumbnail }}" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image" alt="" style="height: 100px; width: 100px;">
-												<br>
-												<h4 class="">{{ item.descricao_categoria }}</h4></a>
+							<div class="wd-text-icon-style5  wd-section-text-icon ">
+								<ul class="slider masque portfolio-grid small-block-grid-2	medium-block-grid-3 large-block-grid-5">
+									<li ng-repeat="item in categoria.filhos | limitTo: 5">
+										<div class="wd-project">
+											<a href="produtos.html?subcategoria={{ item.id }}"><img width="380" height="254" src="http://webliniaerp.com.br/{{ item.thumbnail }}" class="" alt="" style="height: 100px; width: 100px;">
+											<br>
+											<a class="hvr-glow"><h5>{{ item.descricao_categoria }}</h5></a>
 										</div>
 									</li>
 								</ul>
@@ -164,7 +165,7 @@
 	<section class="call-to-action-wrapper1">
 		<div class="row">
 			<div class="small-12 large-12 columns text-center fadeInRight">
-				<h4 style="color: #ffffff; font-weight: 300; display: inline-block;">Obtenha produtos profissionais, ligue-nos agora <b class="fadeInRight hvr-pop">(11) 2511-2233</b>.</h4>
+				<h4 style="color: #ffffff; font-weight: 300; display: inline-block;">Adquira agora nossos produtos de linhas profissionais, através do telefone <b class="fadeInRight hvr-pop">(11) 2511-2233</b>.</h4>
 			</div>
 		</div>
 	</section>
@@ -188,16 +189,16 @@
 							data-fancybox="instagram_feed" 
 							data-caption="{{ feed_item.caption.text }}" 
 							ng-if="(feed_item.carousel_media)">
-								<img class="img-fluid img-thumbnail mx-auto hvr-pop" uib-tooltip="{{ feed_item.caption.text }}" tooltip-trigger="focus" src="{{ feed_item.carousel_media[0].image_versions2.candidates[0].url }}">
+								<img class="img-fluid img-thumbnail mx-auto " uib-tooltip="{{ feed_item.caption.text }}" tooltip-trigger="focus" src="{{ feed_item.carousel_media[0].image_versions2.candidates[0].url }}">
 						</a>
 						<a 	href="{{ feed_item.image_versions2.candidates[0].url }}" 
 							data-fancybox="instagram_feed" 
 							data-caption="{{ feed_item.caption.text }}" 
 							ng-if="(feed_item.image_versions2)">
-								<img class="img-fluid img-thumbnail mx-auto hvr-pop" uib-tooltip="{{ feed_item.caption.text }}" tooltip-trigger="focus" src="{{ feed_item.image_versions2.candidates[0].url }}">
+								<img class="img-fluid img-thumbnail mx-auto " uib-tooltip="{{ feed_item.caption.text }}" tooltip-trigger="focus" src="{{ feed_item.image_versions2.candidates[0].url }}">
 						</a>
-						<p class="hvr-pop read-more">{{ feed_item.caption.text }}
-							<a 	class="hvr-pop read-more" 
+						<p class="read-more">{{ feed_item.caption.text }}
+							<a 	class="read-more" 
 								data-fancybox="instagram_feed" 
 								data-caption="{{ feed_item.caption.text }}" 
 								ng-if="(feed_item.carousel_media)">Saiba Mais →
@@ -218,7 +219,7 @@
 					<div class="textwidget">
 						<div class="widget-logo">
 							<img alt="logo" src="images/logo/logo alfa suportel .png">
-							<p>AlfaSuportel. é o líder em equipamentos e produtos alta qualidade.</p>
+							<p>Alfa Suportel. líder em produtos de alta qualidade. Faça parte dos nossos clientes satisfeitos.</p>
 						</div>
 					</div>
 				</li>
@@ -263,10 +264,10 @@
 										<a href="https://www.instagram.com/explore/tags/alfasuportel/"><i class="fa fa-instagram"></i></a>
 									</li> 
 									    
-									<li class="facebook">
+									<li class="facebook wd-newsletter1">
 										<a href="https://www.facebook.com/fulkancoco/"><i class="fa fa-facebook"></i></a>
 									</li>
-									<li class="instagram">
+									<li class="instagram wd-newsletter1">
 										<a href="https://www.instagram.com/fulkan_br/"><i class="fa fa-instagram"></i></a>
 									</li>               
 								</ul>

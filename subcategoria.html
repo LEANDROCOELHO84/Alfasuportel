@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="stylesheets/custom-style.css">
   <link rel="stylesheet" href="stylesheets/header.css">
   <link rel="stylesheet" href="stylesheets/sections.css">
-  <link rel="icon" href="images/logo/logo alfa suportel .png" width="140" height="140">
+  <link rel="icon" href="images/logo/favicon 2.png" width="140" height="140">
 </head>
   <body ng-controller="subcategoriaController" style="padding-top: 87px;">
 
@@ -63,7 +63,7 @@
                 <a href="contact.html" class="has-icon">CONTATO</a>
               </li>
               <li id="menu-item-1308">
-                <a href="http://webliniaerp.com.br/alfasuportel/cadastro" class="has-icon">TRABALHE CONOSCO</a>
+                <a href="http://webliniaerp.com.br/alfasuportel/cadastro" class="has-icon">FAÇA AQUI SEU PEDIDO</a>
               </li>
             </ul>
           </div>
@@ -95,24 +95,29 @@
             <ul class="wd-section-portfolio small-block-grid-1 medium-block-grid-1 large-block-grid-1">
               <li ng-repeat="item in itens">
                 <div class="wd-project">
-                  <img src="http://webliniaerp.com.br/{{ item.pth_banner }}" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image" alt="">
-                  <a ng-if="(item.filhos == null)" href="produtos.html?subcategoria={{ item.id }}"><h4>{{ item.descricao_categoria }}</h4></a>
-                  <a ng-if="(item.filhos != null)" href="subcategoria.html?categoria={{ item.id }}"><h4>{{ item.descricao_categoria }}</h4></a>
+                  <a ng-if="(item.filhos == null)" href="produtos.html?subcategoria={{ item.id }}" >
+                    <img src="http://webliniaerp.com.br/{{ item.pth_banner }}" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image" alt="">
+                  </a>
+                  <a ng-if="(item.filhos != null)" href="subcategoria.html?categoria={{ item.id }}">
+                    <img src="http://webliniaerp.com.br/{{ item.pth_banner }}" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image" alt="">
+                  </a>
+                  
+                  
                 </div>
                 <div class="wd-text-icon-style5 animated fadeInUp" data-animated="fadeInUp">
-                  <ul class="slider masque portfolio-grid small-block-grid-1  medium-block-grid-2 large-block-grid-4">
+                  <ul class="slider masque portfolio-grid small-block-grid-2  medium-block-grid-2 large-block-grid-5">
                     <li ng-if="(item.filhos == null)" ng-repeat="produto in item.produtos | limitTo: 4">
-                      <div class="wd-project hvr-underline-from-center">
+                      <div class="wd-project ">
                         <a href="item_produtos.html?produto={{ produto.id }}"><img width="380" height="254" src="http://webliniaerp.com.br/assets/imagens/produtos/{{ produto.img }}" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image hvr" alt="" style="height: 100px; width: 100px;">
-                          <h4 class="hvr">{{ produto.nome }}</h4>
+                          <h4 class="hvr-glow">{{ produto.nome }}</h4>
                         </a>
                       </div>
                     </li>
-                    <li ng-if="(item.filhos != null)" ng-repeat="filho in item.filhos | limitTo: 4">
-                      <div class="wd-project hvr-underline-from-center">
+                    <li ng-if="(item.filhos != null)" ng-repeat="filho in item.filhos | limitTo: 5 ">
+                      <div class="wd-project ">
                         <img width="380" height="254" src="http://webliniaerp.com.br/{{ filho.pth_thumbnail }}" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image hvr" alt="" style="height: 100px; width: 100px;">
                         <br>
-                        <a href="subcategoria.html?categoria={{ filho.id }}"><h4 class="hvr">{{ filho.descricao_categoria }}</h4></a>
+                        <a href="subcategoria.html?categoria={{ filho.id }}"><h4 class="hvr-glow">{{ filho.descricao_categoria }}</h4></a>
                       </div>
                     </li>
                   </ul>

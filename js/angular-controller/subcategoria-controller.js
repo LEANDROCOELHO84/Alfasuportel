@@ -48,7 +48,7 @@ app.controller('subcategoriaController', function($scope, $http){
 
 		$http.get(baseUrlApi()+"categorias/treeview?tce->id_empreendimento=217").then(function(response){
 			angular.forEach(response.data, function(item, index){
-				if(item.id == params.categoria){
+				if(item.id == parseInt(params.categoria,10)){
 					$scope.itens = item.filhos;
 					angular.forEach($scope.itens, function(x,y){
 						if(x.pth_thumbnail != null)

@@ -329,11 +329,11 @@ section.creative {
     font-size: 12px;
     line-height: 20px;
     letter-spacing: .5px;
-    background: rgba(0, 0, 0, 0.61);
+    background: rgba #000000;
     color: #FFF;
     padding: 10px 15px;
     &:hover {
-      background: rgba(0,0,0,1);
+      background: rgba #000000;
       color: $primary-color;
     }
   }
