@@ -31,26 +31,26 @@ acessórios(grelhas, espetos, tochos e cestos e afins)--------------------------
 chapeiras(com prensa e sem prensa)-------------------------------------------------------------------------------------OK
 churrasqueira( carvão, espetinho, elétrica, vertical)------------------------------------------------------------------OK
 fogões( esmaltados e semi industrial)----------------------------------------------------------------------------------ok
-utilidades(potes de mantimentos, marmita elétrica,escorredor, formo e fogão e recilata)-------------------------------
------------------------------------------------------------------------------ALTERAÇÕES FEITO PELO CLIENTE PELO CLIENTE
+utilidades(potes de mantimentos, marmita elétrica,escorredor, formo e fogão e recilata)------------------------------- ok
+-------------------------------------------------------------e necessario colocar cada produto em sua categoria--------ok
 
  IMAGEM 4: HOME
 
-seguir as mesmas características da linha alfa
+seguir as mesmas características da linha alfa-----ok
 
 trocar a categoria carvão para acessórios para narguilé-----------------------------------------------------------------ok
 
 centralizar as categirias.----------------------------------CATEGORIA SOMENTE CARREGA NAS LATERAIS----------------------ok
 
-IMAGEM  5: CADASTRO
+IMAGEM  5: CADASTRO--os item nesta pagina são opcionais não havendo a necessidade cadastrar todas as informações--------ok
 
-retirar data de nascimento--------não são informações necessarias e o modulo e para todos os clientes não é possivel tirar
+retirar data de nascimento----este modulo e ultilizado para todos os clientes não é possivel alteralo.------------------ok
 
 retirar apelido----------------------------------------------------------------------------------------------------idem---
 
 retirar (cliente bancário desde)-----------------------------------------------------------------------------------idem---
 
-finalidades: 
+finalidades: --------------------os item nesta pagina são opcionais não havendo a necessidade cadastrar todas as auterações
 - representante
 -distribuidor
 -logista
@@ -88,7 +88,7 @@ se clicar no banner "veja" abre as fotos de todas as categorias-----------------
 
 se clicar nas categorias abre apenas as fotos da categoria.--------------------------------------------------------------ok
 
-ajustar o banner na pg toda.------------------------------------------layout não permite acão---------------------------no
+ajustar o banner na pg toda.------------------------------------------layout padrão  não permite acão--------------------no
 
 colocar a retângulo em todas as categorias envés da linha vermelha.-----------------------------------------------------ok
 
@@ -106,21 +106,25 @@ imagem17: categoria- carvão ---------------------------------------------------
 
 IMAGEM 18: SELEÇÃO DO PRODUTO
 
-envés da linha vermelha um quadrado na imagem.
+envés da linha vermelha um quadrado na imagem.--------------------------------------------------------------------------ok
 
 IMAGEM 19: PG DO PRODUTO
 
 vale para todas.
 
 colocar a miniatura na vertical do lado esquerdo. e deixar um pouco maior
- dividir a pagina ao meio sendo metade para a imagem e a outra para o texto. 
+ dividir a pagina ao meio sendo metade para a imagem e a outra para o texto. -------------------------------------------ok
 
+
+Foi identificado que alguns podutos tem mais que imagens. e assim deixando a forma vertical inviavel estourando a imagen.
+foi alterado para que o banner seja dividido no meio e assim fica mais agradavel de ser visto.
+é necessario que as imagens dos produtos esteja em tamanho 350px/350px para não sair do esquadro da pagina
 IMAGEM 20:
 
 defeito na rolagem.
 
 obs: tirar efeitos de imagem subido ou caixa chegando de lado. deixar tudo estático.
-apanas botão com efeito de contorno.
+apanas botão com efeito de contorno.------------------------------------------------------------------------------------ok
 
 acho que é isso. 
 ps: se tiver algo escrito errado me desculpe , escrever na photoshop é fo...d...

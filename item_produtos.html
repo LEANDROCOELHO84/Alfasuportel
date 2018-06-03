@@ -93,7 +93,7 @@
       <br>
       <div class="small-12 large-6 columns">
         <div class="owl-testimonail owl-carousel owl-theme">
-          <img class="attachment-flooring_blog-thumb size-flooring_blog-thumb wp-post-image"
+          <img  class="attachment-flooring_blog-thumb size-flooring_blog-thumb wp-post-image"
           src="http://webliniaerp.com.br/assets/imagens/produtos/{{ getProductSelectedImage().path }}">
         </div>
         <div>
@@ -123,7 +123,7 @@
       <div class="wd-section-project">
         <ul class="masque portfolio-grid small-block-grid-1  medium-block-grid-3 large-block-grid-4">
           <li ng-repeat="item in relacionados | limitTo: 4"  class="flipInX" data-animated="flipInX" style="opacity: 1; animation-delay: 0ms;">
-            <div class="wd-project hvr-underline-from-center">
+            <div class="wd-project">
               <a href="item_produtos.html?produto={{ item.id }}"><img src="http://webliniaerp.com.br/assets/imagens/produtos/{{ item.img }}" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image" alt="" style="height: 300px; width: 300px;">
                 <h4>{{ item.nome }}</h4>
               </a>
@@ -140,8 +140,8 @@
   <!-- Start Footer -->
 
   <section class="wd-footer">
-    <div class="row animation-parent" data-animation-delay="180">
-      <ul class="block large-4 medium-4 columns animated fadeInRight" data-animated="fadeInRight">
+    <div class="row " data-animation-delay="180">
+      <ul class="block large-4 medium-4 columns animated " data-animated="">
         <li>
           <div class="textwidget">
             <div class="widget-logo">
@@ -151,7 +151,7 @@
           </div>
         </li>
       </ul>
-      <ul class="block large-4 medium-4 columns animated fadeInRight" data-animated="fadeInRight">
+      <ul class="block large-4 medium-4 columns animated " data-animated="">
         <li>
           <h2 class="block-title">Entrar em contato</h2>
           <div class="textwidget">
@@ -174,7 +174,7 @@
           </div>
         </li>
       </ul>
-      <ul class="block large-4 medium-4 columns animated fadeInRight" data-animated="fadeInRight">
+      <ul class="block large-4 medium-4 columns animated " data-animated="">
         <li>
           <h2 class="block-title">Informativos</h2>
           <div class="textwidget">
