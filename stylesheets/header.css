@@ -111,8 +111,8 @@ header.navigation {
 
 /*___________________   Title Bar____________________________*/
 .wd-title-bar {
-  background: url("../images/slider/slide3.jpg") no-repeat center center;
-  min-height: 289px;
+  background: url("../images/img-category/suportelsite.jpg") no-repeat center center;
+  min-height: 440px;
   padding-top: 150px;
   .single-portfolio & {
     margin-bottom: 90px;

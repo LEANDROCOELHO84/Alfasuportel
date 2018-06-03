@@ -47,7 +47,7 @@ button, .button,
 .woocommerce-page button.button, .widget_product_search #searchsubmit, .widget_product_search #searchsubmit:hover,
 .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button
 {
-  background:rgba(232, 17, 48,1);
+  background:rgba(126, 125, 130,1);
 }
 
 .wd-section-blog-services.style-3 .wd-blog-post .shape {
@@ -134,3 +134,33 @@ a:hover, a:focus {
 .creative-layout .top-bar-section ul li {
     background-color: black;
 }
+.buttons{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 0px 5px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+}
+
+    .button4 {
+    background-color: white;
+    color: black;
+    border: 2px solid #aaa;
+}
+    .button5 {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+}
+
+.button5:hover {
+    background-color: #7c7b7fa6;
+    color: white;

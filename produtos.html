@@ -18,7 +18,7 @@
   <script src="bower_components/angular/angular.js"></script>
 
 </head>
-<body ng-controller="produtosController" style="padding-top: 87px;">
+<body ng-controller="produtosController" style="padding-top: 73px;">
 
   <!-- Start Header -->
 <header class="l-header creative-layout">
@@ -101,12 +101,12 @@
       <div class="wd-section-project">
         <ul class="slider masque portfolio-grid small-block-grid-1	medium-block-grid-2 large-block-grid-4">
           <li ng-repeat="item in itens">
-            <div class="wd-project hvr-underline-from-center hvr">
+            <div class="wd-project button4 ">
               <a href="item_produtos.html?produto={{ item.id }}">
                 <img src="http://webliniaerp.com.br/assets/imagens/produtos/{{ item.img }}" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image" alt="{{ item.nome }}" style="height: 200px; width: 200px;" >
-                  <h4>
+                    <h4>
                     {{ item.nome }}
-                  </h4>
+                    </h4>
               </a>
             </div>
           </li>
@@ -163,18 +163,19 @@
             cadastre-se para receber informações
             <div>
               <input type="text" class="email-adress" placeholder="EMAIL" size="20" value="" name="email-adress">
-              <input type="submit" class="newslettersubmit" value="GO">
+              <input type="submit" class="newslettersubmit" value="ENVIAR">
               <ul class="inline-list">              
                 <li class="facebook">
                 <a href="https://www.facebook.com/Alfasuportel/"><i class="fa fa-facebook"></i></a>
                 </li>
                 <li class="instagram">
                   <a href="https://www.instagram.com/explore/tags/alfasuportel/"><i class="fa fa-instagram"></i></a>
-                </li>      
-                <li class="facebook">
+                </li> 
+                    
+                <li class="facebook wd-newsletter1">
                   <a href="https://www.facebook.com/fulkancoco/"><i class="fa fa-facebook"></i></a>
                 </li>
-                <li class="instagram">
+                <li class="instagram wd-newsletter1">
                   <a href="https://www.instagram.com/fulkan_br/"><i class="fa fa-instagram"></i></a>
                 </li>               
               </ul>

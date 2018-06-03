@@ -46,7 +46,7 @@
                     <ul class="sub-menu dropdown">
                       <li id="menu-item-1316" ng-repeat="item in subcategorias">
                         <a class="has-icon" ng-show="(item.filhos == null)" href="produtos.html?subcategoria={{ item.id }}">{{ item.descricao_categoria }}</a>
-                                  <a class="has-icon" ng-show="(item.filhos != null)" href="subcategoria.html?categoria={{ item.id }}">{{ item.descricao_categoria }}</a>
+                           <a class="has-icon" ng-show="(item.filhos != null)" href="subcategoria.html?categoria={{ item.id }}">{{ item.descricao_categoria }}</a>
                       </li>
                     </ul>
                   </li>
@@ -109,15 +109,15 @@
                     <li ng-if="(item.filhos == null)" ng-repeat="produto in item.produtos | limitTo: 4">
                       <div class="wd-project ">
                         <a href="item_produtos.html?produto={{ produto.id }}"><img width="380" height="254" src="http://webliniaerp.com.br/assets/imagens/produtos/{{ produto.img }}" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image hvr" alt="" style="height: 100px; width: 100px;">
-                          <h4 class="hvr-glow">{{ produto.nome }}</h4>
+                          <h4 class="button5">{{ produto.nome }}</h4>
                         </a>
                       </div>
                     </li>
                     <li ng-if="(item.filhos != null)" ng-repeat="filho in item.filhos | limitTo: 5 ">
-                      <div class="wd-project ">
+                      <div class="wd-project">
                         <img width="380" height="254" src="http://webliniaerp.com.br/{{ filho.pth_thumbnail }}" class="attachment-flooring_portfolio size-flooring_portfolio wp-post-image hvr" alt="" style="height: 100px; width: 100px;">
                         <br>
-                        <a href="subcategoria.html?categoria={{ filho.id }}"><h4 class="hvr-glow">{{ filho.descricao_categoria }}</h4></a>
+                        <a href="subcategoria.html?categoria={{ filho.id }}"><h4 class="button5">{{ filho.descricao_categoria }}</h4></a>
                       </div>
                     </li>
                   </ul>
@@ -168,35 +168,35 @@
             </div>
           </li>
         </ul>
-        <ul class="block large-4 medium-4 columns animated fadeInRight" data-animated="fadeInRight">
-          <li>
-            <h2 class="block-title">Informativos</h2>
-            <div class="textwidget">
-              <div class="wd-newsletter">
-                cadastre-se para receber informações
-                <div>
-                  <input type="text" class="email-adress" placeholder="EMAIL" size="20" value="" name="email-adress">
-                  <input type="submit" class="newslettersubmit" value="GO">
-                  <ul class="inline-list">              
-                    <li class="facebook">
-                    <a href="https://www.facebook.com/Alfasuportel/"><i class="fa fa-facebook"></i></a>
-                    </li>
-                    <li class="instagram">
-                      <a href="https://www.instagram.com/explore/tags/alfasuportel/"><i class="fa fa-instagram"></i></a>|
-                    </li>  
-                    |    
-                    <li class="facebook">
-                      <a href="https://www.facebook.com/fulkancoco/"><i class="fa fa-facebook"></i></a>
-                    </li>
-                    <li class="instagram">
-                      <a href="https://www.instagram.com/fulkan_br/"><i class="fa fa-instagram"></i></a>
-                    </li>               
-                  </ul>
-                </div>
+      <ul class="block large-4 medium-4 columns animated fadeInRight" data-animated="fadeInRight">
+        <li>
+          <h2 class="block-title">Informativos</h2>
+          <div class="textwidget">
+            <div class="wd-newsletter">
+              cadastre-se para receber informações
+              <div>
+                <input type="text" class="email-adress" placeholder="EMAIL" size="20" value="" name="email-adress">
+                <input type="submit" class="newslettersubmit" value="ENVIAR">
+                <ul class="inline-list">              
+                  <li class="facebook">
+                  <a href="https://www.facebook.com/Alfasuportel/"><i class="fa fa-facebook"></i></a>
+                  </li>
+                  <li class="instagram">
+                    <a href="https://www.instagram.com/explore/tags/alfasuportel/"><i class="fa fa-instagram"></i></a>
+                  </li> 
+                      
+                  <li class="facebook wd-newsletter1">
+                    <a href="https://www.facebook.com/fulkancoco/"><i class="fa fa-facebook"></i></a>
+                  </li>
+                  <li class="instagram wd-newsletter1">
+                    <a href="https://www.instagram.com/fulkan_br/"><i class="fa fa-instagram"></i></a>
+                  </li>               
+                </ul>
               </div>
             </div>
-          </li>
-        </ul>
+          </div>
+        </li>
+      </ul>
       </div>
       <footer class="wd-copyright">
         <div class="row">
