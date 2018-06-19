@@ -75,11 +75,12 @@ header.navigation {
     padding-top: 0 !important;
   }
 }
-.creative-layout .top-bar .name h1 a img {
+.img1 {
   @media #{$small-only} {
     margin-top: 0px;
   }
 }
+
  .top-bar .name {
    padding: 10px 0px 10px;
  }
@@ -112,11 +113,12 @@ header.navigation {
 /*___________________   Title Bar____________________________*/
 .wd-title-bar {
   background: url("../images/img-category/suportelsite.jpg") no-repeat center center;
-  min-height: 440px;
+  min-height: 304px;
+  background-size:contain;
   padding-top: 150px;
   .single-portfolio & {
     margin-bottom: 90px;
-  }
+  } 
   h2 {
     color: #fff;
   }

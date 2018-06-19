@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	
-	<title>AlfaSuportel Churrasqueiras Frigideiras Grelhas</title>
+	<title>Alfa Suportel Churrasqueiras Frigideiras Grelhas</title>
 	
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800">
 	<link rel="stylesheet" href="stylesheets/owl.carousel.css">
@@ -31,14 +31,14 @@
 <body ng-controller="indexController" style="padding-top: 3px;">
 
 	<!-- Start Header -->
-	<header class="l-header creative-layout">
+	<header class="l-header creative-layout img1">
 		<div class="top-bar-container contain-to-grid sticky fixed">
 			<nav class="top-bar" data-topbar="">
 				<ul class="title-area">
 					<li class="name">
 						<h1>
-							<a title="alfasuportel" rel="home" href="index.html" pa>
-								<img alt="logo" width="auto" height="auto" src="images/logo/logo alfa suportel 	.png">
+							<a title="alfa suportel" rel="home" href="index.html" pa>
+								<img style="margin-top: 0px" alt="logo" width="auto" height="auto" src="images/logo/alfa_suportel.png">
 							</a>
 						</h1>
 					</li>
@@ -85,7 +85,7 @@
 	<!-- End Header -->
 
 	<!-- Start Slider -->
-	<section class="slider" style="height: 400px; margin-top: 66px">
+	<section class="slider " style="height: 400px; margin-top: 66px">
 		<div class="flexslider" style="height: 400px;">
 			<ul class="slides">
 				<li style="background-image: url('images/slider/slide8.jpg');height: all;">
@@ -120,7 +120,7 @@
 			<div class="small-12 large-12 large-offset- columns">
 				<div class="">
 					<br>
-					<h4 class="text-center">Veja nossas linhas produtos</h3>
+					<h4 class="text-center">Conheca Nossas Linhas Produtos</h3>
 				</div>
 			</div>
 		</div>
@@ -137,18 +137,18 @@
 									<div class="box-description">
 										<br>
 										<h3>
-											 confira nossas categorias {{ categoria.descricao_categoria }} 
+											 veja tambem nossas categorias {{ categoria.descricao_categoria }} 
 										</h3>
 									</div>
 								</div>
 							</a>
 							<div class="wd-text-icon-style5  wd-section-text-icon ">
-								<ul class="slider masque portfolio-grid small-block-grid-2	medium-block-grid-3 large-block-grid-5">
-									<li ng-repeat="item in categoria.filhos | limitTo: 5">
+								<ul class="slider masque portfolio-grid small-block-grid-2	medium-block-grid-3 large-block-grid-6">
+									<li ng-repeat="item in categoria.filhos | limitTo: 6">
 										<div class="wd-project">
-											<a href="produtos.html?subcategoria={{ item.id }}"><img width="380" height="254" src="http://webliniaerp.com.br/{{ item.thumbnail }}" class="" alt="" style="height: 100px; width: 100px;">
-											<br>
-											<a class=" buttons button5"><h4>{{ item.descricao_categoria }}</h4></a>
+											<a href="produtos.html?subcategoria={{ item.id }}"><img src="http://webliniaerp.com.br/{{ item.thumbnail }}" class="" alt="" style="height: 150px; width: 150px;">
+											
+											<a href="produtos.html?subcategoria={{ item.id }}"class=" buttons button5"><h6>{{ item.descricao_categoria }}</h6></a>
 										</div>
 									</li>
 								</ul>
@@ -218,7 +218,7 @@
 				<li>
 					<div class="textwidget">
 						<div class="widget-logo">
-							<img alt="logo" src="images/logo/logo alfa suportel .png">
+							<img alt="logo" src="images/logo/alfa_suportel.png">
 							<p>Alfa Suportel. líder em produtos de alta qualidade. Faça parte dos nossos clientes satisfeitos.</p>
 						</div>
 					</div>

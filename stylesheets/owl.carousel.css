@@ -27,7 +27,7 @@
     position: relative;
     overflow: hidden;
     /* fix for flashing background */
-    -webkit-transform: translate3d(100px, 0px, 0px); }
+    -webkit-transform: translate3d(0px, 0px, 0px); }
   .owl-carousel .owl-item {
     position: relative;
     min-height: 1px;
